@@ -28,4 +28,3 @@
         Max number of pages is allocated to student 1 with 60 pages Of the 3 cases, 
         Option 2 has the minimum pages = 45.
 */
-

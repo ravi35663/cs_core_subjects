@@ -1,6 +1,7 @@
 /*
 ===> Merge Sort: - 
     -> Merge sort is combination of two thing: merging and sorting
+    -> Merge sort is an example of divide and conquer approach
     -> Exploits the fact that arrays of 0 and 1 element are always sorted
     -> Works by decomposing an array into smaller arrays of 0 or 1 elements, then build up  newly sorted 
        array.

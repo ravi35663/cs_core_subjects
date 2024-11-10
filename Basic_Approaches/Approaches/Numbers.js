@@ -111,6 +111,18 @@
 */
 
 /*
+===> Gray Code:
+    ->  Gray code is used in many applications because it reduces the likelihood of errors and simplifies 
+        logic operations.
+
+===> Uses og gray code:
+    ->  Digital communications: Gray code helps correct errors in digital communications like cable TV and 
+        digital terrestrial television.
+    ->  Engineering: Gray code is used in applications that require high precision and reliability, such as 
+        robotics, digital signal processing, and error correction.
+    ->  Electromechanical switches: Gray code prevents spurious (false, although seeming to be genuine) 
+        output from electromechanical switches. 
+
     ==> Binary To Gray conversion
         -> (B1B2B3B4)(Binary Code) = (B1(B1^B2)(B2^B3)(B3^B4)) (Gray Code)
         -> here '^' is xor
@@ -123,7 +135,7 @@
 /*
     GP(Geometric progression) series:
         -> 1,2,4,8,16......r^(n-1)
-        -> An = a * r^(n-1)
+        -> An = a * r^(n-1) = a * pow(r,n-1)
         -> Sn = (a * (1-r^n)) / (1-r)
         -> Here r != 1 and r = ratio (2/1 or 4/2 or T(n+1)/Tn)
 */

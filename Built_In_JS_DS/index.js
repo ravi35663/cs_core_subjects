@@ -57,7 +57,7 @@
 ===> unshift:
     ->  In JavaScript, the unshift() method adds one or more elements to the beginning of an array and returns 
         the new length of the array.
-    -> unshift modify the array.
+    ->  unshift modify the array.
         const arr1 = [5,6]
         arr1.unshift(1,2,3,4)
         console.log("Array is : ",arr1); // [ 1, 2, 3, 4, 5, 6 ]

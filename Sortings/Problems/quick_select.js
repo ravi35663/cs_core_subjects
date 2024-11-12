@@ -21,10 +21,13 @@ function quickSort(arr,left,right,k){
         let pi = findPivotIndex(arr,left,right);
         console.log("Pivot ele: ",pi);
         if(pi === k ){
+            // Found
             return arr[pi];
         }else if( pi > k){
+            // if true run this part and discard other part
             return quickSort(arr,left,pi,k);
         }else{
+            // if true run this part and discard other part
             return quickSort(arr,pi+1,right,k);
         }
     }
@@ -50,7 +53,4 @@ const arr = [10,5,2,0,7,6,4]
 const k  = 4;
 const result = QuickSelect(arr,k);
 console.log(`${k}th smallest element is ${result}`)
-
-
-// Optimized solution:
 

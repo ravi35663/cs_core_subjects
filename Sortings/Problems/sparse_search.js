@@ -39,13 +39,10 @@ function sparseSearch(arr,key){
             // Move left and right side
             let temp_mid = mid;
             let temp_mid_1 = mid;
-            console.log("Hello World line 41",mid)
             while((temp_mid >=0 && arr[temp_mid] == '') && (temp_mid_1 <= end && arr[temp_mid_1] == '')){
-                console.log("Line 43",{temp_mid,temp_mid_1})
                 temp_mid--;
                 temp_mid_1++;
             }
-            console.log("Line 47<><><>")
             if(arr[temp_mid] === ''){
                 mid = temp_mid_1; 
             }else{

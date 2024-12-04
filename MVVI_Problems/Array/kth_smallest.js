@@ -53,4 +53,4 @@ const mergeSort = (arr)=>{
 }
 
 const arr = [7, 10, 4, 3, 20, 15], k = 3;
-console.log(`${k}th smallest element is: `,kthSmallestElement(arr,k));
+console.log(`${k}th smallest element is: `,kthSmallestElement(arr,k)); 

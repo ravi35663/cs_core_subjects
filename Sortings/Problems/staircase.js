@@ -30,4 +30,4 @@ Staircase Search:
 function Staircase(arr){
 
 }
-const arr = [[1 4 9],[2 5 10],[6 7 11]];
+// const arr = [[1 4 9],[2 5 10],[6 7 11]];

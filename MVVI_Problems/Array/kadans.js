@@ -22,8 +22,8 @@
 
 function maxSubArraySum(arr){
     let cs = 0;
-    let ms = arr[0];
-    for(let i=0;i<arr.length;i++){
+    let ms = 0;
+    for(let i=1;i<arr.length;i++){
         cs += arr[i];
         if(ms < cs){
             ms = cs;

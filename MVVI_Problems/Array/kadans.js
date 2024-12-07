@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 /*
 
     Kadane's Algorithm:
@@ -24,8 +22,8 @@
 
 function maxSubArraySum(arr){
     let cs = 0;
-    let ms = arr[0];
-    for(let i=0;i<arr.length;i++){
+    let ms = 0;
+    for(let i=1;i<arr.length;i++){
         cs += arr[i];
         if(ms < cs){
             ms = cs;
@@ -41,4 +39,3 @@ const arr = [[2, 3, -8, 7, -1, 2, 3],[-2, -4], [5, 4, 1, 7, 8]];
 arr.forEach(item=>{
     console.log("Max sum is: ",maxSubArraySum(item));
 })
->>>>>>> 6c96c3e88d1f171ce7c1913091c950aedf94ceea

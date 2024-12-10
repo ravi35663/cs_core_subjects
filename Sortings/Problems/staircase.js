@@ -11,7 +11,7 @@ Staircase Search:
     
     Expected Complexity: Linear
 
-    Sample Testcase:
+    Sample Test case:
     Input:
     3 3
 
@@ -28,6 +28,18 @@ Staircase Search:
 */
 
 function Staircase(arr){
+    let start = 0;
+    let end = arr.length - 1;
+    while(start <= end){
+        let mid = Math.floor((start+end)/2);
+        const arr_mid = arr[mid];
 
+        if(arr_mid[])
+    }
+}
+
+function binarySearch(arr,element){
+    let start = 0;
+    let end
 }
 // const arr = [[1 4 9],[2 5 10],[6 7 11]];

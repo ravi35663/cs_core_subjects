@@ -1,1 +1,16 @@
-==> Rains
+/*
+==> Revision Cycle:
+    1)  Basic Approaches + BigO + Built in JS DS + Flow Chart + DS Intro
+    2)  Array
+    3)  HashTable
+    4)  String
+    5)  LinkedList
+    6)  Sorting and Searching
+    7)  Sliding window + Prefix Sum + Two-Pointers + Recursion
+    8)  Stack
+    9)  Queue
+    10) Binary Tree
+    11) Heap
+    12) Tree
+    13) Graph
+*/

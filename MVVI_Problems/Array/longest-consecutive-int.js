@@ -18,6 +18,9 @@
 
 // Brute-force:
 var longestConsecutive = function(nums) {
+    if(nums.length ==0){
+        return 0;
+    }
     const obj = {};
     const unique_ele = [];
     nums.forEach(item=>{

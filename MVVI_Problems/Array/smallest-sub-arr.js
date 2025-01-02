@@ -23,7 +23,6 @@ function smallestSubWithSum(arr, x) {
         let count = 0;
         for(let j=i;j<arr.length;j++){
             count++;
-            sum += arr[j];
             if(sum > x){
                 if(minLength > count){
                     minLength = count;
@@ -38,5 +37,5 @@ function smallestSubWithSum(arr, x) {
     return minLength
 }
 
-const x = 510, arr = [1, 4, 45, 6, 0, 19];
+const x = 51, arr = [1, 4, 45, 6, 0, 19];
 console.log(smallestSubWithSum(arr,x));

@@ -18,6 +18,16 @@
     -> When a function is called then that function is pushed into the call stack.
     -> once the function is executed then that function pops off from the call stack.
     -> In the stack everything is moved from top of the stack.
+    -> Recursion works in depth first manner (i.e. first last call happens then others) 
+*/
+
+/*
+==> How to solve recursion problems?
+    ->  Recursion = Principle of mathematical induction
+    -> Steps to solve recursion Problems:
+        1)  Figure of the smallest case
+        2)  Always 'Assume' the subproblem can be solved
+        3)  Solve the current problem assuming sub-problem's solution exists.
 */
 
 /*

@@ -5,6 +5,4 @@
         let arr = []
         arr = [1,2,3]
         arr = new Array(4) // Create array of size 4
-
-    nCr = (n!)/(r!(n-r)!)
 */

@@ -62,18 +62,16 @@
 /*
 ==> Some important mathematical formulas
     1) Binomial Coefficient : (n!/(r!(n-r)!))
-    
-    2) “ravi” + “ kumar” => “ravi kumar”
 
-    3) Perfect Number :- 
+    2) Perfect Number :- 
         Sum of number of its proper divisor is equal to that number 
         (e.g. 6 => 1 + 2 + 3 == 6 ..etc)
     
-    4) Strong Number :- 
+    3) Strong Number :- 
         A strong number is equal to the sum of factorial of its digits
         i.e.  (145 = 1! + 4! + 5! == 1 + 24 + 120 == 145)
     
-    5) Armstrong number : - 
+    4) Armstrong number : - 
        An Armstrong number is the sum of the power of the digits with the total number 
        of digits. 
           example 1: 
@@ -82,14 +80,13 @@
           example 2: 
           wxyz  -> number of digits is 4
 	      power(w,4) + power(x,4) + power(y,4) + power(z,4);
-    6) ‘A’ -> 65 , ‘Z’ -> 90 , ‘a’-> 97 , ‘z’-> 128 , ‘0’(Zero)-> 48,’9’-> 57
+    5)  ‘A’ -> 65 , ‘Z’ -> 90 , ‘a’-> 97 , ‘z’-> 128 , ‘0’(Zero)-> 48,’9’-> 57
 
-    7) Each character is of 1 byte (8 bits) 
-    8) Any 0 value is treated as false in javascript while any non-zero value is 
-       treated as true.
-    9) 1 Byte is minimum size of the bucket that is why boolean always consume 1 byte 
-       memory instead of 1 bit (0 or 1)
-       e.g bool is_delete = true;
+    7)  Each character is of 1 byte (8 bits) 
+    8)  Any 0 value is treated as false in javascript while any non-zero value is treated as true.
+    9)  1 Byte is minimum size of the bucket that is why boolean always consume 1 byte memory instead of 
+        1 bit (0 or 1)
+            e.g is_delete = true;
 
     10) Prime Number : - divided by 1 or self
         e.g 2,3,5,7,11 ..etc
@@ -115,7 +112,7 @@
     ->  Gray code is used in many applications because it reduces the likelihood of errors and simplifies 
         logic operations.
 
-===> Uses og gray code:
+===> Uses of gray code:
     ->  Digital communications: Gray code helps correct errors in digital communications like cable TV and 
         digital terrestrial television.
     ->  Engineering: Gray code is used in applications that require high precision and reliability, such as 

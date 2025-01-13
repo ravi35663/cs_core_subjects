@@ -59,8 +59,9 @@
         the new length of the array.
     ->  unshift modify the array.
         const arr1 = [5,6]
-        arr1.unshift(1,2,3,4)
+        const len = arr1.unshift(1,2,3,4)
         console.log("Array is : ",arr1); // [ 1, 2, 3, 4, 5, 6 ]
+        console.log("Length of the new array is: ",len); // 6
 */
 
 /*
@@ -84,8 +85,9 @@
 
 // Remove elements: You can use splice() to remove elements from the array.
 const arr = ['a','b','c','d'];
-arr.splice(1,2);
-console.log("Array is: ",arr);
+const r = arr.splice(1,2);
+console.log("Removed items: ",a);//['b','c'];
+console.log("Array is: ",arr); //['a','d']
 
 
 // Remove elements: You can use splice() to remove elements from the array.

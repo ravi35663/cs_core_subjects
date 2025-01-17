@@ -1,6 +1,6 @@
 /*
     Sliding Window Technique:
-        When to Use: Problems involving sums, averages, or fixed-size subarrays.
+        When to Use: Problems involving sums, averages, or fixed-size sub arrays.
 
         Example: Find the maximum sum of a subarray of size k.
     Steps:

@@ -1,7 +1,7 @@
 /*
 ===> Revise Topics Serial wise:
     1) (Basic Approaches), Terminologies and FlowChart, Built-In Js DS and BigO, DS - Introduction  
-    2) Array==> inprogress 
+    2) Array 
     3) String
     4) Sliding window
     5) Bit-Manipulation

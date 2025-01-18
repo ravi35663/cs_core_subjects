@@ -1,7 +1,7 @@
 /*
     ===> Big O Notation : -
         -> BigO Notation used to analyze the  performance of the algorithm. 
-        -> BigO Notation is a way to formalize fuzzy (not clear) counting .
+        -> BigO Notation is a way to formalize fuzzy (not clear) counting.
         -> BigO Notation analyzes how the runtime of the algorithm grows as input grows.
         -> Example: -
             function sum(n){
@@ -19,8 +19,7 @@
             }
         -> Time Complexity is : O(1)
         -> Here time complexity is constant
-        -> Solutions are considered as best which take less time to execute and 
-            consume less memory.
+        -> Solutions are considered as best which take less time to execute and consume less memory.
 */
 
 /*

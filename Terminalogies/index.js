@@ -1,13 +1,13 @@
 /*
 ===> Anagram: -
     -> An anagram is a word, phrase or name formed by re-arranging the letters such as
-       Cinema is like an iceman and more .
+       cinema is like an iceman and more .
 
 ===> Divide and Conquer :-
-    -> this pattern is designed to chunk large data sets into smaller chunks and 
-       repeat the process for subsets of data .
-    -> This pattern tremendously decreases the time complexity .
-    -> few examples are: binary search, quick sort, merge sort ..etc
+    ->  this pattern is designed to chunk large data sets into smaller chunks and repeat the process for 
+        subsets of data .
+    ->  This pattern tremendously decreases the time complexity .
+    ->  Few examples are: Binary Search, Quick Sort, Merge Sort ..etc
 
     -> Intimidating :- scary, fearful ..etc
     -> pitfalls : - issues, danger, difficulties ..etc
@@ -81,9 +81,4 @@
         CSS to the final rendered view.
     ->  DOM (Document Object Model): A structured representation of the HTML on a page. JavaScript interacts 
         with the DOM to manipulate elements and styles.
-*/
-
-/*
-
-
 */

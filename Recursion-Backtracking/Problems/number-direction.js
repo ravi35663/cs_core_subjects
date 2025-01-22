@@ -1,7 +1,7 @@
 /*
     Print number from 1...N recursively in :
-        increasing
-        decreasing
+        increasing order
+        decreasing order
 */
 function increasing(n){
     if(n==0){

@@ -19,6 +19,8 @@
     -> once the function is executed then that function pops off from the call stack.
     -> In the stack everything is moved from top of the stack.
     -> Recursion works in depth first manner (i.e. first last call happens then others) 
+    -> Recursion is a computer science technique where solution of a problem depends on solutions to
+       smaller instance of the same problem.
 */
 
 /*

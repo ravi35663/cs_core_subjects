@@ -9,7 +9,7 @@
 */
 
 const power = (base, iteration) => {
-    if(iteration === 0 ){
+    if(iteration == 0 ){
         return 1;
     }
     return base * power(base, iteration-1 );

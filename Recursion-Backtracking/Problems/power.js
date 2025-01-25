@@ -18,3 +18,20 @@ const power = (base, iteration) => {
 console.log(power(2,0));
 console.log(power(2,2));
 console.log(power(2,4));
+
+
+
+// Optimized power:
+// T.C : O(LogN) and S.C: O(LogN)
+const fastPower = (a,n)=>{
+    if(n==0){
+        return 1;
+    }
+    let subProblem = fastPower(a,Math.floor(n/2));
+    let subSquare = subProblem * subProblem;
+    if( n%2 == 1){
+        return subSquare * a;
+    }
+    return subSquare;
+}
+console.log(fastPower(2,4))

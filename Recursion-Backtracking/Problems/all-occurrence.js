@@ -18,6 +18,12 @@ All Occurrence!
     // Write it into javascript
 */
 
-function allOccurrence(){
-    
+function allOccurrence(k,v, output=[],i=0){
+    if(i == v.length){
+        return output;
+    }
+    if(v[i] == k){
+        output.push(i);
+    }
+    return allOccurrence(k,v,output,i+1);
 }

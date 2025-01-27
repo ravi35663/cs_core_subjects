@@ -17,12 +17,10 @@ function pivotIndex(arr,start,end){
         }
     }
     [arr[swap_index],arr[pi]] =  [arr[pi],arr[swap_index]];
-    console.log("array after sorting:", arr,pi);
     return swap_index;
 }
 
 function quickSort(arr,start=0, end=arr.length-1){
-    console.log("start and end: ",{start,end})
     if(start >= end){
         return;
     }

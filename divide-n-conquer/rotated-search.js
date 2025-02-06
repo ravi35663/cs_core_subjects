@@ -10,13 +10,6 @@
     Sample Output
         6
 */
-// Brute-force: break the element into 2 parts and append them into single array:
-/*
-    Without recursion:
-    Hits: 
-        1) Find break point where array start in ascending order:
-        2) index = (bp+)
-*/
 
 function searchElement(arr, ele){
     let start = 0;

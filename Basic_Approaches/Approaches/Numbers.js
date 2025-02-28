@@ -160,6 +160,15 @@
             3) If remainder is not equal to zero then replace a by b and set b to 
               remainder r.
             4) Then repeat the step 1
+            // Sudo Code:
+                while(a>=b){
+                    r = a % b;
+                    if(r == 0){
+                        return b // GCD
+                    }
+                    a = b;
+                    b = r;
+                }
 */
 
 /*
@@ -168,7 +177,7 @@
     -> Area of the circle = PI * r * r;
     -> Area of the rectangle = base * height;
     -> Area of Triangle Having 3 sides (a,b,c):
-	    P = (a+b+c) (perimeter)
+	    P = ( a + b + c) (perimeter)
 	    S = P/2 (Semi-perimeter)
 	    A = sqrt(s(s-a)(s-b)(s-c));
 */

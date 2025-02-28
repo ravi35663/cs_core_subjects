@@ -80,6 +80,8 @@
             return newArr;
         } // here, as arr grows the size of newArr grows. 
   -> Space Complexity : O(n+1) = O(n) // Constant .
+  -> O(1) < O(logN),O(N), O(NlogN),O(N^2) < O(2^N)
+  -> N^2 -> Quadratic
 */
 
 /*

@@ -11,7 +11,7 @@
                 }
                 return s;
             }
-        -> Here time complexity of sum function is : O(N)
+        -> Here time complexity of sum function is : O(N) :- Linear 
         -> because the loop is running for n number of times.
         -> Better Solution of sum: -
             function sum(n){
@@ -41,7 +41,7 @@
             for(let j=0;j<n;j++){ // this will run n times
             }
         }
-    -> O(n*n) -> T.C
+    -> T.C -> O(n^2) (quadratic)
     -> T.C = O(n) (n time complexity) // linear
     -> T.C = O(1) (constant) 
 */

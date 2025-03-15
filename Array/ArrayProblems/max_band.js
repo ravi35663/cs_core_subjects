@@ -17,7 +17,7 @@ function findMaximumBand(arr){
     // To keep maximum band value
     let max_band = 0;
     arr.forEach(item=> items[item]=true);
-    for(let i=0;i<arr.length;i++){
+    for(let i=0; i<arr.length; i++){
         let item = arr[i];
         let band = 0;
         if(items[item-1] === undefined){

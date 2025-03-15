@@ -94,11 +94,15 @@
 ===> Performance & Optimization Terminology:
     ->  Lazy Loading: A technique where images or content load only as the user scrolls to them, improving 
         initial load time.
+
     ->  Minification: The process of removing unnecessary characters (like whitespace) from code to reduce 
         file sizes and improve load times.
+
     ->  Caching: Storing data temporarily so that subsequent loads are faster.
+    
     ->  Critical Rendering Path: The sequence of steps the browser takes to render a web page, from HTML and 
         CSS to the final rendered view.
+
     ->  DOM (Document Object Model): A structured representation of the HTML on a page. JavaScript interacts 
         with the DOM to manipulate elements and styles.
 */

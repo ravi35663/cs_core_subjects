@@ -85,7 +85,7 @@
 
 // Remove elements: You can use splice() to remove elements from the array.
 const arr = ['a','b','c','d'];
-const r = arr.splice(1,2);
+const a = arr.splice(1,2);
 console.log("Removed items: ",a);//['b','c'];
 console.log("Array is: ",arr); //['a','d']
 

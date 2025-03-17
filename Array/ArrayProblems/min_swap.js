@@ -13,26 +13,26 @@ function minimumSwap(arr){
     let sortArr = [...arr].map((value,index)=> ({index,value}));
     sortArr.sort((a,b)=> a.value-b.value);
 
-    // lets keep the visited index so that you will not retreave the same index again
-    let visists = new Array(arr.length).fill(false);
+    // lets keep the visited index so that you will not retrieve the same index again
+    let visited = new Array(arr.length).fill(false);
     let totalSwap = 0;
     // traverse each node
     for(let i=0;i<arr.length;i++){
         // Check if item is already visited or item is at the right place if yes then skip the further action
-        if(visists[i] || sortArr[i].index === i){
+        if(visited[i] || sortArr[i].index === i){
             continue;
         }
 
         let j = i;
         let cycle = 0;
-        // If index/item is not visited the visit the index and thier cycle as well
-        while(!visists[j]){
-            visists[j] = true;
+        // If index/item is not visited the visit the index and their cycle as well
+        while(!visited[j]){
+            visited[j] = true;
             j = sortArr[j].index; // cycle of the jth element
             cycle++;
         }
-
-        // check if cycle is greater than 1 (at least 3 elment should be there to for a cycle)
+        console.log("Max cycle: ",cycle);
+        // check if cycle is greater than 1 (at least 3 element should be there to form a cycle)
         //  swap  = totalCycle - 1 if totalCycle > 1
         if(cycle > 1){
             totalSwap += cycle - 1;

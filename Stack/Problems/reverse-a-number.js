@@ -20,9 +20,11 @@ function reverse(n){
         n = Math.floor(n/10);
     }
     let reverse = 0;
-    stack.forEach((item,i)=>{
-        reverse = 10*reverse + item;    
-    });
+    let i=0;
+    while(stack.length){
+        reverse = (stack.pop() * Math.pow(10,i))  + reverse;
+        i++;
+    }
     return reverse;
 }
 const n = 456;

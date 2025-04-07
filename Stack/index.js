@@ -3,7 +3,7 @@
     -> Stack is an abstract data structure.
     -> Stack is a LIFO(Last In First Out) data structure.
     -> Stack is just a concept.
-    -> push and pop in the stack should be in constant time.
+    -> 'push' and 'pop' in the stack should be in constant time.
     -> Stack always prioritizes push and pop which is in constant time.
     -> Stack is used to add data 'in' and remove data 'out'.
 */ 
@@ -46,6 +46,7 @@ Note: Adding/removing element at beginning in array has more complexity than add
 ===> Big O of stack:
     -> Push : O(1)
     -> Pop: O(1)
+    -> Top: (1) -> Seeing what present at the top of the stack:
     -> Access: O(N)
     -> Search: O(N)
 */ 
@@ -88,6 +89,11 @@ class Stack{
         this.size--;
         return item;
     }
+    // To see top element of the stack: 0(1)
+    top(){
+        return this.head? this.head.val: null;
+    }
+
     display(){
         let item = this.start;
         while(item){

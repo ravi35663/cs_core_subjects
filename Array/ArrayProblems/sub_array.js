@@ -9,8 +9,8 @@
 
 const arr = [1,2,-3,4,5,-1];
 function subArray(arr){
-    for(let i=0;i<arr.length;i++){
-        for(let j=i;j<arr.length;j++){
+    for(let i=0; i<arr.length; i++){
+        for(let j=i; j<arr.length; j++){
             // You can replace this loop by using slice operator and then complexity goes from O(n^3) to O(n^2)
             for(let k=i;k<=j;k++){
                 process.stdout.write(`${arr[k]},`);

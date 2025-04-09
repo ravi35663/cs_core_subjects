@@ -8,7 +8,7 @@
     max_band = [0,1,2,3,4,5,6,7]    which is 8
 
     Sol: you can solve it be sorting the arr but time complexity will be NLogN.
-    Sol: you must solve in O(logN) complexity:
+    Sol: you must solve in O(N) complexity:
 */
 
 /* Below program has time complexity is O(n)*/ 

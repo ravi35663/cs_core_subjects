@@ -19,7 +19,7 @@ Next Greater Element:
 
 function nextGreaterNumber(arr){
     const stack = [];
-    const result  = new Array(arr.length).fill(false);
+    const result  = new Array(arr.length).fill(-1);
     for(let i=arr.length-1;i>=0;i--){
         if(stack.length == 0){
             result[i] = -1;

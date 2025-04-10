@@ -1,51 +1,27 @@
 /*
-Next Greater Element:
-    Given an array, return the Next Greater Element for every element. The Next greater Element for 
-    an element x is the first greater element on the right side of x in the array. Elements for which 
-    no greater element exist, consider the next greater element as -1.
-
-
-    Input Format
-        In the function an integer vector is passed
-    Output Format
-        Return an integer vector containing the next greater element for each element
-
-
-    Sample Input
-        v = [ 4, 5, 2, 25 ]
-    Sample Output
-        [5, 25, 25, -1] 
+    arr = [1,2,-3,4,-1]
+    prefix sum sub-array is method to calculate maximum or minimum sub array in an array
+    ==> Here time complexity is O(n^2)
 */
+// Dry- Run and try to understand how its works
 
-function nextGreaterNumber(arr){
-    const stack = [];
-    const result  = new Array(arr.length).fill(false);
-    for(let i=arr.length-1;i>=0;i--){
-        if(stack.length == 0){
-            result[i] = -1;
-            stack.push(arr[i]);
-        }else{
-            let popped_item = stack.pop();
-            if(popped_item > arr[i]){
-                result[i] = popped_item
-                stack.push(popped_item,arr[i]);
-            }else{
-                while(popped_item < arr[i]){
-                    popped_item = stack.pop();
-                }
-                if(popped_item == undefined){
-                    result[i] = arr[i];
-                    stack.push(arr[i]);
-                }else{
-                    result[i] = popped_item;
-                    stack.push(popped_item);
-                    stack.push(arr[i]);
-                }
+
+function maxSumSubArray(arr){
+    const prefix_sum = [arr[0]];
+    for(let i=1; i<arr.length; i++){
+        prefix_sum[i] = prefix_sum[i-1] + arr[i];
+    }
+    let max_sum = 0;
+    for(let i=0; i<arr.length; i++){
+        for(let j=i;j<arr.length;j++){
+            const sum = (i == 0 ? prefix_sum[i] : (prefix_sum[j] - prefix_sum[i-1]))
+            if(sum > max_sum){
+                max_sum = sum;
             }
         }
     }
-    return result;
+    return max_sum;
 }
-
-const arr = [ 4, 5, 2,3, 25 ];
-console.log("Next item is: ",nextGreaterNumber(arr));
+// const arr = [1,2,-3,4,-1]
+const arr = [1,3,-4,5,7];
+console.log('max Sub array is: ',maxSumSubArray(arr));

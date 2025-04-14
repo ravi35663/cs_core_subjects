@@ -1,9 +1,9 @@
 /*
-===> Revise Topics Serial wise:
+===> Revise Topics Serial wise: Only-Revise-Theory and maybe max 1-2 questions(important)
     1) (Basic Approaches), Terminologies and FlowChart, Built-In Js DS and BigO, DS - Introduction ==> Done 
-    2) Array    ==> Inprogress
-    3) String
-    4) Sliding window
+    2) Array    ==> Done
+    3) String   ==> Done
+    4) Sliding window ==> 
     5) Bit-Manipulation
     6) Searching
     7) Sorting 

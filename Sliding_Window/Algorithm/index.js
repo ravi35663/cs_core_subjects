@@ -1,4 +1,24 @@
 /*
+===> Sliding Window:
+    ->  Sliding window technique is useful for solving problems in array/strings, especially it is 
+        considered as technique that could reduced the time complexity from O(n^2) to O(n).
+    ->  In Sliding Window problems you may need to expand window from one side and contract window from 
+        the other side. 
+*/
+
+/*
+===> Types of problems  :-
+    1) Fixed window Length K:
+        ->  The length of the window is fixed and it asks you to find something in the window as as the 
+            maximum or median number of each window.
+        ->  Usually we need kinds of variables to maintain the "state of the window" some are as simple 
+            as a or it could be complected as some advanced data structure such as list, queue or dequeue. 
+    2) Two Pointers + Criteria :-
+        ->  The window size is not fixed, usually it asks you to find the subarray that meets the criteria.
+        ->  For example: given an array of integers, find the number of sub arrays whose sum is equal to a target value.
+*/
+
+/*
     The sliding window approach is a simple and efficient technique to solve problems involving 'arrays' or 
     'strings' by examining a "window" (a subset of elements) that slides through the array, adjusting its size 
     or position as needed.
@@ -42,4 +62,3 @@ let arr = [1, 3, 2, 5, 7, 2];
 let k = 3
 const result = maxSum(arr,k);
 console.log("Max sum is : ",result)
-

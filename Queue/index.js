@@ -3,8 +3,8 @@
     -> Queue is a data structure used to add data in and remove data out.
     -> Queue is a FIFO(First in first out) data structure.
     -> We can implement a queue using arrays or with (linked list) classes.
-    -> enqueue means pushing element into queue
-    -> dequeue means removing elements from the queue.
+    -> 'enqueue' means pushing element into queue
+    -> 'dequeue' means removing elements from the queue.
     -> enqueue and dequeue are performed in constant time.
 
 ==> Uses of queue in programming:-
@@ -15,6 +15,7 @@
 ==> Big O of queue:
     -> Push : O(1)
     -> Pop: O(1)
+    -> Front: O(1)
     -> Access: O(N)
     -> Search: O(N)
 */

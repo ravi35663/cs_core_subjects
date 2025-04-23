@@ -13,6 +13,10 @@
     -> Siblings: Nodes which have the same parent.
     -> Leaf: Node which has no children.
     -> Edge: The connections between nodes.
+    -> Ancestors : parent, grand-parents.
+    -> Descendant: Below nodes of a particular node.
+    -> Height: Total depth of tree
+    -> Depth of a node: 
 
 ===> Uses of tree in computer science:-
     -> HTML DOM: (Nested elements)
@@ -29,5 +33,12 @@
     -> Binary Trees: Can have 0, 1 or 2 children. But cannot have more than 2 children.
     -> Binary Search Trees: Binary tree + children are sorted in a particular way.
         ..etc
+*/
+
+/*
+==> Important Notes:
+    ->  Tree problems follow a recursive structure
+    ->  Tree is fairly important topic for interviews 
+    ->  Mostly all problems can be solved by diving the problem into sub-problems and making recursive calls on each sub-trees ir iteratively.
 */
 

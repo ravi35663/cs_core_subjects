@@ -56,3 +56,5 @@ queue.pop()
 // queue.push(10)
 
 console.log("Front: ",queue.viewFront())
+
+module.exports = Queue

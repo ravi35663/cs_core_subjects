@@ -1,15 +1,16 @@
 /*
-==> Sprting:
+==> Sorting:
     -> Sorting is a process in which we re-arrange the elements in such a manner that items may be in either increasing order or 
-       decreasing order(monotonic).
+       decreasing order.
     -> e.g. sorting numbers or names alphabetically or objects based on any particular key..etc
     -> There are many sorting algorithms out there and all the sorting algorithms has their  own pros and cons.
+    -> Monotonic: Monotonic means elements either in increasing or decreasing order:
 
 ===> Built-In Array sorting methods in Js: -
     ->  Default sorting is based on string unicodes not based on items we provide in an array.
-    ->  We can tell “sort” how to sort items of an array by using the optional comparator function. This function sorts arrays 
-        according to our need.
-    -> this comparator function takes a pair of elements (a and b) and sorts based on return
+    ->  We can tell “sort” how to sort items of an array by using the optional comparator function. 
+        This function sorts arrays according to our need.
+    -> This comparator function takes a pair of elements (a and b) and sorts based on return
     ->  arr.sort((a,b)=>{
 		    return a-b;
         }) 

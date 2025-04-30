@@ -11,8 +11,9 @@
     1) Fixed window Length K:
         ->  The length of the window is fixed and it asks you to find something in the window as as the 
             maximum or median number of each window.
-        ->  Usually we need kinds of variables to maintain the "state of the window" some are as simple 
+        ->  Usually we need these kinds of variables to maintain the "state of the window" some are as simple 
             as a or it could be complected as some advanced data structure such as list, queue or dequeue. 
+
     2) Two Pointers + Criteria :-
         ->  The window size is not fixed, usually it asks you to find the subarray that meets the criteria.
         ->  For example: given an array of integers, find the number of sub arrays whose sum is equal to a target value.
@@ -42,6 +43,8 @@
         longer in the window and add the new element.
 */
 
+
+// This is example of fixed sized window:
 function maxSum(arr, k){
     let windowSum = 0;
     let maxSum = 0;
@@ -62,3 +65,40 @@ let arr = [1, 3, 2, 5, 7, 2];
 let k = 3
 const result = maxSum(arr,k);
 console.log("Max sum is : ",result)
+
+
+// Example of variable size window:
+/*
+    Given a string s, find the length of the longest substring without repeating characters.
+
+    Input: "abcabcbb"
+    Output: 3
+    Explanation: The answer is "abc", with the length of 3.
+*/
+
+/*
+==> Why it's a variable-size sliding window:
+    ->  The window expands when characters are unique.
+    ->  The window shrinks from the left when a duplicate is found.
+*/
+// Dry-Run this program to understand it better:
+function lengthOfLongestSubstring(s) {
+    let set = new Set();
+    let left = 0, maxLen = 0;
+
+    for (let right = 0; right < s.length; right++) {
+        while (set.has(s[right])) {
+            console.log("While is running :")
+            set.delete(s[left]);
+            left++;
+        }
+        set.add(s[right]);
+        maxLen = Math.max(maxLen, right - left + 1);
+    }
+
+    return maxLen;
+}
+
+const s = "abcabcbb";
+const re = lengthOfLongestSubstring(s);
+console.log("Max length unique string is: ",re);

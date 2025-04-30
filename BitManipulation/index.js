@@ -4,25 +4,25 @@
     -> It is perform action on bit level that is why it is very fast.
     
     ==> Bitwise Operators:
-    1) Bitwise AND (&):
-        0 & 0   => 0
-        0 & 1   => 0
-        1 & 0   => 0
-        1 & 1   => 1
-    2) Bitwise OR (|):
-        0 | 0   => 0
-        0 | 1   => 1
-        1 | 0   => 1
-        1 | 1   => 1
-    3) Bitwise XOR (^) (Exclusive OR):
-        0 ^ 0   => 0
-        0 ^ 1   => 1
-        1 ^ 0   => 1
-        1 ^ 1   => 0
-    4) Bitwise NOT (~) (1's complement):
-        ~0  => -1
-        ~1  => -2
-        ~(integer) => - (integer + 1)
+        1) Bitwise AND (&):
+            0 & 0   => 0
+            0 & 1   => 0
+            1 & 0   => 0
+            1 & 1   => 1
+        2) Bitwise OR (|):
+            0 | 0   => 0
+            0 | 1   => 1
+            1 | 0   => 1
+            1 | 1   => 1
+        3) Bitwise XOR (^) (Exclusive OR):
+            0 ^ 0   => 0
+            0 ^ 1   => 1
+            1 ^ 0   => 1
+            1 ^ 1   => 0
+        4) Bitwise NOT (~) (1's complement):
+            ~0  => -1
+            ~1  => -2
+            ~(integer) => - (integer + 1)
         => Explanation :
             let a = 0 ==> binary of 0 => 00000000 (upto 8)
                 ~a = ~0 ==> take 1's complement of 0

@@ -3,10 +3,10 @@
     1) (Basic Approaches), Terminologies and FlowChart, Built-In Js DS and BigO, DS - Introduction ==> Done 
     2) Array    ==> Done
     3) String   ==> Done
-    4) Sliding window ==> 
-    5) Bit-Manipulation
-    6) Searching
-    7) Sorting 
+    4) Sliding window ==> Done
+    5) Bit-Manipulation ==> Inprogress
+    6) Searching    ==> Done
+    7) Sorting      ==> Inprogress 
     8) Recursion 
     9) Linked List 
     10) Stack

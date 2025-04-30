@@ -6,7 +6,7 @@
     -> T.C = O(log(n))
     -> Efficient Search algorithm to find desired result in sorted array 
     -> e.g. arr[] = {1,2,3,4,5,6,77,88} , int k=19;
-    -> Loop will be run k = log(base2)(n)  -> T.C. O(log(base2)(n))
+    -> Loop will be run k = log(base2)(n)  -> T.C. O(log(base2)(n)) -> O(LogN)
 */
 // Implementation of Binary search:
 const arr = [1,2,3,4,5,6,7,8,9,10];

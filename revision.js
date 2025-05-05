@@ -6,7 +6,13 @@
     4) Sliding window ==> Done
     5) Bit-Manipulation ==> Inprogress
     6) Searching    ==> Done
-    7) Sorting      ==> Inprogress 
+    7) Sorting:     ==> Done
+        -> Bubble   
+        -> Merge Sort 
+        -> Insertion Sort
+        -> Quick Sort
+        -> Selection Sort
+        -> DNF-Algorithm
     8) Recursion 
     9) Linked List 
     10) Stack

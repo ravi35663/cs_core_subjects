@@ -27,7 +27,7 @@
 ==> How to solve recursion problems?
     ->  Recursion = Principle of mathematical induction
     -> Steps to solve recursion Problems:
-        1)  Figure of the smallest case
+        1)  Figure out the smallest case
         2)  Always 'Assume' the subproblem can be solved
         3)  Solve the current problem assuming sub-problem's solution exists.
 */

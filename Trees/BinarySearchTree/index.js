@@ -11,11 +11,6 @@
     -> Insert: O(LogN)( 😬Not Guarantees because if three is linear then it will go on for n)
 */
 
-/*
-    
-
-*/
-
 const Node = require('./Node');
 class BinarySearchTree{
     constructor(){

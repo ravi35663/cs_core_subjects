@@ -1,80 +1,108 @@
-/*
-    DNF Algorithm:
-        The DNF (Dutch National Flag) Algorithm is an efficient algorithm designed to solve problems 
-        where an array or collection contains three distinct types of elements that need to be segregated. 
-        It was proposed by Edsger Dijkstra and is commonly used in scenarios like sorting arrays with 
-        0s, 1s, and 2s or partitioning data into three regions.
-*/
+//Pre-order build tree:
+class Node{
+    constructor(value){
+        this.left = null;
+        this.right = null;
+        this.value = value;
+    }
+}
 
 /*
-    Key Concepts
-        1) The array is divided into three sections:
-            Low Section: Contains the first type (e.g., 0s).
-            Middle Section: Contains the second type (e.g., 1s).
-            High Section: Contains the third type (e.g., 2s).
-            
-        2) Three pointers are used:
-            Low: Tracks the boundary for the first type.
-            High: Tracks the boundary for the third type.
-            Mid: Scans through the array.
+==> Binary Tree-Traversal:
+    -> Pre-order Traversal: Root, Left, Right
+    -> In-order Traversal: Left, Root, Right
+    -> Post-order Traversal: Left, Right, Root
 */
 
-/*
-    Algorithm Steps:
-    1) Initialize Pointers:
-        low = 0, mid = 0, high = n - 1 (where n is the array length).
-    
-    2) Loop Until mid <= high:
-        Case 1: If the element at mid belongs to the first category:
-            Swap it with the element at low.
-            Increment low and mid.
+function BuildBinaryTree(arr){
+    let index = 0;
+    function buildTree(){
         
-        Case 2: If the element at mid belongs to the second category:
-            Simply move mid forward.
-        
-        Case 3: If the element at mid belongs to the third category:
-            Swap it with the element at high.
-            Decrement high.
+        if(index >= arr.length || arr[index] == -1 || arr[index] == null){
+            index++;
+            return null;
+        }
+        const node = new Node(arr[index++]);
+        node.left = buildTree();
+        node.right = buildTree();
+        return node;
+    }
+    return buildTree();
+}
+// Tree Traversal:
+const preOrder = (root)=>{
+    if(root == null) return;
+    process.stdout.write(` ${root.value} `);
+    preOrder(root.left);
+    preOrder(root.right);
+}
+
+const inOrder = (root)=>{
+    if(root == null) return;
+    inOrder(root.left);
+    process.stdout.write(` ${root.value} `);
+    inOrder(root.right);
+}
+
+const postOrder = (root)=>{
+    if(root == null) return;
+    postOrder(root.left);
+    postOrder(root.right);
+    process.stdout.write(` ${root.value} `);
+}
+
+
+/*
+==> Print-Level-Order:(BFS):
+        Print binary tree using level order traversal:
+        -> Use Queue data structure to put items of visited nodes (left and right)
+        ==> Input: 
+         (1)
+        /   \
+      (2)   (3)
+      /  \     \
+    (4)   (5)  (6)
+    /
+  (7)
+
+    ==> Output: [1,2,3,4,5,6,7]
 */
+const Queue = require('./Queue/queue-with-array');
 
-// function DNF_Algorithm(arr){
-//     let low = 0,mid = 0, high = arr.length - 1;
-//     const first = 0, second = 1,third = 2;
-//     while(mid<=high){
-//         if(arr[mid] === first){
-//             [arr[mid],arr[low]] = [arr[low],arr[mid]];
-//             low++;
-//             mid++
-//         } else if(arr[mid] === second){
-//             mid++;
-//         }else{
-//             [arr[mid],arr[high]] = [arr[high],arr[mid]];
-//             high--;
-//         }
-//     }
-//     return arr;
-// }
-
-// DutchNationalFlag algorithm used to sort an array which have three types of elements present:
-
-
-function DNF_Algorithm(arr){
-    const first = 0, second = 1, third = 2;
-    let low = 0, high = arr.length-1, mid = 0;
-    while(mid<=high){
-        if(arr[mid] == first){
-            [arr[mid],arr[low]] = [arr[low],arr[low]];
-            low++;
-            mid++
-        }else if(arr[mid] == third){
-            [arr[mid],arr[high]] = [arr[high],arr[mid]];
-            high--;
+const levelOrderTraversal = (root)=>{
+    const q = new Queue(50);
+    q.push(root);
+    q.push(null);
+    while(q.cs){
+        const temp = q.viewFront();
+        q.pop();
+        if(temp){
+            process.stdout.write(` ${temp.value} `)
+            if(temp.left){
+                q.push(temp.left);
+            }
+            if(temp.right){
+                q.push(temp.right);
+            }
         }else{
-            mid++;
+            console.log();
+            if(q.cs){
+                q.push(null)
+            }
         }
     }
 }
 
-const arr = [0, 0, 1, 2, 0, 1, 2, 0];
-DNF_Algorithm(arr)
-console.log("DNFAlgorithm: ", arr);
+const arr  = [1,2,4,-1,-1,5,7,-1,-1,-1,3,-1,6,-1,-1];
+const root = BuildBinaryTree(arr);
+// console.log("--------------------------------------Pre-Order------------------------------------------")
+// preOrder(root);
+
+// console.log("--------------------------------------In-Order------------------------------------------")
+// inOrder(root);
+
+// console.log("--------------------------------------Post-Order------------------------------------------")
+// postOrder(root);
+
+console.log("--------------------------------------Level-Order------------------------------------------")
+levelOrderTraversal(root);

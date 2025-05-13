@@ -39,6 +39,7 @@
 ==> Important Notes:
     ->  Tree problems follow a recursive structure
     ->  Tree is fairly important topic for interviews 
-    ->  Mostly all problems can be solved by diving the problem into sub-problems and making recursive calls on each sub-trees ir iteratively.
+    ->  Mostly all problems can be solved by dividing the problem into sub-problems and making recursive 
+        calls on each sub-trees iteratively.
 */
 

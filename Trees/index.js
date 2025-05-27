@@ -1,8 +1,8 @@
 /*
 ===> Tree :
     -> Tree is a data structure that consists of nodes in a parent/child relationship.
-    -> list: lists are linear data structures
-    -> Tree: trees are non-linear data structures.
+    -> List: Lists are linear data structures
+    -> Tree: Trees are non-linear data structures.
     -> A node can have relationships with its children and parents, not with siblings.
     -> A child can not have more than 1 parent.
 

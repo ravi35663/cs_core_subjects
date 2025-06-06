@@ -16,7 +16,7 @@ class Node{
 
 // Functional class: BuildTheTree
 // This way of building a code is known as pre-order build of the tree
-function buildBinaryTree(arr){
+ function buildBinaryTree(arr){
     let index = 0;
     function buildTree(){
         if(index >=arr.length || arr[index] == null || arr[index] == -1){
@@ -108,7 +108,33 @@ function levelOrderTraversal(root){
 }
 
 
+// Height Of the Binary Tree:
+function heightOfBinaryTree(root){
+    if(root == null) return 0;
+    let h1 = heightOfBinaryTree(root.left);
+    let h2 = heightOfBinaryTree(root.right);
+    return 1 + Math.max(h1,h2);
+}
 
+
+// Print K the level nodes:
+function dfs(root,k,output=[]){
+  if(!root) return output;
+  if(k == 0){
+    process.stdout.write(`${root.value} `);
+    output.push(root.value);
+    return;
+  }
+  dfs(root.right,k-1,output);
+  dfs(root.left,k-1,output);
+  return output;
+}
+
+// return sum of all node// root,left,right
+function nodeSum(root){
+    if(!root) return 0;
+    return root.value + nodeSum(root.left) + nodeSum(root.right);
+}
 
 // -1 is treated as null
 const preorder = [1,2,4,-1,-1,5,7,-1,-1,-1,3,-1,6,-1,-1]
@@ -122,3 +148,6 @@ postorderTraversal(root); // 4 7 5 2 6 3 1
 
 console.log("--------------------Level-Order-traversal--------------------------")
 levelOrderTraversal(root);
+
+console.log("--------------------Height of a tree--------------------------")
+console.log(heightOfBinaryTree(root));

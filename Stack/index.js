@@ -33,12 +33,12 @@
         stack.pop(); // [10]
         stack.pop(); // []
 
-	i.e. (pushing and popping from the start)
-	let stack = [];
-	stack.unshift(10); //[10]
-	stack.unshift(12); //[10,12]
-	stack.shift(); // [10]
-	stack.shift(); // []
+        i.e. (pushing and popping from the start)
+        let stack = [];
+        stack.unshift(10); //[10]
+        stack.unshift(12); //[10,12]
+        stack.shift(); // [10]
+        stack.shift(); // []
 
 Note: Adding/removing element at beginning in array has more complexity than adding/removing
       from the end.

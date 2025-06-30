@@ -1,13 +1,19 @@
 /*
 ===> Binary Search Tree :-
     -> Every parent node has at most two children.
-    -> Every node to the left of the parent node is always less than the parent.
-    -> Every node to the right of the parent node is always greater than the parent.
+    -> Every node to the left of the parent node is always less than parent.
+    -> Every node to the right of the parent node is always greater or equal than the parent.
+    -> Left and the right part of the BST is always the BST.
+    -> InOrder Traversal of a binary search tree is always sorted (LeftRootRight).
+    -> BST problems follow a recursive structure.
+    -> Mostly all problems can be solved by dividing the problem into sub problems and making recursive calls on subtrees.
+    -> BST makes search efficient
 */
 
 /*
 ===> Big O of BST:-
-    -> Search : O(LogN)( 😬Not Guarantees because if three is linear then it will go on for n) 
+    -> Search : O(H)( 😬Not Guarantees because if three is linear then it will go on for n) 
+        here H is height of the tree.
     -> Insert: O(LogN)( 😬Not Guarantees because if three is linear then it will go on for n)
 */
 
@@ -16,7 +22,25 @@ class BinarySearchTree{
     constructor(){
         this.root = null;
     }
-    //insert item into tree
+
+    // By using recursion
+    _insert(value){
+        this.root = this.__insert(this.root,value)
+    }
+    // Insert
+    __insert(root, value){
+        if(root == null){
+            return new Node(value);
+        }
+        if(value < root.value){
+            root.left = this.__insert(root.left,value);
+        }else{
+            root.right = this.__insert(root.right,value);
+        }
+        return root;
+    }
+
+    //insert item into tree (Without using recursion)
     insert(value){
         const node = new Node(value);
         if(!this.root){
@@ -60,6 +84,14 @@ class BinarySearchTree{
         }
         return null;
     }
+
+    // Finding value recursively:
+    findRecursively(root,value){
+        if(!root || root.value == value) return root;
+        if(root.value > value) return this.findRecursively(root.left,value);
+        if(root.value < value) return this.findRecursively(root.right,value);
+    }
+
     // Traverse Tree (Breadth first search)
     BFS(){
         let node = this.root;
@@ -125,19 +157,30 @@ class BinarySearchTree{
         traverse(current);
         return result;
     }
+
+    // InOrder
+    inOrder(root){
+        if(!root){
+            return;
+        }
+        this.inOrder(root.left);
+        process.stdout.write(`${root.value} `);
+        this.inOrder(root.right);
+    }
+
 }
-const arr = [10,9,1,5,10,20,19,25,27];
+// const arr = [10,9,1,5,10,20,19,25,27];
 // const arr = [15,10,8,12,20,16,25];
 // const arr = [50,31,27,51,53,30,54,80,75,35,20,51];
 // const arr = [...'qwertyuiopasdfghjklzxcvbnm']
-const bst = new BinarySearchTree();
+// const bst = new BinarySearchTree();
 arr.forEach(item=>{
     bst.insert(item);
 })
 // console.log("Breadth first search :",bst.BFS());
-console.log("Depth first search pre-order: ",bst.dfsPreOrder());
-console.log("Depth first search post-order: ",bst.dfsPostOrder());
-console.log("Depth first search in-order: ",bst.dfsInOrder());
+// console.log("Depth first search pre-order: ",bst.dfsPreOrder());
+// console.log("Depth first search post-order: ",bst.dfsPostOrder());
+// console.log("Depth first search in-order: ",bst.dfsInOrder());
 // console.log("bst.find(1) ",bst.find(1))
 // console.log("bst.find(10) ",bst.find(10))
 // console.log("bst.find(16) ",bst.find(16))

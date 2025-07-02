@@ -186,6 +186,66 @@ class BinarySearchTree{
             return this.search(root.right,key);
         }
     }
+
+    // delete Node from BST:
+    /*
+        => Deletion Can perform in following order:
+            -> If Node have no child
+            -> If node have 1 child
+            -> If node have 2 child
+    */
+    deleteNode(root,key){
+        if(!root){
+            return null;
+        }
+        else if(root.value < key){
+            // Search and delete in right side
+            root.right = this.deleteNode(root.right,key);
+        }else if(root.value > key){
+            // Search and delete in left side:
+            root.left = this.deleteNode(root.left,key);
+        }else{
+            if(root.left == null && root.right == null){
+                // Node has no child
+                root = null
+
+            }else if(root.left == null){
+                // Node has 1 right child
+                root = root.right
+
+            }else if(root.right == null){
+                // Node has 1 left child
+                root = root.left;
+
+            }else{
+                // Node has 2 child:
+                /*
+                    Get Inorder success of that particular tree and replace that value with the key 
+                    and delete it by taking care of their children:
+                    BST:
+                        (15)
+                        /   \
+                      (9)   (30)
+                     /  \     \
+                    (8)  (10)  (60)
+                    /
+                  (7)
+                  Inorder(LeftRootRight): [7 8 9 10 15 30 60]
+                 Here inorder successor of 15 is 30:, inorder successor of 9 is 10: 
+                */
+
+                //Find inorder successor:
+                let temp = root.right;
+                while(temp.left !=null){
+                    temp = temp.left;
+                } 
+
+                root.value = temp.value;
+                root.right = this.deleteNode(root.right,temp.value);
+            }
+        }
+        return root;
+    }
 }
 const arr = [10,9,1,5,10,20,19,25,27];
 // const arr = [15,10,8,12,20,16,25];
@@ -204,9 +264,14 @@ bst.inOrder(bst.root)
 // console.log("bst.find(10) ",bst.find(10))
 // console.log("bst.find(16) ",bst.find(16))
 console.log("Search below: ");
-const n = bst.search(bst.root,100)
-if(n){
-    console.log("Element found",n);
-}else{
-    console.log("Element does not found")
-}
+// const n = bst.search(bst.root,100)
+// if(n){
+//     console.log("Element found",n);
+// }else{
+//     console.log("Element does not found")
+// }
+const r = bst.deleteNode(bst.root,10)
+console.log("Inorder after deleting node: ")
+bst.inOrder(bst.root)
+
+

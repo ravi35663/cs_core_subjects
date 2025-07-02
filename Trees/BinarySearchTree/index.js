@@ -13,7 +13,8 @@
 /*
 ===> Big O of BST:-
     -> Search : O(H)( 😬Not Guarantees because if three is linear then it will go on for n) 
-        here H is height of the tree.
+        Here H is height of the tree: 
+        (O(Log(n))<=O(H)<=O(n))
     -> Insert: O(LogN)( 😬Not Guarantees because if three is linear then it will go on for n)
 */
 
@@ -168,12 +169,85 @@ class BinarySearchTree{
         this.inOrder(root.right);
     }
 
+
+    search(root,key){
+        // Return if key is present into the bst:
+        if(!root){
+            return null
+        }
+        if(root.value == key){
+            return root;
+        }
+        if(root.value > key){
+            // Discard right part of the tree
+            return this.search(root.left,key);
+        }
+        if(root.value < key){
+            // Discard 
+            return this.search(root.right,key);
+        }
+    }
+
+    // Delete Node from BST:
+    deleteNode(root,key){
+        if(!root){
+            return null;
+        }
+        else if(root.value < key){
+            // Search and delete in right side
+            root.right = this.deleteNode(root.right,key);
+        }else if(root.value > key){
+            // Search and delete in left side:
+            root.left = this.deleteNode(root.left,key);
+        }else{
+            if(root.left == null && root.right == null){
+                // Node has no child
+                root = null
+
+            }else if(root.left == null){
+                // Node has 1 right child
+                root = root.right
+
+            }else if(root.right == null){
+                // Node has 1 left child
+                root = root.left;
+
+            }else{
+                // Node has 2 child:
+                /*
+                    Get Inorder success of that particular tree and replace that value with the key 
+                    and delete it by taking care of their children:
+                    BST:
+                        (15)
+                        /   \
+                      (9)   (30)
+                     /  \     \
+                    (8)  (10)  (60)
+                    /
+                  (7)
+                  Inorder(LeftRootRight): [7 8 9 10 15 30 60]
+                 Here inorder successor of 15 is 30:, inorder successor of 9 is 10: 
+                */
+
+                //Find inorder successor:
+                let temp = root.right;
+                while(temp.left !=null){
+                    temp = temp.left;
+                } 
+
+                root.value = temp.value;
+                root.right = this.deleteNode(root.right,temp.value);
+            }
+        }
+        return root;
+    }
+
 }
-// const arr = [10,9,1,5,10,20,19,25,27];
+const arr = [10,9,1,5,10,20,19,25,27];
 // const arr = [15,10,8,12,20,16,25];
 // const arr = [50,31,27,51,53,30,54,80,75,35,20,51];
 // const arr = [...'qwertyuiopasdfghjklzxcvbnm']
-// const bst = new BinarySearchTree();
+const bst = new BinarySearchTree();
 arr.forEach(item=>{
     bst.insert(item);
 })

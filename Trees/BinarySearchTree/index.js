@@ -242,6 +242,46 @@ class BinarySearchTree{
         return root;
     }
 
+
+    // Print Elements in a range:
+    printInRange(root,k1,k2){
+        // console.log("Line 252")
+        if(!root){
+            return;
+        }
+        if(root.value >= k1 && root.value<=k2){
+            process.stdout.write(`${root.value} `)
+            this.printInRange(root.left,k1,k2);
+            this.printInRange(root.right,k1,k2);
+        }else if(root.value > k2){
+            this.printInRange(root.left,k1,k2);
+        }else if(root.value < k1){
+            this.printInRange(root.right,k1,k2);
+        }
+    }
+
+    // Path from root to leaf:
+    rootToLeafPath(root,path=[]){
+        if(!root){
+            return;
+        }
+        // Check if node is reached the leaf:
+        if(root.left == null && root.right == null){
+            for(let item of path){
+                process.stdout.write(`${item} `);
+            }
+            process.stdout.write(`${root.value} `);
+            console.log("Path :")
+            return;
+        }
+        path.push(root.value);
+        this.rootToLeafPath(root.left,path);
+        this.rootToLeafPath(root.right,path);
+        // Backtracking part
+        path.pop();
+        return;
+    }
+
 }
 const arr = [10,9,1,5,10,20,19,25,27];
 // const arr = [15,10,8,12,20,16,25];

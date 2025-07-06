@@ -1,13 +1,20 @@
 /*
 ===> Binary Search Tree :-
     -> Every parent node has at most two children.
-    -> Every node to the left of the parent node is always less than the parent.
-    -> Every node to the right of the parent node is always greater than the parent.
+    -> Every node to the left of the parent node is always less than parent.
+    -> Every node to the right of the parent node is always greater or equal than the parent.
+    -> Left and the right part of the BST is always the BST.
+    -> InOrder Traversal of a binary search tree is always sorted (LeftRootRight).
+    -> BST problems follow a recursive structure.
+    -> Mostly all problems can be solved by dividing the problem into sub problems and making recursive calls on subtrees.
+    -> BST makes search efficient
 */
 
 /*
 ===> Big O of BST:-
-    -> Search : O(LogN)( 😬Not Guarantees because if three is linear then it will go on for n) 
+    -> Search : O(H)( 😬Not Guarantees because if three is linear then it will go on for n) 
+        Here H is height of the tree: 
+        (O(Log(n))<=O(H)<=O(n))
     -> Insert: O(LogN)( 😬Not Guarantees because if three is linear then it will go on for n)
 */
 
@@ -16,7 +23,25 @@ class BinarySearchTree{
     constructor(){
         this.root = null;
     }
-    //insert item into tree
+
+    // By using recursion
+    _insert(value){
+        this.root = this.__insert(this.root,value)
+    }
+    // Insert
+    __insert(root, value){
+        if(root == null){
+            return new Node(value);
+        }
+        if(value < root.value){
+            root.left = this.__insert(root.left,value);
+        }else{
+            root.right = this.__insert(root.right,value);
+        }
+        return root;
+    }
+
+    //insert item into tree (Without using recursion)
     insert(value){
         const node = new Node(value);
         if(!this.root){
@@ -60,6 +85,14 @@ class BinarySearchTree{
         }
         return null;
     }
+
+    // Finding value recursively:
+    findRecursively(root,value){
+        if(!root || root.value == value) return root;
+        if(root.value > value) return this.findRecursively(root.left,value);
+        if(root.value < value) return this.findRecursively(root.right,value);
+    }
+
     // Traverse Tree (Breadth first search)
     BFS(){
         let node = this.root;
@@ -125,6 +158,130 @@ class BinarySearchTree{
         traverse(current);
         return result;
     }
+
+    // InOrder
+    inOrder(root){
+        if(!root){
+            return;
+        }
+        this.inOrder(root.left);
+        process.stdout.write(`${root.value} `);
+        this.inOrder(root.right);
+    }
+
+
+    search(root,key){
+        // Return if key is present into the bst:
+        if(!root){
+            return null
+        }
+        if(root.value == key){
+            return root;
+        }
+        if(root.value > key){
+            // Discard right part of the tree
+            return this.search(root.left,key);
+        }
+        if(root.value < key){
+            // Discard 
+            return this.search(root.right,key);
+        }
+    }
+
+    // Delete Node from BST:
+    deleteNode(root,key){
+        if(!root){
+            return null;
+        }
+        else if(root.value < key){
+            // Search and delete in right side
+            root.right = this.deleteNode(root.right,key);
+        }else if(root.value > key){
+            // Search and delete in left side:
+            root.left = this.deleteNode(root.left,key);
+        }else{
+            if(root.left == null && root.right == null){
+                // Node has no child
+                root = null
+
+            }else if(root.left == null){
+                // Node has 1 right child
+                root = root.right
+
+            }else if(root.right == null){
+                // Node has 1 left child
+                root = root.left;
+
+            }else{
+                // Node has 2 child:
+                /*
+                    Get Inorder success of that particular tree and replace that value with the key 
+                    and delete it by taking care of their children:
+                    BST:
+                        (15)
+                        /   \
+                      (9)   (30)
+                     /  \     \
+                    (8)  (10)  (60)
+                    /
+                  (7)
+                  Inorder(LeftRootRight): [7 8 9 10 15 30 60]
+                 Here inorder successor of 15 is 30:, inorder successor of 9 is 10: 
+                */
+
+                //Find inorder successor:
+                let temp = root.right;
+                while(temp.left !=null){
+                    temp = temp.left;
+                } 
+
+                root.value = temp.value;
+                root.right = this.deleteNode(root.right,temp.value);
+            }
+        }
+        return root;
+    }
+
+
+    // Print Elements in a range:
+    printInRange(root,k1,k2){
+        // console.log("Line 252")
+        if(!root){
+            return;
+        }
+        if(root.value >= k1 && root.value<=k2){
+            process.stdout.write(`${root.value} `)
+            this.printInRange(root.left,k1,k2);
+            this.printInRange(root.right,k1,k2);
+        }else if(root.value > k2){
+            this.printInRange(root.left,k1,k2);
+        }else if(root.value < k1){
+            this.printInRange(root.right,k1,k2);
+        }
+    }
+
+    // Path from root to leaf:
+    rootToLeafPath(root,path=[]){
+        if(!root){
+            return;
+        }
+        // Check if node is reached the leaf:
+        if(root.left == null && root.right == null){
+            for(let item of path){
+                process.stdout.write(`${item} `);
+            }
+            process.stdout.write(`${root.value} `);
+            console.log("Path :")
+            return;
+        }
+        path.push(root.value);
+        this.rootToLeafPath(root.left,path);
+        this.rootToLeafPath(root.right,path);
+        // Backtracking part
+        path.pop();
+        return;
+    }
+
 }
 const arr = [10,9,1,5,10,20,19,25,27];
 // const arr = [15,10,8,12,20,16,25];
@@ -135,9 +292,9 @@ arr.forEach(item=>{
     bst.insert(item);
 })
 // console.log("Breadth first search :",bst.BFS());
-console.log("Depth first search pre-order: ",bst.dfsPreOrder());
-console.log("Depth first search post-order: ",bst.dfsPostOrder());
-console.log("Depth first search in-order: ",bst.dfsInOrder());
+// console.log("Depth first search pre-order: ",bst.dfsPreOrder());
+// console.log("Depth first search post-order: ",bst.dfsPostOrder());
+// console.log("Depth first search in-order: ",bst.dfsInOrder());
 // console.log("bst.find(1) ",bst.find(1))
 // console.log("bst.find(10) ",bst.find(10))
 // console.log("bst.find(16) ",bst.find(16))

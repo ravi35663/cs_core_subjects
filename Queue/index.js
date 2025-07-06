@@ -1,6 +1,6 @@
 /*
 ===> Queue :-
-    -> Queue is a data structure used to add data in and remove data out.
+    -> Queue is a data structure used to add data 'in' and remove data 'out'.
     -> Queue is a FIFO(First in first out) data structure.
     -> We can implement a queue using arrays or with (linked list) classes.
     -> 'enqueue' means pushing element into queue

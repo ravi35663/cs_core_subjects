@@ -7,7 +7,7 @@ class Queue{
         this.rear = size-1;
         this.ms = size;
         this.cs = 0;
-        this.arr = []; // This an circular array (when you are implementing push and pop)
+        this.arr = new Array(size); // This an circular array (when you are implementing push and pop)
     }
 
     // Add element into the queue:(enqueue)

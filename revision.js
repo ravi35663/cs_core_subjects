@@ -1,6 +1,6 @@
 /*
 =Revise Topics Serial wise: Only-Revise-Theory and maybe max 1-2 questions(important)
-    1) (Basic Approaches), Terminologies and FlowChart, Built-In Js DS and BigO, DS - Introduction  
+    1) Basic  
     2) Array   
     3) String   
     4) Sliding window 
@@ -21,5 +21,5 @@
     13) Heap
     14) HashTable
     15) Backtracking
-    16) Binary Tree ==> Inprogress
+    16) Binary Tree 
 */

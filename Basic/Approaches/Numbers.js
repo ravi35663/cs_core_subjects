@@ -83,7 +83,7 @@
     5)  ‘A’ -> 65 , ‘Z’ -> 90 , ‘a’-> 97 , ‘z’-> 128 , ‘0’(Zero)-> 48,’9’-> 57
 
     7)  Each character is of 1 byte (8 bits) 
-    8)  Any 0 value is treated as false in javascript while any non-zero value is treated as true.
+    8)  0,'',false,null,undefined and NaN value is treated as false in javascript while any non-zero value is treated as true.
     9)  1 Byte is minimum size of the bucket that is why boolean always consume 1 byte memory instead of 
         1 bit (0 or 1)
             e.g is_delete = true;
@@ -95,7 +95,7 @@
         3  * 10 = 30
         5  * 6  = 30
         (a)  (b) --> here a is smaller divisor and b is bigger divisor 
-        -> we only need to check the number in “sqrt(n)” not in “n
+        -> we only need to check the number in "sqrt(n)" not in "n"
         -> function isPrime(int n){
             for(int i=2 i*i<=n;i++){
                 if(n%i == 0){
@@ -177,9 +177,9 @@
     -> Area of the circle = PI * r * r;
     -> Area of the rectangle = base * height;
     -> Area of Triangle Having 3 sides (a,b,c):
-	    P = ( a + b + c) (perimeter)
-	    S = P/2 (Semi-perimeter)
-	    A = sqrt(s(s-a)(s-b)(s-c));
+	    P = ( a + b + c) => (Perimeter)
+	    S = P/2 (Semi-perimeter): Semi-Perimeter
+	    A = sqrt(s(s-a)(s-b)(s-c)): Area
 */
 
 /*

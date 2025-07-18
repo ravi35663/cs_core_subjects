@@ -23,9 +23,9 @@
     -> Example arr = [10,20,30,40]
     -> use array if you required items in an order
     -> Accessing Element Time Complexity : O(1)
-    -> removal element : it depends from where to remove
-    -> insertion element : it depends from where to insert
-    -> searching element : O(n)
+    -> Removal element : it depends from where to remove
+    -> Insertion element : it depends from where to insert
+    -> Searching element : O(n)
     -> push : O(1)
     -> pop : O(1)
     -> shift : O(n)
@@ -68,7 +68,7 @@
 ===> splice
     ->  The splice() method in JavaScript is a versatile array method that allows you to add, remove, or 
         replace elements from an array. 
-        It modifies the original array and returns an array of the deleted elements, if any.
+    ->  It modifies the original array and returns an array of the deleted elements, if any.
 */
 
 /*
@@ -76,7 +76,9 @@
     arr.splice(start,deleteCount,item1,item2,item3,........)
 
     start: the index at which arr start changing
+    
     deleteCount: the number of elements to remove from the array. if set 0, no elements will be removed.
+    
     item1,item2,item3:  the elements to add to the array starting from the 'start'. 
                         if omitted then no element will be added.
 */

@@ -1,25 +1,25 @@
 /*
-    ===> Big O Notation : -
-        -> BigO Notation used to analyze the  performance of the algorithm. 
-        -> BigO Notation is a way to formalize fuzzy (not clear) counting.
-        -> BigO Notation analyzes how the runtime of the algorithm grows as input grows.
-        -> Example: -
-            function sum(n){
-                let s=0;
-                for(let i=1;i<=n;i++){
-                    s = s+i;
-                }
-                return s;
+==> Big O Notation : -
+    -> BigO Notation used to analyze the  performance of the algorithm. 
+    -> BigO Notation is a way to formalize fuzzy (not clear) counting.
+    -> BigO Notation analyzes how the runtime of the algorithm grows as input grows.
+    -> Example: -
+        function sum(n){
+            let s=0;
+            for(let i=1;i<=n;i++){
+                s = s+i;
             }
-        -> Here time complexity of sum function is : O(N) :- Linear 
-        -> because the loop is running for n number of times.
-        -> Better Solution of sum: -
-            function sum(n){
-                return n*(n+1)/2;	
-            }
-        -> Time Complexity is : O(1)
-        -> Here time complexity is constant
-        -> Solutions are considered as best which take less time to execute and consume less memory.
+            return s;
+        }
+    -> Here time complexity of sum function is : O(N) :- Linear 
+    -> because the loop is running for n number of times.
+    -> Better Solution of sum: -
+        function sum(n){
+            return n*(n+1)/2;	
+        }
+    -> Time Complexity is : O(1)
+    -> Here time complexity is constant
+    -> Solutions are considered as best which take less time to execute and consume less memory.
 */
 
 /*
@@ -27,7 +27,7 @@
 	-> Arithmetic operations are constant
 	-> Variable assignment are also constants
 	-> Accessing elements in an array (by index) or object(by key) is also constant .
-		E.g. arr= [10,20,30,50] - > arr[3] -> accessed in constant time
+		E.g. arr= [10,20,30,50] -> arr[3] -> accessed in constant time
 		E.g. obj = {name:”ravi”,city:”Noida”} -> obj.city -> accessed in constant time
 	-> O(2n) = O(n)
 	-> O(500) = O(1)
@@ -62,7 +62,7 @@
     -> Example : -
 		function sum(arr){
 			let total = 0;
-			for(let i=0;i<arr.length;i++){
+			for(let i=0; i<arr.length;i++){
     	        total +=arr[i];
             }
             return total;

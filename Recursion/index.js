@@ -19,8 +19,6 @@
     -> once the function is executed then that function pops off from the call stack.
     -> In the stack everything is moved from top of the stack.
     -> Recursion works in depth first manner (i.e. first last call happens then others) 
-    -> Recursion is a computer science technique where solution of a problem depends on solutions to
-       smaller instance of the same problem.
 */
 
 /*
@@ -77,3 +75,22 @@ function collectOddValues(arr){// pure recursion
 	-> It is also known as stack overflow.
 	-> It is RangeError
 */
+
+// JavaScript Example of Head Recursion
+function headRecursion(n) {
+    if (n > 0) {
+        headRecursion(n - 1);  // Recursive call before processing
+        // This is called backtracking: Here value in console coming from back track:
+        console.log(n + " ");  // Processing after recursion
+    }
+}
+headRecursion(5); // 1 2 3 4 5
+
+// JavaScript Example of Tail Recursion
+function tailRecursion(n) {
+    if (n === 0) return;
+    console.log(n + " ");  // Processing before recursion
+    tailRecursion(n - 1);  // Recursive call is the last action
+}
+
+tailRecursion(5); // 5 4 3 2 1

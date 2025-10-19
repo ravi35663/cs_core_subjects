@@ -12,7 +12,7 @@ It uses two pointers:
         loop.
     ->  If there’s no cycle, the fast pointer will reach null.
 */
-
+// You c
 class Solution {
     hasCycle(head) {
         let slow = head;

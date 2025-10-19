@@ -28,5 +28,5 @@
 /*
 ==> Where we can use linkedList:
     -> Stack and Queue primarily
-    -> In real-life we used in browser(Navigation)
+    -> In real-life we used in browser (Navigation)
 */

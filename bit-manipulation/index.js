@@ -186,6 +186,11 @@ function countSetBit(n){
         }
         n = n>>1
     }
+    // way 2
+    while(n !=0){
+        count++;
+        n = n & n-1;
+    }
     return count
 }
 

@@ -52,32 +52,31 @@
         items = [];
         ele = items.shift() // undefined
 */
-
 /*
 ===> unshift:
-    ->  In JavaScript, the unshift() method adds one or more elements to the beginning of an array and returns 
-        the new length of the array.
+    ->  In JavaScript, the unshift() method adds one or more elements to the beginning 
+        of an array and returns the new length of the array.
     ->  unshift modify the array.
         const arr1 = [5,6]
         const len = arr1.unshift(1,2,3,4)
         console.log("Array is : ",arr1); // [ 1, 2, 3, 4, 5, 6 ]
         console.log("Length of the new array is: ",len); // 6
 */
-
 /*
 ===> splice
-    ->  The splice() method in JavaScript is a versatile array method that allows you to add, remove, or 
-        replace elements from an array. 
-    ->  It modifies the original array and returns an array of the deleted elements, if any.
+    ->  The splice() method in JavaScript is a versatile array method that allows you 
+        to add, remove, or replace elements from an array. 
+    ->  It modifies the original array and returns an array of the deleted elements, 
+        if any.
 */
-
 /*
 ==> Syntax :
     arr.splice(start,deleteCount,item1,item2,item3,........)
 
     start: the index at which arr start changing
     
-    deleteCount: the number of elements to remove from the array. if set 0, no elements will be removed.
+    deleteCount: the number of elements to remove from the array. if set 0, no elements 
+    will be removed.
     
     item1,item2,item3:  the elements to add to the array starting from the 'start'. 
                         if omitted then no element will be added.

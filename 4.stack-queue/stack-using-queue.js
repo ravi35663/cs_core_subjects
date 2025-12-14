@@ -5,8 +5,8 @@ class Queue{
     constructor(size=10){ // Default the maximum size of a queue is 10:
         this.front = 0;
         this.rear = size-1;
-        this.ms = size;
-        this.cs = 0;
+        this.ms = size; // Max size
+        this.cs = 0; // Current Size
         this.arr = new Array(size); // This an circular array (when you are implementing push and pop)
     }
 

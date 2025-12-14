@@ -21,34 +21,33 @@
 */
 //Number conversion
 /*
-    Binary To decimal
+1)  Binary To decimal
     1) 110011 => (51)(base 10)
        (1 * 2^5) + (1*2^4) + (0 * 2^3) + (0*2^2) + (1 * 2^1) + (1* 2^0) 
        32 + 16 + 0 + 0 + 2 +1 => 51
 */
 
 /*
-    Decimal To Binary
-    1) 52
-    
-    Divide By       Number      remainder
-    2               52              0
-    2               26              0
-    2               13              1
-    2               6               0
-    2               3               1    
-    2               1               1
-
-    concatenate remainder from bottom to top
-    Here decimal is (52) and binary of the number is (110100) 
+2)  Decimal To Binary
+        1) 52
+        
+        Divide By       Number      remainder
+        2               52              0
+        2               26              0
+        2               13              1
+        2               6               0
+        2               3               1    
+        2               1               1
+        ->  Concatenate remainder from bottom to top
+        ->  Here decimal is (52) and binary of the number is (110100) 
 */
 
 /*
-    => Octal To decimal
+3)  Octal To decimal
     -> Just like binary to decimal
-    1) (12367)8
-    => (1 * 8^4) + (2 * 8^3) + (3 * 8^2) + (6 * 8^1) + (7 * 8^0)
-      4096 + 1024 + 384 + 128 + 48 + 7 => (5697)10  
+        1) (12367)8
+            ->  (1 * 8^4) + (2 * 8^3) + (3 * 8^2) + (6 * 8^1) + (7 * 8^0)
+                4096 + 1024 + 384 + 128 + 48 + 7 => (5697)10  
 */
 
 /*
@@ -80,12 +79,13 @@
           example 2: 
           wxyz  -> number of digits is 4
 	      power(w,4) + power(x,4) + power(y,4) + power(z,4);
-    5)  ‘A’ -> 65 , ‘Z’ -> 90 , ‘a’-> 97 , ‘z’-> 128 , ‘0’(Zero)-> 48,’9’-> 57
 
+    5)  ‘A’ -> 65 , ‘Z’ -> 90 , ‘a’-> 97 , ‘z’-> 128 , ‘0’(Zero)-> 48,’9’-> 57
     7)  Each character is of 1 byte (8 bits) 
-    8)  0,'',false,null,undefined and NaN value is treated as false in javascript while any non-zero value is treated as true.
-    9)  1 Byte is minimum size of the bucket that is why boolean always consume 1 byte memory instead of 
-        1 bit (0 or 1)
+    8)  0, '', false, null, undefined and NaN value is treated as false in javascript 
+        while any non-zero value is treated as true.
+    9)  1 Byte is minimum size of the bucket that is why boolean always consume 1 byte 
+        memory instead of 1 bit (0 or 1)
             e.g is_delete = true;
 
     10) Prime Number : - divided by 1 or self
@@ -109,8 +109,8 @@
 
 /*
 ===> Gray Code:
-    ->  Gray code is used in many applications because it reduces the likelihood of errors and simplifies 
-        logic operations.
+    ->  Gray code is used in many applications because it reduces the likelihood of 
+        errors and simplifies logic operations.
 
 ===> Uses of gray code:
     ->  Digital communications: Gray code helps correct errors in digital communications like cable TV and 
@@ -138,37 +138,37 @@
 */
 
 /*
-    ==> LCM and HCF(GCD)
-        -> LCM (Least common multiplication)
-            A = 20
-            B = 3
-            Here LCM is 60 because only 60 can be divisible by both 20 and 3.
+==> LCM and HCF(GCD)
+    -> LCM (Least common multiplication)
+        A = 20
+        B = 3
+        Here LCM is 60 because only 60 can be divisible by both 20 and 3.
 
-        -> HCF (Highest common factor) or GCD (Greatest common divisor)
-            A = 12
-        	B = 15 
-	        Here GCD will be 3 because 3 is common divisor of both 12 and 15 and it 
-            greatest one.
+    -> HCF (Highest common factor) or GCD (Greatest common divisor)
+        A = 12
+        B = 15 
+        Here GCD will be 3 because 3 is common divisor of both 12 and 15 and it 
+        greatest one.
 
-        -> LCM(a,b) = a * b / GCD(a,b)
-        -> LCM(a,b) * GCD(a,b) = a * b;
+    -> LCM(a,b) = a * b / GCD(a,b)
+    -> LCM(a,b) * GCD(a,b) = a * b;
 
-        -> GCD(Euclidean Algorithm):
-            1) Given two numbers a & b, where a greater or equal to b. 
-               Repeatedly divide a by b;
-            2) If remainder r is equal to zero then b would be the gcd.
-            3) If remainder is not equal to zero then replace a by b and set b to 
-              remainder r.
-            4) Then repeat the step 1
-            // Sudo Code:
-                while(a>=b){
-                    r = a % b;
-                    if(r == 0){
-                        return b // GCD
-                    }
-                    a = b;
-                    b = r;
+    -> GCD(Euclidean Algorithm):
+        1) Given two numbers a & b, where a >= b. 
+            Repeatedly divide a by b;
+        2) If remainder r is equal to zero then b would be the gcd.
+        3) If remainder is not equal to zero then replace a by b and set b to 
+            remainder r.
+        4) Then repeat the step 1
+        // Sudo Code:
+            while(a>=b){
+                r = a % b;
+                if(r == 0){
+                    return b // GCD
                 }
+                a = b;
+                b = r;
+            }
 */
 
 /*
@@ -192,8 +192,8 @@
 	-> White -> (255,255,255) (RGB)
 	-> 4MB image --> row * column * 3(3 is RGB) * 8 bits
     -> 255 is maximum space of a color
-    -> sequence of images is known as video .
-    -> image is 3d object (colored image black and white is 3d image)
+    -> Sequence of images is known as video .
+    -> Image is 3d object (colored image black and white is 3d image)
     -> if we add another dimension ‘which is time’ to image then it become 4d image
         which is a video.
     -> video is a 4d matrix .

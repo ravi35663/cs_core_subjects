@@ -1,10 +1,12 @@
 /*
     Kadane's Algorithms:
-    -> This algorithm is used to find maximum sub array sum in linear time complexity
-    -> if all the array elements are negative then maximum of all element is a max-sub array
-    -> if current sum is negative reset it to zero
-    -> it does not contains extra space like prefix approach.
-    -> Time complexity is O(n) and space is constant.
+    ->  This algorithm is used to find maximum sub array sum in linear time complexity
+    ->  If all the array elements are negative then maximum of all element is a max-sub 
+        array.
+    ->  If current sum is negative reset it to zero
+    ->  It does not contains extra space like prefix approach.
+    ->  Time complexity is O(n) and space is constant.
+    
     Example:
         e.g.
         arr = [-2,3,4,-1,5,-12,6,1,3,2]

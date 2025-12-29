@@ -1,17 +1,8 @@
 /*
 ===> Why we use Data structure :- 
-    ->  There are many reasons to learn data structure. For instance if you want fast insertion and removal 
-        of elements then you should use linked list instead of array. and so on.
-
-==> ES2015 (ES-6) Syntax:-
-    ->  Class is the blueprint of an object with predefined properties and methods.
-    ->  With the help of class we can make new data types.
-    ->  Static methods are class methods not instance or object methods.
-    ->  Static method shared by all instances of the class.
-    ->  You can access static methods using created class
-    ->  in the static method ‘this’ represents all info of the class including static methods and
-        static properties.
-	    e.g.
+    ->  There are many reasons to learn data structure. For instance if you want fast 
+        insertion and removal of elements then you should use linked list instead of 
+        array. and so on.
 */
 class Student{ // This student is become constant
     // “this” represents the Students methods and properties for particular objects

@@ -1,4 +1,14 @@
-/*
-arr = 
-[58,64,76,77,91,-91,-89,-75,-74,-71,-66,-53,-47,-34,-33,-28,-25,-15,-12,-7,-2,0,13,20,21,33,34,56]
-*/
+arr = [-2,3,4,-1,5,-12,6,1,3,2]
+function maxSubArraySum(arr){
+    let sum = 0;
+    let max = -Infinity;
+    for(let item of arr){
+        sum +=item;
+        if(sum > max){
+            max = sum;
+        }
+        if(sum < 0){
+            sum = 0;
+        }
+    }
+}

@@ -7,7 +7,7 @@
 function maxSumSubArray(arr){
     let prefix_sum = new Array(arr.length);
     prefix_sum[0] = arr[0]; 
-    for(let i=1;i<arr.length;i++){
+    for(let i=1; i<arr.length;i++){
         prefix_sum[i] = prefix_sum[i-1] + arr[i];
     }
     let max_sum = arr[0];

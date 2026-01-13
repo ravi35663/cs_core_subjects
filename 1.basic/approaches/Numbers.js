@@ -115,6 +115,7 @@
 ===> Uses of gray code:
     ->  Digital communications: Gray code helps correct errors in digital communications like cable TV and 
         digital terrestrial television.
+
     ->  Engineering: Gray code is used in applications that require high precision and reliability, such as 
         robotics, digital signal processing, and error correction.
     ->  Electromechanical switches: Gray code prevents spurious (false, although seeming to be genuine) 

@@ -1,59 +1,60 @@
 /*
-    DNF Algorithm:
-        The DNF (Dutch National Flag) Algorithm is an efficient algorithm designed to solve problems 
-        where an array or collection contains three distinct types of elements that need to be segregated. 
-        It was proposed by Edsger Dijkstra and is commonly used in scenarios like sorting arrays with 
-        0s, 1s, and 2s or partitioning data into three regions.
-*/
+==============================
+DNF (DUTCH NATIONAL FLAG) – REVISION
+==============================
 
-/*
-    Key Concepts
-        1) The array is divided into three sections:
-            Low Section: Contains the first type (e.g., 0s).
-            Middle Section: Contains the second type (e.g., 1s).
-            High Section: Contains the third type (e.g., 2s).
-            
-        2) Three pointers are used:
-            Low: Tracks the boundary for the first type.
-            High: Tracks the boundary for the third type.
-            Mid: Scans through the array.
-*/
+Purpose:
+- Efficiently segregates an array containing exactly three distinct values
+- Commonly used for sorting 0s, 1s, and 2s
+- Proposed by Edsger Dijkstra
 
-/*
-    Algorithm Steps:
-    1) Initialize Pointers:
-        low = 0, mid = 0, high = n - 1 (where n is the array length).
-    
-    2) Loop Until mid <= high:
-        Case 1: If the element at mid belongs to the first category:
-            Swap it with the element at low.
-            Increment low and mid.
-        
-        Case 2: If the element at mid belongs to the second category:
-            Simply move mid forward.
-        
-        Case 3: If the element at mid belongs to the third category:
-            Swap it with the element at high.
-            Decrement high.
-*/
+Core Idea:
+- Divide array into three regions:
+  1) Low   → first type (0)
+  2) Mid   → second type (1)
+  3) High  → third type (2)
 
-function DNFAlgorithm(arr){
-    let low = 0,mid = 0, high = arr.length - 1;
-    const first = 0, second = 1,third = 2;
-    while(mid<=high){
-        if(arr[mid] === first){
-            [arr[mid],arr[low]] = [arr[low],arr[mid]];
-            low++;
-            mid++
-        } else if(arr[mid] === second){
+Pointers:
+- low  → boundary for first type
+- mid  → current index being scanned
+- high → boundary for third type
+
+Algorithm Steps:
+1) Initialize: low = 0, mid = 0, high = n - 1
+2) Loop while mid <= high
+   - If arr[mid] == first type:
+       swap(arr[mid], arr[low])
+       low++, mid++
+   - If arr[mid] == second type:
+       mid++
+   - If arr[mid] == third type:
+       swap(arr[mid], arr[high])
+       high--
+
+Time Complexity: O(n)
+Space Complexity: O(1)
+In-place & Single pass
+
+Example Implementation:
+*/
+function DNFAlgorithm(arr) {
+    let low = 0, mid = 0, high = arr.length - 1;
+    const first = 0, second = 1, third = 2;
+
+    while (mid <= high) {
+        if (arr[mid] === first) {
+            [arr[mid], arr[low]] = [arr[low], arr[mid]];
+            low++; mid++;
+        } else if (arr[mid] === second) {
             mid++;
-        }else{
-            [arr[mid],arr[high]] = [arr[high],arr[mid]];
+        } else {
+            [arr[mid], arr[high]] = [arr[high], arr[mid]];
             high--;
         }
     }
     return arr;
 }
 
+// Example Input & Output
 const arr = [0, 0, 1, 2, 0, 1, 2, 0];
-console.log("DNFAlgorithm: ",DNFAlgorithm(arr));
+console.log("DNFAlgorithm:", DNFAlgorithm(arr));

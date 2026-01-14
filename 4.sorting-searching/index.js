@@ -1,31 +1,61 @@
 /*
-==> Sorting:
-    -> Sorting is a process in which we re-arrange the elements in such a manner that items may be in either increasing order or 
-       decreasing order.
-    -> e.g. sorting numbers or names alphabetically or objects based on any particular key..etc
-    -> There are many sorting algorithms out there and all the sorting algorithms has their  own pros and cons.
-    -> Monotonic: Monotonic means elements either in increasing or decreasing order:
+========================
+SORTING – REVISION
+========================
+Sorting:
+- Sorting is the process of rearranging elements in an array
+- Order can be increasing or decreasing
+- Examples:
+  - Sorting numbers
+  - Sorting names alphabetically
+  - Sorting objects by a specific key
+- Different sorting algorithms exist, each with pros & cons
+- Monotonic order:
+  - Elements are either entirely increasing or decreasing
 
-===> Built-In Array sorting methods in Js: -
-    ->  Default sorting is based on string unicodes not based on items we provide in an array.
-    ->  We can tell “sort” how to sort items of an array by using the optional comparator function. 
-        This function sorts arrays according to our need.
-    -> This comparator function takes a pair of elements (a and b) and sorts based on return
-    ->  arr.sort((a,b)=>{
-		    return a-b;
-        }) 
-        value.
- 	    -> If return -ve then a comes first than b
-	    -> If return +ve then b comes first than a
-	    -> If return 0 then any value comes
+--------------------------------
+BUILT-IN ARRAY SORT (JavaScript)
+--------------------------------
+- Default JS sort works on STRING UNICODE values
+  (not numeric by default)
+
+Example:
+[10, 2, 5].sort() → ["10","2","5"] ❌
+
+- Use comparator function to define custom sorting logic
+
+Syntax:
+arr.sort((a, b) => a - b);
+
+Comparator Rules:
+- return negative → a comes before b
+- return positive → b comes before a
+- return 0        → order doesn't matter
+
+Example:
 */
+const nums = [5, 2, 9, 1];
+nums.sort((a, b) => a - b);
+console.log("Sorted numbers:", nums);
 
 /*
-==> TIME and SPACE Complexity of different algorithm:
-Sorting Algorithm       T.C (Best)      T.C (Average)       T.C (Worst)         Space Comp.
-    Bubble Sort             O(n)            O(n^2)              O(n^2)              O(1)
-    Insertion Sort          O(n)            O(n^2)              O(n^2)              O(1)
-    Selection Sort          O(n^2)          O(n^2)              O(n^2)              O(1)
-    Merge Sort              O(NlogN)        O(NlogN)            O(NlogN)            O(n)
-    Quick Sort              O(NlogN)        O(NlogN)            O(n^2)              O(logN)
+--------------------------------
+TIME & SPACE COMPLEXITY (SORTING)
+--------------------------------
+
+Algorithm        Best        Average      Worst        Space
+--------------------------------------------------------------
+Bubble Sort      O(n)        O(n²)         O(n²)        O(1)
+Insertion Sort   O(n)        O(n²)         O(n²)        O(1)
+Selection Sort   O(n²)       O(n²)         O(n²)        O(1)
+Merge Sort       O(n log n)  O(n log n)    O(n log n)  O(n)
+Quick Sort       O(n log n)  O(n log n)    O(n²)       O(log n)
+
+--------------------------------
+KEY TAKEAWAYS
+--------------------------------
+- Comparison-based sorting dominates most problems
+- Built-in sort must always use comparator for numbers
+- Space vs Time tradeoff varies by algorithm
+- Choose algorithm based on constraints
 */

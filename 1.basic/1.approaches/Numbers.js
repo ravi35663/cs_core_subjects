@@ -1,5 +1,5 @@
 /*
-==> Number System:-
+=> Number System:-
     Decimal     Binary      Octal       Hexadecimal
     0           00          0           0
     1           01          1           1
@@ -29,7 +29,7 @@
 
 /*
 2)  Decimal To Binary
-        1) 52
+    -   1) 52
         
         Divide By       Number      remainder
         2               52              0
@@ -51,7 +51,7 @@
 */
 
 /*
-==> Binary Addition :-
+=> Binary Addition :-
     0 + 0 = 0
     0 + 1 = 1
     1 + 0 = 1
@@ -59,7 +59,7 @@
 */
 
 /*
-==> Some important mathematical formulas
+=> Some important mathematical formulas
     1) Binomial Coefficient : (n!/(r!(n-r)!))
 
     2) Perfect Number :- 
@@ -89,7 +89,7 @@
             e.g is_delete = true;
 
     10) Prime Number : - divided by 1 or self
-        e.g 2,3,5,7,11 ..etc
+        e.g 2, 3, 5, 7, 11 ..etc
         30 -> 
         2  * 15 = 30
         3  * 10 = 30
@@ -108,51 +108,52 @@
 */
 
 /*
-===> Gray Code:
-    ->  Gray code is used in many applications because it reduces the likelihood of 
+=> Gray Code:
+    -   Gray code is used in many applications because it reduces the likelihood of 
         errors and simplifies logic operations.
 
-===> Uses of gray code:
-    ->  Digital communications: Gray code helps correct errors in digital communications like cable TV and 
+=> Uses of gray code:
+    -   Digital communications: Gray code helps correct errors in digital communications like cable TV and 
         digital terrestrial television.
 
-    ->  Engineering: Gray code is used in applications that require high precision and reliability, such as 
+    -   Engineering: Gray code is used in applications that require high precision and reliability, such as 
         robotics, digital signal processing, and error correction.
-    ->  Electromechanical switches: Gray code prevents spurious (false, although seeming to be genuine) 
+
+    -   Electromechanical switches: Gray code prevents spurious (false, although seeming to be genuine) 
         output from electromechanical switches. 
 
-    ==> Binary To Gray conversion
-        -> (B1B2B3B4)(Binary Code) = (B1(B1^B2)(B2^B3)(B3^B4)) (Gray Code)
-        -> here '^' is xor
+=> Binary To Gray conversion
+    -   (B1B2B3B4)(Binary Code) = (B1(B1^B2)(B2^B3)(B3^B4)) (Gray Code)
+    -   here '^' is xor
     
-    ==> Gray to Binary conversion:
-        -> (G1G2G3)(Gray Code) = (G1(G1+G2)(G1+G2+G3))(Binary code)
-        -> here '+' us binary sum sign
+==> Gray to Binary conversion:
+    -   (G1G2G3)(Gray Code) = (G1(G1+G2)(G1+G2+G3))(Binary code)
+    -   here '+' us binary sum sign
 */
 
 /*
-    GP(Geometric progression) series:
-        -> 1,2,4,8,16......r^(n-1)
-        -> An = a * r^(n-1) = a * pow(r,n-1)
-        -> Sn = (a * (1-r^n)) / (1-r)
-        -> Here r != 1 and r = ratio (2/1 or 4/2 or T(n+1)/Tn)
+=>  GP(Geometric progression) series:
+    -   1, 2, 4, 8, 16 ...... r^(n-1)
+    -   An = a * r^(n-1) = a * pow(r,n-1)
+    -   Sn = (a * (1-r^n)) / (1-r)
+    -   Here r != 1 and r = ratio (2/1 or 4/2 or T(n+1)/Tn)
 */
 
 /*
-==> LCM and HCF(GCD)
-    -> LCM (Least common multiplication)
+=> LCM and HCF(GCD)
+    -   LCM (Least common multiplication)
         A = 20
         B = 3
         Here LCM is 60 because only 60 can be divisible by both 20 and 3.
 
-    -> HCF (Highest common factor) or GCD (Greatest common divisor)
+    -   HCF (Highest common factor) or GCD (Greatest common divisor)
         A = 12
         B = 15 
         Here GCD will be 3 because 3 is common divisor of both 12 and 15 and it 
         greatest one.
 
-    -> LCM(a,b) = a * b / GCD(a,b)
-    -> LCM(a,b) * GCD(a,b) = a * b;
+    -   LCM(a,b) = a * b / GCD(a,b)
+    -   LCM(a,b) * GCD(a,b) = a * b;
 
     -> GCD(Euclidean Algorithm):
         1) Given two numbers a & b, where a >= b. 
@@ -173,7 +174,7 @@
 */
 
 /*
-==> Areas :-
+=> Areas :-
     -> Area of Triangle = ( base * height ) / 2
     -> Area of the circle = PI * r * r;
     -> Area of the rectangle = base * height;
@@ -184,7 +185,7 @@
 */
 
 /*
-==> Colors:
+=> Colors:
     -> RGB : - (RGB) 
 	-> Red -> 0 to 255 (range max) (255,0,0)
 	-> Green -> 0 to 255 (range max) (0,255,0)

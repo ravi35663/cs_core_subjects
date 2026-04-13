@@ -1,5 +1,5 @@
 /*
-===> Why we use Data structure :- 
+=> Why we use Data structure :- 
     ->  There are many reasons to learn data structure. For instance if you want fast 
         insertion and removal of elements then you should use linked list instead of 
         array. and so on.

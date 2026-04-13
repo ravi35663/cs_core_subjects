@@ -1,9 +1,9 @@
 /*
-===> Anagram: -
+=> Anagram: -
     ->  An anagram is a word, phrase or name formed by re-arranging the letters such as
        'cinema' is like an 'iceman' and more .
 
-===> Divide and Conquer :-
+=> Divide and Conquer :-
     ->  This pattern is designed to chunk large data sets into smaller chunks and 
         repeat the process for subsets of data .
     ->  This pattern tremendously decreases the time complexity .
@@ -11,20 +11,22 @@
 */
 
 /*
-===> General Frontend Terminology:
-    ->  HTML (HyperText Markup Language): The standard markup language used to structure web pages.
+=> General Frontend Terminology:
+    ->  HTML (HyperText Markup Language): The standard markup language used to structure 
+        web pages.
 
-    ->  CSS (Cascading Style Sheets): A style sheet language used for describing the appearance of HTML elements 
-        (colors, layout, fonts, etc.).
+    ->  CSS (Cascading Style Sheets): A style sheet language used for describing the 
+        appearance of HTML elements (colors, layout, fonts, etc.).
     
-    ->  JavaScript (JS): A programming language that enables dynamic content, animations, and interactive 
-        elements on web pages.
+    ->  JavaScript (JS): A programming language that enables dynamic content, animations, 
+        and interactive elements on web pages.
     
-    ->  Framework: A pre-built collection of code and templates used to simplify development. Common frontend 
-        frameworks include React, Vue.js, and Angular.
+    ->  Framework: A pre-built collection of code and templates used to simplify 
+        development. Common frontend frameworks include React, Vue.js, and Angular.
     
-    ->  Responsive Design: A design approach that ensures a website works well on different screen sizes, from 
-        mobile to desktop, often achieved using CSS techniques.
+    ->  Responsive Design: A design approach that ensures a website works well on 
+        different screen sizes, from mobile to desktop, often achieved using CSS 
+        techniques.
     
     ->  Media Query: A CSS feature used to apply different styles based on screen size, 
         device orientation, and resolution, helping achieve responsive design.
@@ -45,7 +47,7 @@
         Examples include Webpack, Parcel, and Vite.
 */
 /*
-===> UI Terminology:
+=> UI Terminology:
     ->  UX (User Experience): The overall experience a user has with a product, 
         encompassing ease of use, accessibility, and satisfaction.
 
@@ -92,7 +94,7 @@
         for selections like filters or settings
 */
 /*
-===> Performance & Optimization Terminology:
+=> Performance & Optimization Terminology:
     ->  Lazy Loading: A technique where images or content load only as the user scrolls 
         to them, improving initial load time.
 

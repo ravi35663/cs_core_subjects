@@ -1,5 +1,5 @@
 /*
-==> Big O Notation : -
+=> Big O Notation : -
     -> BigO Notation used to analyze the  performance of the algorithm. 
     -> BigO Notation is a way to formalize fuzzy (not clear) counting.
     -> BigO Notation analyzes how the runtime of the algorithm grows as input grows.
@@ -23,11 +23,11 @@
         less memory.
 */
 /*
-==> BigO Expression: -
+=> BigO Expression: -
 	-> Arithmetic operations are constant
 	-> Variable assignment are also constants
 	-> Accessing elements in an array (by index) or object(by key) is also constant.
-		E.g. arr= [10,20,30,50] -> arr[3] -> accessed in constant time
+		E.g. arr= [10, 20, 30, 50] -> arr[3] -> accessed in constant time
 		E.g. obj = {name:”ravi”, city:”Noida”} -> obj.city -> accessed in constant time
 	-> O(2n) = O(n)
 	-> O(500) = O(1)
@@ -35,19 +35,19 @@
 	-> O(n+1009) = O(n)
 	-> O(n^3 + 10n^2 + 100) = O(n^3)
     Note: -
-    -> performance.now():- It is a js function which gives you time in millisecond 
-    -> T.C = O(n^2) (n square time complexity) //quadratic 
-        for(let i=0;i<n;i++){// this will run n times
-            for(let j=0;j<n;j++){ // this will run n times
+        -> performance.now():- It is a js function which gives you time in millisecond 
+        -> T.C = O(n^2) (n square time complexity) //quadratic 
+            for(let i=0;i<n;i++){// this will run n times
+                for(let j=0;j<n;j++){ // this will run n times
+                }
             }
-        }
     -> T.C -> O(n^2) (quadratic)
     -> T.C = O(n) (n time complexity) // linear
     -> T.C = O(1) (constant) 
 */
 
 /*
-==> Space Complexity : -
+=> Space Complexity : -
     -> We can also use big-O notation to analyze space complexity, that is, how much 
        additional memory we need to allocate in order to run the code in our algorithm
 
@@ -88,12 +88,12 @@
         } // here, as arr grows the size of newArr grows. 
         
   -> Space Complexity : O(n+1) = O(n) // Constant .
-  -> O(1) < O(logN),O(N), O(NlogN),O(N^2) < O(2^N)
+  -> O(1) < O(logN) < O(N) < O(NlogN) < O(N^2) < O(2^N)
   -> N^2 -> Quadratic
 */
 
 /*
-===> Logarithmic : -
+=> Logarithmic : -
     -> Note: here all log is of base 2.
     -> Log8 -> 3
     -> logarithmic time complexity is better than O(n).

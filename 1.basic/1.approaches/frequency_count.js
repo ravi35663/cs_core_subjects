@@ -1,11 +1,11 @@
 /*
-==> Frequency Counter : -
-	-> This method uses objects or sets to collect values/frequencies of values.
-	-> This can often avoid the need of nested loop or O(n^2) operations with arrays 
-       and strings.
+=> Frequency Counter : -
+    -   This method uses objects or sets to collect values/frequencies of values.
+	-   This can often avoid the need of nested loop or O(n^2) operations with arrays 
+        and strings.
 */
-// Implementation
 
+// Implementation
 const arr = [1,2,3,3,1,1,2,4,5];
 function frequencyCounter(arr){
     const obj = {};

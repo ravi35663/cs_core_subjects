@@ -1,5 +1,5 @@
 /*
-==> Object :-
+=> Object :-
     -> An object is unsorted data structure which store data in key-value pairs
     const person = {
 	            name:”ravi”,
@@ -19,7 +19,7 @@
 */
 
 /*
-==> Array : -
+=> Array : -
     -> Example arr = [10,20,30,40]
     -> use array if you required items in an order
     -> Accessing Element Time Complexity : O(1)
@@ -41,19 +41,20 @@
 */
 
 /*
-    'shift' in javascript:
-    -> shift is used to remove first element in the array and it will return that first element.
-    -> shift modify original array.
-    -> if array is empty then shift will return 'undefined'.
-        const arr  = [1,2,3,4,5]
-        ele = arr.shift();
-        console.log("Element is : ",ele)// 1
-        console.log("Arr is ",arr) // [2,3,4,5]
-        items = [];
-        ele = items.shift() // undefined
+=>  'shift' in javascript:
+    ->  shift is used to remove first element in the array and it will return that 
+        first element.
+    ->  shift modify original array.
+    ->  if array is empty then shift will return 'undefined'.
+            const arr  = [1,2,3,4,5]
+            ele = arr.shift();
+            console.log("Element is : ",ele)// 1
+            console.log("Arr is ",arr) // [2,3,4,5]
+            items = [];
+            ele = items.shift() // undefined
 */
 /*
-===> unshift:
+=> unshift:
     ->  In JavaScript, the unshift() method adds one or more elements to the beginning 
         of an array and returns the new length of the array.
     ->  unshift modify the array.
@@ -63,7 +64,7 @@
         console.log("Length of the new array is: ",len); // 6
 */
 /*
-===> splice
+=> splice:
     ->  The splice() method in JavaScript is a versatile array method that allows you 
         to add, remove, or replace elements from an array. 
     ->  It modifies the original array and returns an array of the deleted elements, 

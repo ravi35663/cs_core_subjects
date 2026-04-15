@@ -1,7 +1,7 @@
 /*
     find longest unique sub-string in a string
 */
-// It's wrong solution , solve it agian with sliding window approach
+// It's wrong solution , solve it again with sliding window approach
 const longestSubString = (str)=>{
     let larg = str[0];
     let temp = str[0];

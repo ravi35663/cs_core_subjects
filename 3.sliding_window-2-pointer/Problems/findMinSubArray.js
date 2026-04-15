@@ -1,12 +1,13 @@
 /*
-    Sliding Window - minSubArrayLen
-    Write a function called minSubArrayLen which accepts two parameters - an array of positive integers and a positive integer.
+=>  Sliding Window - minSubArrayLen
+    Write a function called minSubArrayLen which accepts two parameters - 
+    an array of positive integers and a positive integer.
 
-    This function should return the minimal length of a contiguous subarray of which the sum is greater than 
-    or equal to the integer passed to the function. 
-    If there isn't one, return 0 instead.
+    This function should return the minimal length of a contiguous subarray of which 
+    the sum is greater than or equal to the integer passed to the function. If there 
+    isn't one, return 0 instead.
+
     Examples:
-
     minSubArrayLen([2,3,1,2,4,3], 7) // 2 -> because [4,3] is the smallest subarray
     minSubArrayLen([2,1,6,5,4], 9) // 2 -> because [5,4] is the smallest subarray
     minSubArrayLen([3,1,7,11,2,9,8,21,62,33,19], 52) // 1 -> because [62] is greater than 52
@@ -42,7 +43,7 @@ function findMinSubArray(nums,sum) {
         // reduce the window and find another sum with on less value of start
         else if(total >= sum){
             // This is used to get the window size
-            minLength = Math.min(minLength,end-start);
+            minLength = Math.min(minLength, end-start);
             total -= nums[start];
             start++;
         }
@@ -55,9 +56,7 @@ function findMinSubArray(nums,sum) {
 }
 
 
-
 const minLenSubArray = findMinSubArray([2,3,1,2,4,3],7);
-
 console.log("Min length sub array",minLenSubArray);
 
 // Method - 2

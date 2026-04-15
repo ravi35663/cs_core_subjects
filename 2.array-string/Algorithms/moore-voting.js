@@ -11,10 +11,11 @@
 */
 
 /*
-==> Moore's voting algorithm:
-    ->  Moore’s Voting Algorithm is used to find the majority element in an array in O(n) 
-        time and O(1) space.
+=> Moore's voting algorithm:
+    ->  Moore’s Voting Algorithm is used to find the majority element in an array in 
+        O(n) time and O(1) space.
     ->  A majority element is the one that appears more than ⌊n/2⌋ times in the array.
+    ->  ⌊n/2⌋ --> that means floor value
 
     Steps
         1) Candidate Selection
@@ -30,7 +31,7 @@
 function majorElement(nums){
    let count = 1;
    let ele = nums[0]; 
-   for(let i=1;i<nums.length;i++){
+   for(let i=1; i<nums.length; i++){
         if(nums[i] == ele){
             count++;
         }else{

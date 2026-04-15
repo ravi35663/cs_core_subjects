@@ -1,14 +1,15 @@
 /*
-    Unique Substring:
-    Given a string, write a function to find the largest substring with unique characters (no duplicates).
+Unique Substring:
+    Given a string, write a function to find the largest substring with unique 
+    characters (no duplicates).
 
     Sample Input 
-    prateekbhaiya
-    aabcb
+        prateekbhaiya
+        aabcb
 
     Sample Output 
-    ekbhaiy
-    abc
+        ekbhaiy
+        abc
 
 */
 

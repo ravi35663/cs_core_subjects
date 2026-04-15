@@ -1,26 +1,28 @@
 /*
-    String Window
+=>  String Window
 
-    Given two strings, one big string and one small string, find the 'smallest window' in the big string 
-    that contains all characters of the small string.
+    Given two strings, one big string and one small string, find the 'smallest window' 
+    in the big string that contains all characters of the small string.
 
     Window can have additional characters than required.
-    If small string has duplicates, then those duplicates must be present with the same or higher count 
-    in the window.
-    
-    ==> Examples:
-        Input: s1 = hello_world
+    If small string has duplicates, then those duplicates must be present with the 
+    same or higher count in the window.
+
+=> Examples:
+    Input: 
+        s1 = hello_world
         s2 = lol
 
-        Output:
+    Output:
         llo
-    
-    ==> Examples:
-        Input: s1 = fizzbuzz
+
+=> Examples:
+    Input: 
+        s1 = fizzbuzz
         s2 = fuzz
 
-        Output:
-            fizzbu
+    Output:
+        fizzbu
 */
 function stringToMap(s){
     const m ={};
@@ -79,7 +81,7 @@ function stringWindow(s1,s2){
 }
 
 function patternMatched(m2_values,m1){
-    for(let k=0;k<m2_values.length;k++){
+    for(let k=0; k<m2_values.length; k++){
         let [key,value] = m2_values[k];
         if(m1[key] != value){
             return false;

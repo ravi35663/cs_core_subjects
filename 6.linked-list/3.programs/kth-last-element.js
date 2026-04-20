@@ -22,9 +22,9 @@
     Method: 1 (Will take two pass)
         -> Reverse the linked list and run for kth time to get kth element
     Method: 2:
-        1️⃣ Move one pointer K steps ahead.
-        2️⃣ Then, move both pointers one step at a time until the first pointer reaches the end.
-        3️⃣ The second pointer will be at the Kth last element when the first pointer reaches the last node.
+        - Move one pointer K steps ahead.
+        - Then, move both pointers one step at a time until the first pointer reaches the end.
+        - The second pointer will be at the Kth last element when the first pointer reaches the last node.
 */
 
 class Node{

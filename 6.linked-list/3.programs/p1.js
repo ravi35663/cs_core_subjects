@@ -1,16 +1,16 @@
 /*
-    1) Implement a singly linked list.
-        1) Insert a node at the beginning of a linked list.
-        2) Insert a node at the end of a linked list.
-        3) Insert a node at a specific position in a linked list.
-        4) Delete a node from the beginning of a linked list.
-        5) Delete a node from the end of a linked list.
-        6) Delete a node at a specific position in a linked list.
-        7) Find the length of a linked list.
-        8) Search for a given element in a linked list.
-        9) Count occurrences of a given element in a linked list.
-        10) Delete nodes with a given value in a linked list.
-        11) Find the middle of a linked list.
+1) Implement a singly linked list.
+    1) Insert a node at the beginning of a linked list.
+    2) Insert a node at the end of a linked list.
+    3) Insert a node at a specific position in a linked list.
+    4) Delete a node from the beginning of a linked list.
+    5) Delete a node from the end of a linked list.
+    6) Delete a node at a specific position in a linked list.
+    7) Find the length of a linked list.
+    8) Search for a given element in a linked list.
+    9) Count occurrences of a given element in a linked list.
+    10) Delete nodes with a given value in a linked list.
+    11) Find the middle of a linked list.
 */
 
 class Node {

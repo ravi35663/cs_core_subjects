@@ -34,4 +34,4 @@ function pivot(arr, start = 0, end = arr.length - 1) {
              
 //   const arr = [100,-3,2,4,6,9,1,2,5,3,23]
 const arr = [3,7,2,-1,4,1,5,2,12,8,9];
-  console.log(quickSort(arr));
+console.log(quickSort(arr));

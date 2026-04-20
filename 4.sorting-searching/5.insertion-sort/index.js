@@ -1,5 +1,5 @@
 /*
-===> Insertion Sort :-
+=> Insertion Sort :-
    -> Insertion sort builds up the sort by gradually creating a part which is already 
       sorted and putting greater and lesser elements by each side of the sorted part of 
       the array.
@@ -16,14 +16,16 @@
 */
 /*
    -> T.C = O(n^2) (worse case)
-   -> Note :- if you have a small dataset then you can go with sorting algorithms which
-      have O(N^2) complexity. 
+   -> Note :- 
+      If you have a small dataset then you can go with sorting algorithms which have 
+      O(N^2) complexity. 
    -> For large datasets try those algorithms which have O(NLogN) complexity.
 */
 
 function insertionSort(arr){
-   for(let i=1;i<arr.length;i++){
-      for(let j=i; j> 0 && arr[j] < arr[j-1];j-- ){
+   for(let i=1; i<arr.length; i++){
+      for(let j=i; j> 0 && arr[j] < arr[j-1]; j-- ){
+         // Because we're making correct room for new item
          [arr[j],arr[j-1]] = [arr[j-1],arr[j]];
       }
    }

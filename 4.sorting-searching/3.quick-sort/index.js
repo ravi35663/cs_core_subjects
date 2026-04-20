@@ -1,5 +1,5 @@
 /*
-===> Quick Sort:
+=> Quick Sort:
     ->  Quick sort is like merge sort, exploiting the fact that arrays of 0 or 1 element 
         are always sorted.
     ->  Time Complexity is T.C: O(NlogN) and S.C: O(1)
@@ -23,7 +23,8 @@
         until all pivot elements are sorted.
 */
 
-const pivotElementIndex = (arr,start=0,end=arr.length-1)=>{
+// This function is responsible placing each element at correct position:
+const pivotElementIndex = (arr, start=0, end=arr.length-1)=>{
     let pivot_index = start;
     let pivot_ele = arr[start];
     for(let i=start+1 ; i<=end;i++){
@@ -38,11 +39,11 @@ const pivotElementIndex = (arr,start=0,end=arr.length-1)=>{
     return pivot_index;
 }
 
-const quickSort = (arr,left = 0,right = arr.length-1) => {
+const quickSort = (arr, left = 0, right = arr.length-1) => {
     if(left < right){
         let pivotIndex = pivotElementIndex(arr,left,right);
-        quickSort(arr,left,pivotIndex-1);
-        quickSort(arr,pivotIndex+1,right);
+        quickSort(arr, left, pivotIndex-1);
+        quickSort(arr, pivotIndex+1, right);
     }
     return arr;
 }

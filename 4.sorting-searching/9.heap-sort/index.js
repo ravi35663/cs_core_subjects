@@ -5,16 +5,17 @@
     3) Swap the max heap value to 0th value of the heap:
     4) Do heapify down to place 0th value at the right place of the heap
     5) Repeat step 2 to 4 until last last index not reach to 0:
-*/ 
-
+*/
 /*
-=> T.C: O(nlogn)
-=> S.C: O(1)
+Note:
+    - T.C: O(nlogn)
+    - S.C: O(1)
+    - You can also sort the array by using and building min-heap:
 */
 class Solution {
     heapSort(nums) {
         // Build max heap:
-        let leaf = Math.floor(nums.length/2) - 1;
+        let leafs = Math.floor(nums.length/2) - 1;
         for(let i = leaf; i>=0; i--){
             this.heapifyDown(nums, i, nums.length);
         }
@@ -27,6 +28,7 @@ class Solution {
             end--;
         }
     }
+    // Heapify down:
     heapifyDown(arr, i, len){
         const l = (2 * i) + 1;
         const r = (2 * i) + 2;

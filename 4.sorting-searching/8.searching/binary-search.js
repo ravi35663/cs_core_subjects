@@ -1,11 +1,11 @@
 /*
-==> Binary Search:
+=> Binary Search:
     -> Binary search works for sorted arrays.
     -> Binary search is a fast searching algorithm.
     -> This is a divide and conquer algorithm.
     -> T.C = O(log(n))
     -> Efficient Search algorithm to find desired result in sorted array 
-    -> e.g. arr[] = {1,2,3,4,5,6,77,88} , int k=19;
+    -> e.g. arr[] = {1, 2, 3, 4, 5, 6, 77, 88} , int k=19;
     -> Loop will be run k = log(base2)(n)  -> T.C. O(log(base2)(n)) -> O(LogN)
 */
 // Implementation of Binary search:

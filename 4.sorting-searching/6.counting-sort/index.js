@@ -1,11 +1,11 @@
 /*
-    Counting sort:
-    -> if elements in the array in the range then use counting sort
+=>  Counting sort:
+    -> If elements in the array in the range then use counting sort
     -> Example:
-        arr = [5,3,4,1,2,1,2]
+        arr = [5, 3, 4, 1, 2, 1, 2]
         here max  =  5;
-        freq_arr = [0,2,2,1,1,1,0,0] ==> count of each v
-        then arr = [1,1,2,2,3,4,5]
+        freq_arr = [0, 2, 2, 1, 1, 1, 0, 0] ==> count of each v
+        then arr = [1, 1, 2, 2, 3, 4, 5]
 */
 
 // Lets assume collection of array are sorted
@@ -26,7 +26,7 @@ function countingSort(arr){
         }
     })
     let last_index = 0;
-    for(let i=0;i<max;i++){
+    for(let i=0; i<max; i++){
         let freq = freq_array[i]
         while(freq > 0){
             arr[last_index] = i;

@@ -1,15 +1,12 @@
 /**
- * [5,3,4,1,2,0,7,-4]
- * 
- * 
+ * [5,3,4,1,2,0,7,-4] 
 */
-
 const insertionSort = (arr)=>{
     let count = 0;
-    for(let i=1;i<arr.length;i++){
+    for(let i=1; i<arr.length; i++){
         let currentValue = arr[i];
         // find index where to insert current value
-        for(let j=i-1 ;arr[j]>currentValue && j>=0; j--){
+        for(let j=i-1; arr[j]>currentValue && j>=0; j--){
             console.log("count",count++);
             [arr[j],arr[j+1]] = [arr[j+1],arr[j]]
         }

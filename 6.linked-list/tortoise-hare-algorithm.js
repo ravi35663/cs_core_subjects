@@ -1,18 +1,18 @@
 /*
-==> Tortoise and Hare:
+=> Tortoise and Hare:
     ->  The Tortoise and Hare algorithm (also called Floyd’s Cycle Detection Algorithm) 
         is a pointer-based technique used to detect cycles in a linked list or similar 
         data structures.
 */
 /*
-It uses two pointers:
+=>  It uses two pointers:
     ->  🐢 Tortoise (slow) → moves one step at a time
     ->  🐇 Hare (fast) → moves two steps at a time
     ->  If the linked list has a cycle, both pointers will meet at some point inside the 
         loop.
     ->  If there’s no cycle, the fast pointer will reach null.
 */
-// You c
+// 
 class Solution {
     hasCycle(head) {
         let slow = head;

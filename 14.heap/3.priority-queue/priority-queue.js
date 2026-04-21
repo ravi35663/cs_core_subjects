@@ -10,17 +10,12 @@ class PriorityQueue{
 
     // Adding element at the correct position
     enqueue(val){ // it can be push
-        this.values.push(val)
+        this.values.push()
         this.heapifyUp(this.values.length - 1);
     }
     // Removing 0th element:
     dequeue(){ // it can be pop:
-        if(this.values.length == 0) return null;
-        if(this.values.length == 1) return this.values.pop();
-        const min = this.values[0];
-        this.values[0] = this.values.pop(); // the the last value at 0th index
-        this.heapifyDown(0);
-        return min;
+        
     }
 
     heapifyUp(index){
@@ -43,20 +38,9 @@ class PriorityQueue{
             s = r;
         }
         if(s != index){
-            [this.values[s], this.values[index]] = [this.values[index], this.values[s]];
-            this.heapifyDown(s);
+            [this.values[s], this.values[index]] = [this.values[index], this.values[s]]
         }
     }
 
-    peek(){
-        return this.values[0] || null;
-    }
-}
 
-const arr = [11,9,8,7,3,1];
-const pq = new PriorityQueue();
-for(let item of arr){
-    pq.enqueue(item);
 }
-
-console.log('pr: ',pq.values);

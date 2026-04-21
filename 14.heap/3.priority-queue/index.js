@@ -1,25 +1,24 @@
 /*
-===> Priority Queue:
+=> Priority Queue:
     ->  Priority-Queue is a data-structure where each element has a priority.
     ->  Elements with higher priorities are served before elements with lower priorities.
-    -> Priority queue is separate from heap, it is concept.
-    -> You can implementb priority queue using array, linked list, heap ..etc
+    ->  Priority queue is separate from heap, it is concept.
+    ->  You can implement priority queue using array, linked list, heap ..etc
 */ 
 
 /*
-===> Implementation of priority queue using heap.
-1) Write a min-binary-heap (Lower number means higher priority)
-2) Each node has a 'val' and 'priority' use the priority to build the heap
-3) Enqueue: 
-    ->  Enqueue method accepts a value and priority, makes a new node and puts it in the right spot 
-        based off its priority. 
-    ->  TimeComplexity is O(LogN) 
-4) Dequeue: 
-    ->  Deueue method removes root element, returns it and rearrage heap using priority.
-    ->  TimeComplexity is O(LogN)
-*/ 
-
-
+=> Implementation of priority queue using heap.
+    1) Write a min-binary-heap (Lower number means higher priority)
+    2) Each node has a 'val' and 'priority' use the priority to build the heap
+    3) Enqueue: 
+        ->  Enqueue method accepts a value and priority, makes a new node and puts 
+            it in the right spot based off its priority. 
+        ->  TimeComplexity is O(LogN) 
+    4) Dequeue: 
+        ->  Dequeue method removes root element, returns it and rearrange heap using 
+            priority.
+        ->  TimeComplexity is O(LogN)
+*/
 
 class Node{
     constructor(value,priority){
@@ -36,10 +35,8 @@ class PriorityQueue{
     Enqueue(value,priority){
         const node = new Node(value,priority);
         this.values.push(node);
-        // Bubble Up (Rearrage the node)
+        // Bubble Up (Rearrange the node)
         this.bubbleUp();
-
-
     }
 
     bubbleUp(){

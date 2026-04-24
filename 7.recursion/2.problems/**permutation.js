@@ -12,12 +12,12 @@
 
 function generatePermutation(str){
     const result = [];
-    permutation(str.length,str.split(''),0,result);
-    console.log("Result is: ",result);
+    permutation(str.length, str.split(''), 0, result);
+    console.log("Result is: ", result);
 }
 
 
-function permutation(n,str,swap_index,result){
+function permutation(n, str, swap_index, result){
     // The dead end will be happens to each permuted string
     if(n-1 == swap_index){
         result.push([...str]);

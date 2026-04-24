@@ -1,5 +1,5 @@
 /*
-    ==> Implement stack using 2 queue:
+=> Implement stack using 2 queue:
 */
 class Queue{
     constructor(size=10){ // Default the maximum size of a queue is 10:

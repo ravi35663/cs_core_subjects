@@ -1,5 +1,5 @@
 /*
-===> Stack :-
+=> Stack :-
     -> Stack is an abstract data structure.
     -> Stack is a LIFO(Last In First Out) data structure.
     -> Stack is just a concept.
@@ -8,7 +8,7 @@
     -> Stack is used to add data 'in' and remove data 'out'.
 */ 
 /*
-==> Where to use Stack:
+=> Where to use Stack:
     -> Undo/Redu
     -> Routing(the history object) is treated as a stack.
     -> Function Call Stack in Programming:
@@ -21,11 +21,12 @@
     -> Memory Management in Recursion:
     -> ....etc.
 
-==> Using Stack with Array :-
+=> Using Stack with Array :-
     ->  If you add an element at the end of an array then you should remove the element 
         from at the end.
     ->  If you add an element at the start of the array then you should remove the element 
-        at the start .
+        at the start.
+
         i.e. (pushing and popping from the end)
         let stack = [];
         stack.push(10); //[10]
@@ -43,7 +44,7 @@
 Note: Adding/removing element at beginning in array has more complexity than adding/removing
       from the end.
 
-===> Big O of stack:
+=> Big O of stack:
     -> Push : O(1)
     -> Pop: O(1)
     -> Top: (1) -> Seeing what present at the top of the stack:
@@ -51,11 +52,11 @@ Note: Adding/removing element at beginning in array has more complexity than add
     -> Search: O(N)
 */ 
 /*
-==> Implementation: 
+=> Implementation: 
     -> You can implement stack using linked list and using array.
 */
 
-const Node = require('./Node');
+const Node = require('../Node');
 class Stack{
     constructor(){
         this.start = null;

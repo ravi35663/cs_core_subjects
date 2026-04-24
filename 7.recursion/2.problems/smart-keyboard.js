@@ -39,8 +39,8 @@ function generatedKeys(str,obj,output,result,n){
     const s = str[0];
     str = str.slice(1);
     // We can also add loop in here with obj[s] length
-    for(let i=0;i<obj[s].length;i++){
-        generatedKeys(str,obj,output+obj[s][i],result,n);        
+    for(let i=0; i<obj[s].length; i++){
+        generatedKeys(str, obj, output+obj[s][i], result, n);        
     }
     return result;
 }

@@ -45,7 +45,7 @@ function stringifyNumbers(obj){
     return obj;
 }
 
-// Seond more optimsed;
+// Second more optimized;
 function stringifyNumbers(obj) {
     var newObj = {};
     for (var key in obj) {

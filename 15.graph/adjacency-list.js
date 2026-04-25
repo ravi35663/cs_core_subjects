@@ -9,8 +9,8 @@ class AdjacencyList{
         
     }
 
-    addEdges(u, v){
-        this.matrix[u].push(v);
+    addEdges(u, v,weight){
+        this.matrix[u].push([v,weight]);
     }
 
 
@@ -51,4 +51,14 @@ More details:
     Node 3: ↔ 1, 4
     Node 4: ↔ 2, 3, 5
     Node 5: ↔ 2, 4
+*/
+/*
+[
+  [],           // Node 0 (isolated)
+  [2, 3],       // Node 1 → 2, 3
+  [1, 4, 5],    // Node 2 → 1, 4, 5
+  [1, 4],       // Node 3 → 1, 4
+  [3, 2, 5],    // Node 4 → 3, 2, 5
+  [2, 4]        // Node 5 → 2, 4
+]
 */

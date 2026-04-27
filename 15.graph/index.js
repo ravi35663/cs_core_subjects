@@ -8,7 +8,7 @@
 
 => Terminologies of graph:
     1)  Directed Graph: Edges have a direction (A → B).
-    2)  Undirected Graph: Edges don’t have a direction (A ↔ B).
+    2)  Undirected Graph: Edges don’t have a direction (A - B).
     3)  Vertex:  a node 
     4)  Edge: Connection between nodes (It can be bi-directional or multiple directions)
     5)  Weighted graph:
@@ -16,8 +16,8 @@
                 value or "weight" associated with it. This weight usually represents 
                 cost, distance, or time between two nodes
     6)  Unweighted graph: 
-            ->  An unweighted graph is a graph where the edges between nodes do not have any associated 
-                weights or costs. Each edge simply represents a connection without 
+            ->  An unweighted graph is a graph where the edges between nodes do not have any 
+                associated weights or costs. Each edge simply represents a connection without 
                 prioritizing any path
 */
 /*
@@ -26,17 +26,17 @@
         edges.
     2)  Google Maps: Cities or locations are nodes, and roads are edges.
     3)  Web Crawling: Web pages as nodes, hyperlinks as edges.
-    4)  Recommendation Systems: Products and users as nodes, interactions 
-        (likes, purchases) as edges.
-        ->  "People also watched"
-        ->  "You might also like"
-        ->  "People you also know"
-        ->  "Frequently bought with"
+    4)  Recommendation Systems: Products and users as nodes, interactions (likes, purchases) 
+        as edges.
+            ->  "People also watched"
+            ->  "You might also like"
+            ->  "People you also know"
+            ->  "Frequently bought with"
 */
 /*
 => Storing graph:
     ->  We can store graph using adjacency matrix (see storing graph image)
-    ->  We can also store graph using adjacency list (see the adjecency_list image).
+    ->  We can also store graph using adjacency list (see the adjacency_list image).
         -> can be hash-table
 */
 /*
@@ -70,24 +70,23 @@ Operation                       Adjacency List                          Adjacenc
 => Cyclic graph:
     - Start at a node and my moving some nodes you can react that node is known as cyclic graph:
     - e.g: All undirected graph is cyclic graph
+    - Multiple directed graph can be cyclic.
 
 => Acyclic graph:
     - Graph which have no cycle .
     - Unidirectional graphs.
 */
-
 /*
 => Path:
     - Contains lots of nodes and each of the nodes are reachable.
     - A single node cannot comes twice in a path.
 */
-
 /*
 => Degree of a graph (undirected graph):
     -   Degree of node: Edges attached to a graph is known as degree of that graph:
-    -  Example:
-        D(3) in graph-example.jpg is: 3
-        D(1) in graph-example.jpg is: 2
+    -   Example:
+            - D(3) in graph-example.jpg is: 3
+            - D(1) in graph-example.jpg is: 2
     - Property:
         Total no of degree of a graph is: 2 * no. of edges in the graph.
 */

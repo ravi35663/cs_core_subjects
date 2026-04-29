@@ -25,5 +25,5 @@
 */
 
 /*
-=> start from 6.recursion:
+=> start from backtracking:
 */

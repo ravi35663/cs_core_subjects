@@ -1,61 +1,20 @@
-/*
-=> BFS traversal:
-    - We can also call it level-wise traversal:
-    - We can also call it breadth-wise traversal:
-*/
-
-/*
-    Input: V = 5, edges = [ [0, 1], [0, 2], [0, 3], [2, 4] ]
-    Output: [0, 2, 3, 1, 4]
-*/
-
-class GraphBfsTraversal{
-    constructor(vertex, edges){
-        this.v = vertex;
-        this.edges = edges;
+function fillArray(arr, i=0){
+    if(i == arr.length){
+        console.log("Arr in base case: ",arr)
+        return ;
     }
-    traversal(){
-        let visited_nodes = {};
-        let result = [];
-        const adjList = this.createAdjacencyList()
-        for(let i=0; i<this.v; i++){
-            if(!visited_nodes[i]){
-                this.bfs(i, visited_nodes, result, adjList);
-            }
-        }
-        return result;
-    }
-    createAdjacencyList(){
-        const adjList = (new Array(this.v).fill(0)).map(item=> []);
-        for(let edge of this.edges){
-            adjList[edge[0]].push(edge[1]);
-            adjList[edge[1]].push(edge[0])
-        }
-        return adjList;
-    }
-
-    bfs(node,visited_nodes, result, adjList){
-        // Always mark visited when pushing
-        visited_nodes[node] = true;
-        let q = [node];
-        while(q.length){
-            node = q.shift();
-            result.push(node);
-            // Add neighbors of node into q:
-            for(let n of adjList[node]){
-                if(!visited_nodes[n]){
-                    // Always mark visited when pushing
-                    visited_nodes[n] = true;
-                    q.push(n);
-                }
-            }
-        }
-        return result;
-    }
+    arr[i] = i+1;
+    fillArray(arr, i+1);
+    // Backtracking (Coming back from the base case)
+    // Backtracing always used after function call
+    arr[i] = arr[i] * -1
 }
 
-
-const V = 5, edges = [ [0, 1], [0, 2], [0, 3], [2, 4] ];
-const t = new GraphBfsTraversal(V, edges);
-const r = t.traversal();
-console.log("Result is: ",r);
+const arr = new Array(5).fill(0);
+fillArray(arr);
+console.log("Array is: ",arr);
+/*
+Output: 
+    Array in base case: [1, 2, 3, 4, 5]
+    Array is: [-1, -2, -3, -4, -5] // after backtracking:
+*/

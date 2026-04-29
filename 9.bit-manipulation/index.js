@@ -1,8 +1,8 @@
-
 /*
-==> Why do we use bit-manipulation?
+=> Why do we use bit-manipulation?
     -> It is perform action on bit level that is why it is very fast.
-==> Bitwise Operators:
+
+=> Bitwise Operators:
     1) Bitwise AND (&):
         0 & 0   => 0
         0 & 1   => 0
@@ -50,19 +50,20 @@
     5) Bitwise RightShift (>>):
         a>>b ==> (a/(2^b)) -> shift b bits in a toward right. that is discard bit from right and add in left
         5 >> 2 ==> 00000101 => 00000001 => which is 1
+
     6) Bitwise LeftShift (<<)
-        a<<b ==> (a*(2^b)) -> shift b bits in a toward left. that is discart bit from left and add in right
+        a<<b ==> (a*(2^b)) -> shift b bits in a toward left. that is discard bit from left and add in right
                 5 >> 2 ==> 00000101 => 00010100 => which is 20
 
 Note:   
-1)  Whenever you encounter negative number, get the 2s complement of that number (positive 
-    part only) and further perform the action.
-2)  if number is 32 bit => 31st for sign and rest for values
-3)  Largest possible value you can store is (2^31) - 1 if system is 32 bit and (2^31) is 
-    int_max and int_min is -2^31 (get 2s complement of 2^31 and add minus)
-4)  If system if n bit then largest value you can store is (2^n-1) - 1;
-5)  You'll get the unwanted values if bits are overflow in left shift. so always do 
-    calculation in boundaries of the bits
+    1)  Whenever you encounter negative number, get the 2s complement of that number 
+        (positive part only) and further perform the action.
+    2)  if number is 32 bit => 31st for sign and rest for values
+    3)  Largest possible value you can store is (2^31) - 1 if system is 32 bit and 
+        (2^31) is int_max and int_min is -2^31 (get 2s complement of 2^31 and add minus)
+    4)  If system if n bit then largest value you can store is (2^n-1) - 1;
+    5)  You'll get the unwanted values if bits are overflow in left shift. So always do 
+        calculation in boundaries of the bits
 
 */
 /*
@@ -77,28 +78,26 @@ Note:
             = 0110011
 
 */
-
 /*
-    ==> Bit-Operations:
+=> Bit-Operations:
     1) Get ith Bit
     2) Set ith Bit
     3) Clear ith Bit
 */
 
 function swapTwo(a,b){
-    /*
-        Explanation: a^a = 0, b^b = 0 because same bits resultant is 0:
-            a = a^b;
-            b = a^b     => (a^b)^b      => a
-            a = a ^ b   => (a^b) ^ b    => a^b ^ a => b 
-    */
-   a = a ^b ;
-   b = a^b
-   a = a^b
-}
-
 /*
-    check if ith bit is set or not:
+    Explanation: a^a = 0, b^b = 0 because same bits resultant is 0:
+        a = a^b;
+        b = a^b     => (a^b)^b      => a
+        a = a^b     => (a^b)^b      => a^b^a => b 
+*/
+   a = a^b;
+   b = a^b;
+   a = a^b;
+}
+/*
+Check if ith bit is set or not:
     Example: 1
         n = 13, i=2;
         Explanation: 
@@ -143,7 +142,7 @@ const clearIthBit = (num,i)=>{
 
 function updateIthBit(num,i,v){ // v either 1 or 0
     // Clear the bit
-    num = clearIthBit(num,i)
+    num = clearIthBit(num, i)
     // Create mask
     const mask = (v<<i);
     // Perform OR Operator

@@ -3,12 +3,10 @@
     - We can also call it level-wise traversal:
     - We can also call it breadth-wise traversal:
 */
-
 /*
     Input: V = 5, edges = [ [0, 1], [0, 2], [0, 3], [2, 4] ]
     Output: [0, 2, 3, 1, 4]
 */
-
 class GraphBfsTraversal{
     constructor(vertex, edges){
         this.v = vertex;
@@ -39,7 +37,7 @@ class GraphBfsTraversal{
         visited_nodes[node] = true;
         let q = [node];
         while(q.length){
-            node = q.shift();
+            node = q.shift();// we can replace it with 
             result.push(node);
             // Add neighbors of node into q:
             for(let n of adjList[node]){

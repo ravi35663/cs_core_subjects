@@ -43,7 +43,7 @@ Output:
      /|   |
     5 4---+
      \|
-      (connections)
+    (connections)
 
 More details:
     Node 0: (isolated)

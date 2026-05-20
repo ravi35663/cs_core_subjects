@@ -68,7 +68,7 @@ Operation                       Adjacency List                          Adjacenc
 
 /*
 => Cyclic graph:
-    - Start at a node and my moving some nodes you can react that node is known as cyclic graph:
+    - Start at a node and my moving some nodes you can reach that node is known as cyclic graph:
     - e.g: All undirected graph is cyclic graph
     - Multiple directed graph can be cyclic.
 
@@ -88,7 +88,8 @@ Operation                       Adjacency List                          Adjacenc
             - D(3) in graph-example.jpg is: 3
             - D(1) in graph-example.jpg is: 2
     - Property:
-        Total no of degree of a graph is: 2 * no. of edges in the graph.
+        - Total no of degree of a graph is: 2 * no. of edges in the graph.
+        - Degree: 2 * E
 */
 /*
 =>  Degree of directed graph:

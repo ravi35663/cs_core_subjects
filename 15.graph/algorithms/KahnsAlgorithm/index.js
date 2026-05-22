@@ -53,3 +53,35 @@ class Solution {
         stack.push(i);
     }
 }
+
+// BFS: Kahn's algorithm:
+// Kahn's Algorithm:
+class Solution {
+    topoSort(V, adj) {
+        // No of incoming edges:
+        let indegree = new Array(V).fill(0);
+        for(let i=0; i<V; i++){
+            for(let item of adj[i]){
+                indegree[item] = indegree[item] + 1;
+            }
+        }
+        let q = [];
+        for(let i=0; i<V; i++){
+            if(indegree[i] == 0){
+                q.push(i);
+            }
+        }
+        let tSort = [];
+        while(q.length){
+            const item = q.shift();
+            tSort.push(item)
+            for(let i of adj[item]){
+                indegree[i]--;
+                if(indegree[i] == 0){
+                    q.push(i)
+                }
+            }
+        }
+        return tSort;
+    }
+}

@@ -1,0 +1,60 @@
+===> Basic Tree Operations:
+Create a Binary Tree: Write a program to create a binary tree and perform basic operations like insertion.
+
+Create a Binary Search Tree (BST): Implement a BST with basic operations like insertion and search.
+
+Pre-order Traversal of a Binary Tree (Recursive): Perform a pre-order traversal of a binary tree using recursion.
+
+In-order Traversal of a Binary Tree (Recursive): Perform an in-order traversal of a binary tree using recursion.
+
+Post-order Traversal of a Binary Tree (Recursive): Perform a post-order traversal of a binary tree using recursion.
+
+Pre-order Traversal of a Binary Tree (Iterative): Perform a pre-order traversal of a binary tree using a stack.
+
+In-order Traversal of a Binary Tree (Iterative): Perform an in-order traversal of a binary tree using a stack.
+
+Post-order Traversal of a Binary Tree (Iterative): Perform a post-order traversal of a binary tree using two stacks.
+
+Level Order Traversal of a Binary Tree (BFS): Implement level order traversal of a binary tree using a queue.
+
+Reverse Level Order Traversal of a Binary Tree: Perform a reverse level order traversal using BFS.
+
+Find the Height of a Binary Tree: Calculate the height of a binary tree using DFS.
+
+Check if a Binary Tree is a BST: Write a program to check if a binary tree is a BST using in-order traversal.
+
+Find the Minimum and Maximum Element in a BST: Implement functions to find the minimum and maximum elements in a BST.
+
+Delete a Node from a BST: Write a program to delete a node from a BST and adjust the tree accordingly.
+
+Find the Lowest Common Ancestor (LCA) in a BST: Given two nodes, find their LCA in a BST.
+
+Check if Two Trees are Identical: Write a program to check if two binary trees are identical using DFS.
+
+Mirror a Binary Tree: Create a mirror of a binary tree using DFS.
+
+Print All Paths from Root to Leaf: Use DFS to print all root-to-leaf paths in a binary tree.
+
+Convert a BST to a Sorted Doubly Linked List: Convert a BST into a doubly linked list using in-order traversal.
+
+Construct a Binary Tree from In-order and Pre-order Traversals: Given in-order and pre-order traversal sequences, construct the binary tree.
+
+Construct a Binary Tree from In-order and Post-order Traversals: Given in-order and post-order traversal sequences, construct the binary tree.
+
+Level Order Traversal in Spiral Form (Zigzag): Implement a level order traversal in a zigzag (spiral) pattern using BFS and a deque.
+
+Find the Diameter of a Binary Tree: Write a program to find the diameter (longest path between two nodes) of a binary tree using DFS.
+
+Count the Number of Nodes in a Binary Tree: Count the total number of nodes in a binary tree using DFS.
+
+Check if a Binary Tree is Balanced: Determine if a binary tree is height-balanced using DFS.
+
+Find the Maximum Width of a Binary Tree: Use BFS to find the maximum width (number of nodes at the widest level) of a binary tree.
+
+Check if a Binary Tree is Symmetric: Determine if a binary tree is symmetric (mirror image of itself) using DFS.
+
+Serialize and Deserialize a Binary Tree: Implement functions to serialize a binary tree into a string and deserialize it back into a tree using BFS.
+
+Convert Binary Tree to Sum Tree: Convert a binary tree to a sum tree where each node contains the sum of its left and right subtrees' values.
+
+Find All Nodes at Distance K from a Given Node in a Binary Tree: Use DFS and BFS to find all nodes at a distance K from a given node in a binary tree.

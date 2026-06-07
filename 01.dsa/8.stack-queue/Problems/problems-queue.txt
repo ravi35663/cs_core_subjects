@@ -1,0 +1,25 @@
+Implement Queue using Array: Write a program to implement a queue using an array with basic operations like enqueue, dequeue, peek, and isEmpty.
+Implement Queue using Linked List: Implement a queue using a linked list with operations enqueue, dequeue, peek, and isEmpty.
+Implement Circular Queue: Implement a circular queue using an array with wrap-around capabilities.
+Implement Double-Ended Queue (Deque): Implement a double-ended queue where elements can be added or removed from both ends.
+Check for Palindrome using Queue: Use a queue to check if a given string is a palindrome.
+Reverse a Queue: Write a program to reverse the elements of a queue.
+Generate Binary Numbers from 1 to N: Use a queue to generate binary numbers from 1 to a given number N.
+Implement Queue using Stacks: Implement a queue using two stacks.
+Implement Stack using Queues: Implement a stack using two queues.
+First Non-Repeating Character in a Stream: Given a stream of characters, use a queue to find the first non-repeating character at any point in the stream.
+Implement Priority Queue: Implement a priority queue where elements are dequeued based on priority.
+Interleave the First Half of the Queue with the Second Half: Given a queue of integers, interleave the first half with the second half.
+Sort a Queue using Recursion: Sort the elements of a queue using recursion.
+Implement a Circular Deque: Implement a circular double-ended queue.
+Check if All Levels of a Binary Tree Are Anagrams: Use queues to check if all levels of a binary tree are anagrams.
+Level Order Traversal of a Binary Tree: Use a queue to perform level order traversal of a binary tree.
+Implement LRU Cache using Queue: Implement a Least Recently Used (LRU) cache using a queue.
+Rotten Oranges Problem: Given a grid of oranges, where each orange can be fresh or rotten, use a queue to determine the minimum time required to rot all the oranges.
+Sliding Window Maximum: Use a deque to find the maximum in each sliding window of size k in an array.
+Job Scheduling Problem: Use a priority queue to solve a job scheduling problem with deadlines and profits.
+Find the Maximum of All Subarrays of Size K: Given an array, use a deque to find the maximum for each subarray of size k.
+Shortest Path in a Binary Maze: Use a queue to find the shortest path in a binary maze (using BFS).
+Zigzag Level Order Traversal of a Binary Tree: Use a queue to perform a zigzag level order traversal of a binary tree.
+Petrol Pump Tour Problem: Given a set of petrol pumps, each with a certain amount of petrol and distance to the next pump, use a queue to determine the starting point to complete the tour.
+Implement K Queues in a Single Array: Implement K queues using a single array.

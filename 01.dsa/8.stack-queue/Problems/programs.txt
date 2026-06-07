@@ -1,0 +1,50 @@
+Implement Stack using Array: Write a program to implement a stack using an array with basic operations like push, pop, peek, and isEmpty.
+
+Implement Stack using Linked List: Implement a stack using a linked list with operations push, pop, peek, and isEmpty.
+
+Reverse a String using Stack: Given a string, use a stack to reverse the string.
+
+Check for Balanced Parentheses: Use a stack to check if the given expression has balanced parentheses (e.g., {[()]} is balanced, but {[(])} is not).
+
+Implement Two Stacks in an Array: Implement two stacks using a single array and ensure that they grow in opposite directions.
+
+Evaluate Postfix Expression: Given a postfix expression, use a stack to evaluate its value.
+
+Infix to Postfix Conversion: Convert an infix expression (e.g., A + B) to a postfix expression (e.g., AB+) using a stack.
+
+Infix to Prefix Conversion: Convert an infix expression to a prefix expression using a stack.
+
+Sort a Stack: Given a stack, write a program to sort it such that the smallest items are on the top.
+
+Implement a Stack with getMin() in O(1) Time: Design a stack that supports push, pop, peek, and getMin() (retrieve the minimum element) operations in constant time.
+
+Implement Stack using Queue: Implement a stack using two queues.
+
+Implement Queue using Stack: Implement a queue using two stacks.
+
+Next Greater Element: For each element in an array, find the next greater element using a stack.
+
+Largest Rectangle in Histogram: Given an array representing the histogram's bar height, find the area of the largest rectangle.
+
+Design a Special Stack: Design a stack that supports push, pop, peek, and an additional getMax() function to return the maximum element in the stack.
+
+
+Implement Stack with Middle Operation: Implement a stack that supports push, pop, and retrieving the middle element in constant time.
+
+Expression Evaluation (Infix): Evaluate an infix expression using stacks for operator precedence and associativity.
+
+Implement K Stacks in a Single Array: Implement K stacks using a single array.
+
+Trapping Rain Water Problem: Given n non-negative integers representing an elevation map, compute how much water it can trap after raining.
+
+Stock Span Problem: Given the daily price of stocks, calculate the span of stock's price for all days using a stack.
+
+Design a Text Editor's Undo/Redo Functionality: Implement undo and redo operations using stacks.
+
+Celebrity Problem: Given n people, find the celebrity (if one exists) in the party using a stack. A celebrity is known by everyone but knows no one.
+
+Check for Redundant Braces: Given an expression, find if it contains redundant braces (e.g., ((a+b))).
+
+Flatten Nested List Iterator: Given a nested list of integers, implement an iterator to flatten the list.
+
+Iterative Tower of Hanoi using Stack: Implement the Tower of Hanoi problem iteratively using stacks instead of recursion.

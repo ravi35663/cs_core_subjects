@@ -1,0 +1,212 @@
+/*
+    3 ==> Write a function called productOfArray which takes in an array of numbers and returns the product of them all.
+    // productOfArray([1,2,3]) // 6
+    // productOfArray([1,2,3,10]) // 60
+*/
+
+/*
+Write a recursive function called reverse which accepts a string and returns a new string in reverse.
+    reverse('awesome') // 'emosewa'
+    reverse('rithmschool') // 'loohcsmhtir'
+*/
+/*
+    Write a recursive function called flatten which accepts an array of arrays and returns
+    a new array with all values flattened.
+    // flatten([1, 2, 3, [4, 5] ]) // [1, 2, 3, 4, 5]
+    // flatten([1, [2, [3, 4], [[5]]]]) // [1, 2, 3, 4, 5]
+    // flatten([[1],[2],[3]]) // [1,2,3]
+    // flatten([[[[1], [[[2]]], [[[[[[[3]]]]]]]]]]) // [1,2,3]
+*/
+/*
+    Write a recursive function called capitalizeFirst. Given an array of strings, 
+    capitalize the first letter of each string in the array.
+    //capitalizeFirst(['car','taco','banana']); // ['Car','Taco','Banana']
+*/
+
+/*
+    11 ==> Write a recursive function called nestedEvenSum. Return the sum of all even 
+    numbers in an object which may contain nested objects.
+    function nestedEvenSum () {
+        // add whatever parameters you deem necessary - good luck!
+    }
+    var obj1 = {
+    outer: 2,
+    obj: {
+        inner: 2,
+        otherObj: {
+        superInner: 2,
+        notANumber: true,
+        alsoNotANumber: "yup"
+        }}
+    }
+    var obj2 = {
+    a: 2,
+    b: {b: 2, bb: {b: 3, bb: {b: 2}}},
+    c: {c: {c: 2}, cc: 'ball', ccc: 5},
+    d: 1,
+    e: {e: {e: 2}, ee: 'car'}
+    };
+    nestedEvenSum(obj1); // 6
+    nestedEvenSum(obj2); // 10
+*/
+/*
+    Write a recursive function called capitalizeWords. 
+    Given an array of words, return a new array containing each word capitalized. 
+    // let words = ['i', 'am', 'learning', 'recursion'];
+    // capitalizedWords(words); // ['I', 'AM', 'LEARNING', 'RECURSION']
+*/
+/*
+    Write a function called stringifyNumbers which takes in an object and finds all of 
+    the values which are numbers and converts them to strings. 
+    Recursion would be a great way to solve this!
+/*
+let obj = {
+    num: 1,
+    test: [],
+    data: {
+        val: 4,
+        info: {
+            isRight: true,
+            random: 66
+        }
+    }
+}
+/*
+
+stringifyNumbers(obj)
+
+/*
+{
+    num: "1",
+    test: [],
+    data: {
+        val: "4",
+        info: {
+            isRight: true,
+            random: "66"
+        }
+    }
+}
+*/
+
+/*
+    Write a recursive function called isPalindrome which returns true if the string passed 
+    to it is a palindrome (reads the same forward and backward). 
+    Otherwise it returns false.
+    // isPalindrome('awesome') // false
+    // isPalindrome('foobar') // false
+    // isPalindrome('tacocat') // true
+    // isPalindrome('amanaplanacanalpanama') // true
+    // isPalindrome('amanaplanacanalpandemonium') // false
+*/
+/*
+    Write a function called collectStrings which accepts an object and returns an array of 
+    all the values in the object that have a typeof string
+    const obj = {
+        stuff: "foo",
+        data: {
+            val: {
+                thing: {
+                    info: "bar",
+                    moreInfo: {
+                        evenMoreInfo: {
+                            weMadeIt: "baz"
+                        }
+                    }
+                }
+            }
+        }
+    }
+    collectStrings(obj) // ["foo", "bar", "baz"]
+*/
+
+Find the longest word in a sentence.
+Count the number of vowels in a string.
+Reverse a sentence word by word.
+Check if a string is a palindrome ignoring spaces and punctuation.
+Remove duplicate characters from a string.
+Capitalize the first letter of each word in a sentence.
+Check if two strings are rotations of each other.
+Find the first non-repeating character in a string.
+Replace all spaces in a string with '%20'.
+Check if a string has balanced parentheses.
+Sort an array of strings based on their lengths.
+Find the intersection of two arrays.
+Find the union of two arrays.
+Merge two sorted arrays into a single sorted array.
+Rotate an array to the right by k steps.
+Find the maximum subarray sum.
+Remove duplicates from an array.
+Find the majority element in an array.
+Check if an array is sorted in non-decreasing order.
+Reverse an array in place.
+Implement binary search in an array.
+Find the kth largest element in an array.
+Find the missing number in an array of integers from 1 to n.
+Find the median of two sorted arrays.
+Find the longest increasing subsequence in an array.
+Find all permutations of a string.
+Generate all possible combinations of a string.
+Check if two strings are anagrams.
+Find the longest common prefix among an array of strings.
+Find the shortest word distance between two words in a sentence.
+Merge two sorted array lists.
+Remove duplicates from a sorted array.
+Find the longest palindrome substring in a string.
+Find the longest palindromic subsequence in a string.
+Count the number of palindromic substrings in a string.
+Reverse words in a string.
+Convert a string to an integer without using built-in functions.
+Convert a Roman numeral to an integer.
+Convert an integer to Roman numerals.
+Find all possible anagrams of a string.
+Find the average of all numbers in an array of objects.
+Calculate the total value of items in a shopping cart object.
+Remove duplicates from an array of strings while preserving the order.
+Check if an object contains a specific property with a given value.
+Convert an array of numbers into a comma-separated string.
+Sort an array of objects by a specific property value.
+Calculate the sum of even numbers in an array.
+Find the longest word in a sentence stored as a string.
+Convert an object into an array of key-value pairs.
+Check if a string contains any numeric characters.
+Merge two arrays of objects with common properties into a single array.
+Extract all numbers from a string and calculate their sum.
+Group an array of objects by a common property value into an object.
+Find the median value of an array of numbers.
+Reverse the words in a sentence while maintaining their order.
+Implement a function to shuffle an array of numbers.
+Convert a number to its Roman numeral representation.
+Count the occurrences of each character in a string and store them in an object.
+Implement a function to rotate elements of an array to the left by a specified number of positions.
+Calculate the factorial of a given number.
+Create an object representing a student with properties for name, age, and grades, and calculate their average grade.
+Check if an array of numbers is sorted in non-decreasing order.
+Find the first non-repeating character in a string and return its index.
+Implement a function to pad a string with a specified character to a certain length.
+Calculate the total cost of items in a shopping cart object with discounts applied.
+Remove all vowels from a string and return the modified string.
+Find the intersection of two arrays of numbers and return the common elements.
+Convert a binary string to its decimal equivalent.
+Check if an object is empty (contains no properties).
+Generate a random alphanumeric string of a specified length.
+Calculate the average value of each property in an array of objects.
+Convert a temperature in Celsius to Fahrenheit and vice versa.
+Implement a function to find the mode (most frequently occurring element) in an array.
+Check if a string is a valid palindrome ignoring non-alphanumeric characters.
+Calculate the sum of all prime numbers in an array.
+Flatten an array of nested arrays into a single array.
+Implement a function to find the second smallest number in an array.
+Convert a string to title case (capitalize the first letter of each word).
+Create a function that returns the Fibonacci sequence up to a specified length.
+Calculate the product of all elements in an array except the current element.
+Check if two objects have the same properties and values.
+Generate a random password of a specified length with alphanumeric characters and symbols.
+Find the longest substring of consecutive characters in a string.
+Calculate the sum of digits in a given number.
+Remove all falsy values (false, null, 0, "", undefined, and NaN) from an array.
+Implement a function to find the difference between two arrays.
+Check if an array of strings contains a specific word.
+Convert a number to its English word representation.
+Calculate the distance between two points represented as objects with x and y coordinates.
+Implement a function to find the GCD (greatest common divisor) of two numbers.

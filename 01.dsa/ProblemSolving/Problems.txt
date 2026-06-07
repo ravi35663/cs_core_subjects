@@ -1,0 +1,352 @@
+==> Javascript on Date, Time & Year
+Leap Year Program in Javascript
+
+==> Special Javascript
+Javascript to Find Sum of the Series 1/1! + 2/2! + 3/3! + ……1/N!
+
+==> Javascript on Array
+Javascript to Delete an Element from an Array
+Javascript to Print all Non Repeated Elements in an Array
+Javascript to Cyclically Permute the Elements of an Array
+Javascript to Find Missing Numbers in Array
+Javascript to Find Union and Intersection of Two Arrays
+Javascript to Split the Array and Add First Part to the End
+Javascript to Implement Bit Array
+Javascript to Implement Variable Length Array
+Find Largest Two Numbers in Array in Javascript
+Second Largest and Smallest Element of an Array in Javascript	
+Largest Element in an Array using Recursion in Javascript	
+Maximum Difference b/w Two Elements in Javascript
+Insert an Element in the Sorted Array in Javascript
+Insert an Element in an Array in Javascript
+Remove Duplicates from Array in Javascript
+Reverse an Array in Javascript
+Separate Odd and Even Numbers from an Array in Javascript
+Cyclically Permute the Elements of an Array in Javascript
+Non Repeated Elements in an Array in Javascript
+Find Missing Numbers in Array in Javascript
+Find Missing Numbers of a Range [1, n] in Javascript
+Array Bounds Checking in Javascript
+Two Odd Occurring Elements in an Array in Javascript
+Bit Array in Javascript
+Variable Length Array in Javascript
+Find Mode of an Array in Javascript
+Swap Array Elements in Javascript
+Split an Array & Add First Part to the End in Javascript
+Search an Element in an Array using Recursion in Javascript
+Segregate 0s and 1s in an Array in Javascript
+Increment an Array by One in Javascript
+Sum and Average of Array Elements in Javascript
+Sum of Array Elements using Pointer in Javascript
+Sum of Array Elements using Pointer as Arguments in Javascript
+Addition of One Dimensional Array in Javascript
+Largest Sum Contiguous Subarray in Javascript
+Sort the Array in Ascending Order in Javascript
+Sort the Array in Descending Order in Javascript
+Sort Names in Alphabetical Order in Javascript
+Merge two Sorted Arrays in Javascript
+Merge and Sort Two Arrays in Javascript
+Pascal Triangle 1 D Array in Javascript
+Odd and Even Numbers in an Array in Javascript
+Kth Largest Element in an Array in Javascript
+Print Alternate Elements of an Array in Javascript
+Frequency of all Duplicate Elements in an Array in Javascript
+Print Square of Array Elements in Javascript
+Print Ascii Values using Array in Javascript
+Closest to Zero Program in Javascript
+Union & Intersection of 2 Arrays
+Javascript to Perform Matrix Multiplication
+Javascript to Display Upper Triangular Matrix
+Javascript to Find Transpose of a Matrix
+Javascript to Find Determinant of a Matrix
+Javascript to Implement Adjacency Matrix
+Javascript to Find the Frequency of Odd and Even Numbers in Matrix
+Javascript to Find Normal and Trace of a Matrix
+Javascript to Interchange Any Two Rows and Columns in the Matrix
+Matrix Multiplication in Javascript
+Matrix Multiplication using Recursion in Javascript
+Multiplicability of Two Matrices in Javascript
+Product of Two Matrices in Javascript
+Sum and Difference of Matrices in Javascript
+Matrix Operations in Javascript
+Matrix Addition in Javascript
+Matrix Subtraction in Javascript
+Find Transpose of a Matrix in Javascript
+Determinant of a Matrix in Javascript
+Matrix Linear Equations in Javascript
+Matrix Basis and Dimension in Javascript
+Check if Two Matrices are Equal in Javascript
+Inverse Matrix in Javascript
+Invertible Matrix in Javascript
+Sparse Matrix Program in Javascript
+Sparse Matrix Representation in Javascript
+Adjacency Matrix in Javascript
+Check Matrix is an Identity Matrix in Javascript
+Symmetric Matrix in Javascript
+Interchange Rows and Columns of a Matrix in Javascript
+Sort Matrix in Javascript
+Row Sum and Column Sum of a Matrix in Javascript
+Sum of Diagonal Elements of a Matrix in Javascript
+Find Trace & Normal of a Matrix in Javascript
+Interchanging Matrix Rows in Javascript
+Lower Triangular Matrix in Javascript
+Upper Triangular Matrix in Javascript
+Find Frequency of Odd & Even Numbers in Matrix in Javascript
+Message Encoding using Matrix in Javascript
+LU Decomposition in Javascript
+
+
+
+==> Javascript on Bitwise Operation
+Javascript to Perform Addition using Bitwise Operators
+Javascript to Check whether the Given Integer has an Alternate Pattern
+Javascript to Check if Bit Position is Set to One or not
+Javascript to Check whether nth Bit is Set or not
+Javascript to Count Trailing Zeros in Integer
+Javascript to Round Floor of Integer to Next Lower Power of 2
+Javascript to Find the Highest Bit Set for any Given Integer
+Javascript to Reverse All Bits of an 32-bit Integer using Bitwise
+Javascript to Find MSB Position using Function
+Addition using Bitwise Operators in Javascript
+Multiply Number by 4 using Bitwise Operators in Javascript
+Power of 2 using Bitwise in Javascript
+Power of 2 without Bitwise in Javascript
+Javascript to Check whether nth Bit is Set or not
+Reverse Bits using Bitwise in Javascript
+Javascript to Check if All Bits of Integer is One
+Javascript to Count Trailing Zeros in Integer
+Find Next Higher Value with Same Number of Set Bits in Javascript
+Find Highest Bit Set of Integer in Javascript
+Javascript to Count Set Bits in an Integer
+Count Leading Zeros in Number using Bitwise Operations in Javascript
+Replace Bits from Position in Javascript
+Replace Bits in Integer x from Bit Position a to b from Another Integer y in Javascript
+Swap ith & jth Bits for a 32-Bit Integer in Javascript
+Swap Numbers using Bitwise XOR Operation in Javascript
+Swap Integers without Temporary Variables & Bitwise Operations in Javascript
+Alternate Pattern Program in Javascript
+Integer round up to next Lower Power of 2 in Javascript
+Round to Next Lower Multiple of 2 using Bitwise in Javascript
+Find MSB Position using Function in Javascript
+Javascript to Read Byte & Return All Bits
+Find Position of 1-bits in Javascript
+Javascript to Check if Bit Position is set to One or not
+Swap Two Numbers using Bitwise Operators in Javascript
+Palindrome using Bitwise Operator in Javascript
+Javascript to Count Set Bits using Bitwise Operations
+Flip the Bits to Convert X to Y in Javascript
+
+
+==> Javascript on Strings
+Javascript to Compare Two Strings
+Javascript to Delete All Repeated Words in String
+Javascript to Replace all Characters by Lowercase
+Javascript to Find the Frequency of a Substring in a String
+Javascript to Count Number of Unique Words in a String
+Javascript to Find All Possible Subsets of a String
+Javascript to Print Ascii Value of All Characters in the String
+Javascript to Find First and Last Occurrence of Character in a String
+Javascript to Implement Regular Expression Matching
+Javascript to Implement strpbrk() Function
+String Concatenation in Javascript	
+Concatenate Two Strings Lexically in Javascript
+Compare Two Strings in Javascript	
+Find Substring in a String in Javascript	
+Length of a String without Built-in Function in Javascript	
+Insert Character in String in Javascript	
+Remove Duplicate Words from String in Javascript	
+Remove Word from String in Javascript	
+Remove Characters in Second String which are present in First String in Javascript	
+Replace all Characters by Lowercase in Javascript	
+Capitalize First Letter of Each Word in a String in Javascript	
+Reverse Each Word in a String in Javascript	
+Regular Expression Matching in Javascript	
+strpbrk() Function in Javascript	
+String Palindrome Program in Javascript	
+Palindrome String using Recursion in Javascript	
+Palindrome String without Built-in Function in Javascript	
+Smallest and Largest Palindrome in Javascript
+Program	Description
+Sum of Numbers in String in Javascript	
+Largest and Smallest Word in a String in Javascript	
+Maximum Occurring Character in a String in Javascript	
+Words Ending with Letter S in Javascript	
+Permutation of a String in Javascript	
+List All Lines Containing a given String in Javascript	
+Check if Two Strings are Permutation of Each Other in Javascript	
+Anagram Program in Javascript	
+Find Position of 1-bits in Javascript	
+ASCII Value of a String in Javascript	
+Sum of ASCII Value of a String in Javascript	
+Prime String Program in Javascript	
+Javascript to Display All Combinations of Two Words from String without Repeated Combinations	
+Print Common Characters of Two Strings in Javascript	
+Square String in Javascript	
+Binary Addition of Strings in Javascript	
+Add Two Binary Strings in Javascript	
+Convert Integer to String and Vice-versa in Javascript	
+Grep, Egrep and Fgrep in Javascript
+Highest Frequency Character in a String in Javascript	
+Frequency of Each Word in a String in Javascript	
+Frequency of “the” Word in a String in Javascript
+Frequency of a Substring in a String in Javascript	
+Find Frequency of Characters in a String in Javascript	
+Count Repeated Words from a String in Javascript	
+Find all Subsets of a String in Javascript	
+Find all Subsets of given Length in String in Javascript
+First and Last Occurrence of Character in a String in Javascript	
+Find Consecutive Occurrence of Vowel in a String in Javascript	
+Find all Occurrences of a Substring in String in Javascript	
+Count Particular Repeated Word in String in Javascript	
+Count Occurrence of Each Character in String in Javascript	
+Count Number of Words from a String in Javascript	
+Count Unique Words from a String in Javascript
+First Uppercase Letter in a String using Recursion in Javascript	
+First Uppercase Letter in a String without Recursion in Javascript
+String Length using Recursion in Javascript	
+String Copy using Recursion in Javascript	
+Reverse a String using Recursion in Javascript	
+Reverse a String using Recursion and Iteration in Javascript
+Naive String Matching in Javascript	
+Knuth Morris Pratt Algorithm in Javascript for Pattern Searching	
+Knuth Morris Pratt Algorithm in Javascript	
+Boyer Moore Algorithm in Javascript	
+Rabin Karp String Matching Algorithm in Javascript	
+Online String Matching using Wagner and Fisher in Javascript	
+Levenshtein Distance Computing Algorithm in Javascript	
+String Matching Using Library in Javascript	
+String Search Algorithm in Javascript	
+Repeated Search Pattern in Javascript
+Monoalphabetic Cipher in Javascript	
+Caesar Cipher in Javascript	
+Vigenere Cipher in Javascript	
+Hill Cipher in Javascript	
+Affine Cipher in Javascript	
+Playfair Cipher Encryption Program in Javascript
+RSA Algorithm in Javascript	
+Transposition Technique Program in Javascript	
+Checksum Program in Javascript
+Longest Repeating Subsequence in Javascript	
+Length of Longest Repeating Subsequence in Javascript	
+Longest Increasing Subsequence in Javascript
+
+==> Palindrome Programs in Javascript
+Javascript to Check Whether a Number is Palindrome or Not
+Javascript to Check if a given String is Palindrome
+Javascript to Check whether two Strings are Anagrams
+Javascript to Check whether a String is Palindrome or not using Recursion
+Javascript to Check if a String is a Palindrome without using Built-in Function
+Javascript to Find the Largest & Smallest possible Word which is a Palindrome
+Javascript to Find Smallest and Biggest Possible Word which is Palindrome in a String
+
+==> Javascriptming Examples on File Handling
+Javascript to Create a File and Store Information
+Javascript to Count the Number of Lines in Text File
+Javascript to Convert the Content of File to Lowercase
+Javascript to Capitalize First Letter of Each Word in a File
+Javascript to Replace a Specific Line in a Text File
+Javascript to Delete a Specific Line from File
+Javascript to Create Employee Record System using File Handling
+Javascript to Display the Inventory of Items in a Store
+Program to Create a File & Store Data in Javascript	
+Program to Read Data from File in Javascript	
+Program to Delete Specific Line from File in Javascript
+Copy One File to Another File in Javascript	
+Count Number of Lines in Text File in Javascript	
+Capitalize First Letter of Each Word in File in Javascript	
+Find File Size using File Handling Function in Javascript	
+List Files in Directory in Javascript	
+Compare two Binary Files in Javascript	
+Count Lines, Blank Lines, Lines ending with Semicolon in Javascript	
+Append Contents of One File to Another in Javascript	
+Merge Alternate Lines from Two Files in Javascript	
+Sum of Numbers in Javascriptommand Line Arguments in Javascript	
+Merge Two Files in Javascript	
+Find the Function Name of a C File in Javascript
+Replace Specific Line in File in Javascript	
+Convert Text File to Lowercase in Javascript	
+Convert Text File to Uppercase in Javascript	
+Print Contents of File in Reverse Order in Javascript	
+Count Words using Command Line Argument in Javascript	
+Create and Update Employee Record in Javascript	
+Employee Record System in Javascript	
+Employee Details Update using Files in Javascript	
+Grocery Store Inventory Program in Javascript
+
+
+==> Javascript on Puzzles & Games
+Snake Game in Javascript
+Tic Tac Toe Game in Javascript
+Tower of Hanoi Program in Javascript
+Javascript to Solve the Magic Squares Puzzle without Recursion
+
+
+==> Javascript on Recursion
+Javascript to Find Sum of N Numbers using Recursion
+Javascript Find the Length of Linked List without Recursion
+Javascript to Find the Height of Tree using Recursion
+Javascript to Find the Length of the String
+Javascript to Reverse a Stack using Recursion
+Javascript to Perform Binary Search using Recursion
+Sum of Digits using Recursion in Javascript	
+Reverse Number using Recursion in Javascript	
+Integer Binary Equivalent using Recursion in Javascript	
+Prime Number using Recursion in Javascript	
+Sum of N Numbers using Recursion in Javascript	
+Power using Recursion in Javascript	
+Product of two Numbers using Recursion in Javascript
+Product of two Numbers without Recursion in Javascript
+Nth Fibonacci Series using Recursion in Javascript	
+Factorial using Recursion in Javascript	
+GCD using Recursion in Javascript	
+LCM using Recursion in Javascript	
+HCF using Recursion in Javascript	
+HCF without Recursion in Javascript	
+Binary to Gray Code using Recursion in Javascript	
+Binary to Gray Code without Recursion in Javascript	
+Decimal to Binary using Recursion in Javascript	
+Search an Element in Linked List using Recursion in Javascript	
+Count Occurrences of Elements in a Linked List using Recursion in Javascript
+Length of Linked List using Recursion in Javascript
+Print All Nodes of Linked List using Recursion in Javascript
+Reverse a Linked List using Recursion in Javascript	
+Print Alternate Nodes of a Linked List using Recursion in Javascript
+Search an Element in Linked List without Recursion in Javascript	
+Count Occurrences of Elements in a Linked List without Recursion in Javascript
+Length of Linked List without Recursion in Javascript
+Print All Nodes of Linked List without Recursion in Javascript	
+Reverse a Linked List without Recursion in Javascript	
+Print Alternate Nodes of a Linked List without Recursion in Javascript	
+Find Height of Tree using Recursion in Javascript	
+Search Tree Element using Recursion in Javascript	
+Tree Traversal using Recursion in Javascript	
+Level Order Traversal using Recursion in Javascript	
+Spiral Order Traversal using Recursion in Javascript	
+DFS Tree Traversal using Recursion in Javascript	
+Inorder Traversal using Recursion in Javascript	
+Preorder Traversal using Recursion in Javascript	
+Postorder Traversal using Recursion in Javascript	
+Tree Traversal without Recursion in Javascript	
+DFS Tree Traversal without Recursion in Javascript	
+Inorder Traversal without Recursion in Javascript	
+Preorder Traversal without Recursion in Javascript	
+Postorder Traversal without Recursion in Javascript	
+Reverse a String using Recursion in Javascript	
+Reverse a String using Recursion and Iteration in Javascript	
+First Uppercase Letter in a String using Recursion in Javascript	
+First Uppercase Letter in a String without Recursion in Javascript	
+String Length using Recursion in Javascript	
+String Copy using Recursion in Javascript	
+Palindrome String using Recursion in Javascript	
+Largest Element in an Array using Recursion in Javascript	
+Search an Element in an Array using Recursion in Javascript	
+Matrix Multiplication using Recursion in Javascript
+Reverse a Stack using Recursion in Javascript	
+Reverse a Stack without Recursion in Javascript	
+Tower of Hanoi using Recursion in Javascript	
+Linear Search using Recursion in Javascript	
+Binary Search using Recursion in Javascript	
+Merge Sort using Recursion in Javascript	
+Quick Sort using Recursion in Javascript	
+Shell Sort without Recursion in Javascript	
+Magic Squares Puzzle without Recursion in Javascript	

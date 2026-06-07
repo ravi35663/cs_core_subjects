@@ -1,0 +1,50 @@
+Implement a singly linked list.
+Implement a doubly linked list.
+Implement a circular linked list.
+Insert a node at the beginning of a linked list.
+Insert a node at the end of a linked list.
+Insert a node at a specific position in a linked list.
+Delete a node from the beginning of a linked list.
+Delete a node from the end of a linked list.
+Delete a node at a specific position in a linked list.
+Find the length of a linked list.
+Search for a given element in a linked list.
+Count occurrences of a given element in a linked list.
+Delete nodes with a given value in a linked list.
+Find the middle of a linked list.
+Detect a loop in a linked list.
+Find the starting point of the loop in a linked list.
+Remove the loop in a linked list.
+Check if a linked list is palindrome.
+Merge two sorted linked lists.
+Find the intersection point of two linked lists.
+Sort a linked list using insertion sort.
+Sort a linked list using bubble sort.
+Sort a linked list using selection sort.
+Sort a linked list using quicksort.
+Reverse a linked list.
+Reverse a linked list in groups of k.
+Swap nodes in pairs in a linked list.
+Rotate a linked list by k positions.
+Add two numbers represented by linked lists.
+Multiply two numbers represented by linked lists.
+Clone a linked list with next and random pointers.
+Find the union of two linked lists.
+Find the intersection of two linked lists.
+Find the nth node from the end of a linked list.
+Delete N nodes after M nodes in a linked list.
+Implement a stack using a linked list.
+Implement a queue using two linked lists.
+Find the fractional node in a linked list.
+Implement a linked list with operations for addition and subtraction.
+Merge k sorted linked lists.
+Implement LRU Cache using a linked list.
+Flatten a multilevel doubly linked list.
+Split a circular linked list into two halves.
+Multiply every node with the next node in a linked list.
+Find the sum of two linked lists represented by numbers.
+Check if a linked list is a sum list.
+Reverse alternate k nodes in a linked list.
+Alternating split of a linked list into two separate lists.
+Reverse blocks of k nodes in a linked list.
+Check if a linked list is a palindrome or not in O(n) time.

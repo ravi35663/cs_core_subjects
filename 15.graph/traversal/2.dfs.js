@@ -2,12 +2,10 @@
 => DFS traversal:
     - We can also call it depth - wise traversal:
 */
-
 /*
     Input: V = 5, edges = [ [0, 1], [0, 2], [0, 3], [2, 4] ]
     Output: [0 2 4 3 1]
 */
-
 class GraphDfsTraversal{
     constructor(vertex, edges){
         this.v = vertex;

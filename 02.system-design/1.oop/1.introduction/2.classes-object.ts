@@ -80,16 +80,16 @@ class Manager extends Employee{
 
 const emp = new Employee('John', 50000, 'HR', 101);
 console.log(emp.name);           // Public, so accessible
-console.log(emp.getSalary());    // Can access private data via method
+console.log(emp.getSalary());    // can access private data via method
 
 // emp.salary is not accessible directly because it is private
 // emp.id = 102; // Error: Cannot assign to 'id' because it is a read-only property
   
-
-// Very important to understand
+// # Very important to understand
 /*
 => How the object created and destroyed in the memory?
-    -   Stack memory(memory assigned during run time) and heap memory(on our system)
+    -   Stack memory: memory assigned during run time) 
+    -   Heap memory:  memory available in our system
     -   Stack memory is very limited
     -   Heap is huge.
     -   Example:
@@ -117,7 +117,7 @@ console.log(emp.getSalary());    // Can access private data via method
 */
 
 /*
-Note: References always be in the heap memory like: array, object, classes
+    Note: References always be in the heap memory like: array, object, classes
 */
 function demo() {
   let x = 10;            // Stack

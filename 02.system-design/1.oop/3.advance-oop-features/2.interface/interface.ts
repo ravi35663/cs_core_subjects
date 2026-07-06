@@ -38,6 +38,7 @@ myDog.makeSound();       // Output: Bark!
 /*
     class with multiple interfaces:
 */
+
 // Interface for flying behavior
 interface CanFly {
     fly(): void;
@@ -47,7 +48,7 @@ interface CanSwim {
     swim(): void;
 }
 
-class Bird implements CanFly,CanSwim{
+class Bird implements CanFly, CanSwim{
     swim(): void {
         console.log("Bird cannot swim")
     }
@@ -84,17 +85,16 @@ interface C extends A, B {
 */
 /*
 => Why use interfaces?
-    ->  Better structure
+    ->  Better structure:
     ->  Loose coupling: If you want you can implement otherwise you may not
-    ->  Easy maintenance
-    ->  Cleaner design
+    ->  Easy maintenance:
+    ->  Cleaner design:
     ->  They make code flexible and easy to change
 */
-
 /*
 Key Benefits:
     1)  Separation of concerns: Different functionalities can be defined in 
         different interfaces, and classes can combine them as needed.
-    2)  Flexibility: A class can implement multiple interfaces, allowing for more 
-        complex behavior.
+        
+    2)  Flexibility: A class can implement multiple interfaces, allowing for more complex behavior.
 */

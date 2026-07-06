@@ -13,12 +13,12 @@ class Calculator{
     static PI:number = 3.14
 
     // Static method
-    static add(a:number,b:number):number{
+    static add(a:number, b:number):number{
         return a+b;
     }
 
     // Non-static method
-    multiply(a:number,b:number):number{
+    multiply(a:number, b:number):number{
         return a*b;
     }
 }
@@ -113,7 +113,7 @@ class Logger{
 */
 /*
 Key Uses:
-    1) Utility methods: Functions that don't require an instance (e.g., Math.random()).
+    1) Utility methods: Functions that don't require an instance (e.g: Math.random()).
     1) Shared constants or values: Like the PI value in the Calculator example.
     3) Tracking data: For instance, keeping track of the number of objects created.
 */

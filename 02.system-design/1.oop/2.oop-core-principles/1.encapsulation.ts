@@ -13,12 +13,15 @@
 // Example:
 class Account{
     private balance: number;
+    
     constructor(initialBalance: number){
         this.balance = initialBalance;
     }
+
     deposit(amount:number){
         if(amount > 0) this.balance +=amount;
     }
+
     getBalance(){
         return this.balance;
     }
@@ -30,7 +33,7 @@ console.log(acc.getBalance()) // 1500;
 // acc.balance  = 0; Error — balance is private
 
 /*
-==> 🔒 Why Encapsulation Is Important:
+=> Why Encapsulation Is Important 🔒:
     1. Security
         - Prevents unwanted or unsafe access to internal data.
         - Ensures data integrity by controlling how it’s modified.

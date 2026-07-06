@@ -26,7 +26,7 @@ class Rectangle{
     Area:number;
 
     constructor();
-    constructor(length?:number,width?:number){
+    constructor(length?:number, width?:number){
         if(length && width){
             this.length = length;
             this.width = width;

@@ -16,6 +16,7 @@
   - 'extends' means inheritance of class.
   - Inheritance is a mechanism that allows one class to derive (or extend) another 
     class, so it can reuse its properties and methods.
+
   - It promotes code reusability, extensibility, and modularity.
 
 => Parent (Base / Superclass):
@@ -208,20 +209,21 @@ Summary
   2) Overriding: Child class redefines parent methods.
   3) super: Used to invoke parent constructors or methods.
 
-  In short: Access modifiers define what’s visible, overriding defines what changes, 
-  and super connects parent and child.
+  In short: 
+  - Access modifiers define what’s visible, overriding defines what changes, and super connects 
+    parent and child.
 */
 
 /*
 => Method override vs method overloading:
   -  Method override means:
-    1) Same access modifier
-    2) Same method name
-    3) Same parameter and their type
-    4) Same return type 
+      1) Same access modifier
+      2) Same method name
+      3) Same parameter and their type
+      4) Same return type 
 
   -  Method Overloading:
-    1) Same access modifier
-    2) Same method name
-    3) Different parameters or different types of parameters.
+      1) Same access modifier
+      2) Same method name
+      3) Different parameters or different types of parameters.
 */

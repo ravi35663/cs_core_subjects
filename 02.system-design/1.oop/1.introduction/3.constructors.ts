@@ -9,27 +9,26 @@
     -   There are several types and patterns of constructors depending on how you define or 
         use them.
 */
-// 1. Default Constructor
+// 1. Default Constructor:
 class Person1 {
   name1: string = 'John';
 }
 const p1 = new Person1(); // works fine
 
-//2.Parameterized Constructor
+//2.Parameterized Constructor:
 class Person{
     name:string;
     age:number;
-    constructor(public name: string,public age:number){
+    constructor(public name: string, public age:number){
         this.name = name;
         this.age = age;
     }
 }
-const p = new Person('Ravi',30)
+const p = new Person('Ravi', 30)
 
 /*
-3. Private Constructor
-    Prevents direct instantiation from outside the class. Often used in Singleton 
-    patterns.
+3. Private Constructor:
+    - Prevents direct instantiation from outside the class. Often used in Singleton patterns.
 */
 class Singleton{
     private static instance: Singleton;
@@ -42,8 +41,8 @@ class Singleton{
     }
 }
 /*
-4. Protected Constructor
-    Allows instantiation only within subclasses, not from outside.
+4. Protected Constructor:
+    - Allows instantiation only within subclasses, not from outside.
 */
 class Base{
     protected constructor() {}
@@ -73,7 +72,7 @@ class Example{
 const e1 = new Example();
 const e2 = new Example('Ravi')
 /*
-==> Copy Constructor:
+=> Copy Constructor:
     ->  TypeScript does not have a built-in copy constructor like C++ does.
 */
 class Doctor{
@@ -91,12 +90,12 @@ class Doctor{
         }
     }
 }
-const d1 = new Doctor('Ravi',30);
+const d1 = new Doctor('Ravi', 30);
 const d2 = new Doctor(d1); // // copy constructor
-console.log('D2 is ',d2); // {name:'Ravi',age:30}
+console.log('D2 is ', d2); // {name:'Ravi',age:30}
+
 /*
 Note:
     1) Can one constructor call other constructor?? Yes
-    2) A constructor can be overloaded via signature. 
-        (same method accepts different parameters)
+    2) A constructor can be overloaded via signature: (same method accepts different parameters)
 */

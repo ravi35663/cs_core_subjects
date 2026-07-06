@@ -64,13 +64,14 @@ d.showValue();
 
 /*
 Summary Table
-  Modifier	    Within Class	Subclass	    Outside Class
-  public	      YES	            YES	         YES
-  protected	    YES	            YES	         NO
-  private	      YES	            NO	         NO
+  Modifier	    Within Class	    Subclass	    Outside Class
+    public	      YES	                YES	         YES
+    protected	    YES	                YES	         NO
+    private	      YES	                NO	         NO
 */
+
 /*
 Note:
-  - Purpose of access specifier is to enforce the encapsulation (data hiding) and we 
-    gives controlled access
+  - Purpose of access specifier is to enforce the encapsulation (data hiding) and we gives 
+    controlled access.
 */

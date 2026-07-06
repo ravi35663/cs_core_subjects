@@ -2,6 +2,7 @@
 => What is abstraction?
     -   Abstraction means showing only the essential details and hiding the 
         unnecessary complexity.
+        
     -   Abstraction can be implemented using 'abstract' keyword or 'interface' in 
         typescript. 
 */

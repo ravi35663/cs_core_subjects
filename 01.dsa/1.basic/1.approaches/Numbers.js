@@ -97,7 +97,7 @@
         (a)  (b) --> here a is smaller divisor and b is bigger divisor 
         -> we only need to check the number in "sqrt(n)" not in "n"
         -> function isPrime(int n){
-            for(int i=2 i*i<=n;i++){
+            for(int i=2 i*i<=n; i++){
                 if(n%i == 0){
                     return false
                 }
@@ -106,7 +106,6 @@
         }
         ->  T.C = O(LogN)
 */
-
 /*
 => Gray Code:
     -   Gray code is used in many applications because it reduces the likelihood of 
@@ -152,8 +151,8 @@
         Here GCD will be 3 because 3 is common divisor of both 12 and 15 and it 
         greatest one.
 
-    -   LCM(a,b) = a * b / GCD(a,b)
-    -   LCM(a,b) * GCD(a,b) = a * b;
+    -   LCM(a, b) = a * b / GCD(a,b)
+    -   LCM(a, b) * GCD(a,b) = a * b;
 
     -> GCD(Euclidean Algorithm):
         1) Given two numbers a & b, where a >= b. 
@@ -172,7 +171,6 @@
                 b = r;
             }
 */
-
 /*
 => Areas :-
     -> Area of Triangle = ( base * height ) / 2
@@ -183,7 +181,6 @@
 	    S = P/2 (Semi-perimeter): Semi-Perimeter
 	    A = sqrt(s(s-a)(s-b)(s-c)): Area
 */
-
 /*
 => Colors:
     -> RGB : - (RGB) 

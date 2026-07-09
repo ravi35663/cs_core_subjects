@@ -1,5 +1,4 @@
 /*
 ==> Current:
-I) DSA:
-    - 1.basic => inprogress
+1) System design
 */

@@ -27,7 +27,6 @@ Note: Typescript doest not support inner classes so the below points are pointle
     2) Closures / factory functions
     3) Namespaces or modules
 */
-
 /*
 Example (what is NOT allowed):
     class Outer {
@@ -71,7 +70,6 @@ class Car{
         this.engine.start();
     }
 }
-
 /*
 => Functions / Closures: 
     ->  A function can remember variables from where it was created.

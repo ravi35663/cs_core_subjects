@@ -8,8 +8,10 @@
 => What are generic:
     ->  For generic always remember 'type' is parameter not hard-coded as in normal 
         functions:
+
     ->  Generics allow you to write type-safe, reusable OOP code where the type is a 
         parameter, not hard-coded.
+
     ->  In OOP terms: 
         Generics enable classes, interfaces, and methods to work with any data type 
         while preserving type safety.
@@ -150,8 +152,8 @@ const productClass = new ProductClass(1,200);
 userRepo.getId(userClass);
 productRepo.getId(productClass);
 /*
-    ✔️ User and Product are allowed
-    ❌ Any object without id is rejected
+    - User and Product are allowed
+    - Any object without id will be rejected
 */
 
 // Class-based Bound:
@@ -216,7 +218,6 @@ function getLength<T extends {length:number}>(value: T): number{
 | Structural typing | Shape-based constraint |
 
 */
-
 /*
 => Advantages of Generics in TypeScript (OOP context):
     ->  Generics provide type-safe abstraction in OOP, allowing code to work with 

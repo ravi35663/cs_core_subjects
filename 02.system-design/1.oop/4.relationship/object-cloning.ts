@@ -3,7 +3,7 @@
 => What is object cloning:
     ->  Object cloning means creating a new object by copying an existing object’s 
         state (data) instead of creating it from scratch.
-    ->  duplicate an object.
+    ->  duplicating an object.
 */
 /*
 => Why do we need object cloning:
@@ -60,4 +60,4 @@ const a = { x: 10 };
 const b = a;   // reference copy 
 // here, a and b point to same object
 
-const e = { ...a }; // clone: e is independent of a
+const e = { ...a }; // clone: e is independent of a // Shallow cloning

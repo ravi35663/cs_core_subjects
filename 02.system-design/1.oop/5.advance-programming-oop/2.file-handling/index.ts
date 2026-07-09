@@ -1,5 +1,5 @@
 /*
-==> File handling in oops:
+=> File handling in oops:
     ->  Importance of file handling in oop
     ->  File class
     ->  FileReader and BufferReader
@@ -7,13 +7,13 @@
     ->  Try With Resources
     ->  Logging Application Data
     ->  Common file handling issues
-
 */
 /*
-==> What is file handling:
+=> What is file handling:
     ->  File handling is the process of creating, opening, reading, writing, and 
         closing files so that a program can persist data permanently outside the 
         application’s memory.
+
     ->  In OOP, file handling means encapsulating file operations inside classes so 
         data access is structured, reusable, and safe.
 */
@@ -34,14 +34,14 @@ Note:
         const fs  = require('fs') // file system
         fs.writeFileSync('data.txt',"Hello")
     ->  Issues:
-        ❌ Hard to maintain
-        ❌ No abstraction
-        ❌ Repetition
-        ❌ Poor error handling
+        - Hard to maintain
+        - No abstraction
+        - Repetition
+        - Poor error handling
 */
 /*
-==> File Handling in OOP (Correct Approach):
-    Key OOP Concepts Used
+=> File Handling in OOP (Correct Approach):
+    - Key OOP Concepts Used
         ->  Encapsulation → hide file logic
         ->  Abstraction → expose simple methods
         ->  Single Responsibility → one class = one purpose
@@ -49,7 +49,7 @@ Note:
 */
 // Basic OOP Structure:
 class FileManager{
-    write(path:string,data:string){}
+    write(path:string, data:string){}
     read(path:string):string{
         return ''
     }
@@ -58,8 +58,8 @@ class FileManager{
 // Simple TypeScript OOP Example
 const fs = require('fs');
 class FileHandler{
-    writeFile(path:string,data:string):void{
-        fs.writeFileSync(path,data);
+    writeFile(path:string, data:string):void{
+        fs.writeFileSync(path, data);
     }
     readFile(path: string):string{
         return fs.readFileSync(path,"utf-8");
@@ -107,9 +107,9 @@ class BufferedFileReader{
     }
 }
 /*
-✔️ Streams = buffering
-✔️ Memory efficient
-✔️ Used for large files
+- Streams = buffering
+- Memory efficient
+- Used for large files
 */
 
 //FileWriter and BufferedWriter (TypeScript equivalent):
@@ -128,8 +128,8 @@ class BufferedFileWriter{
         stream.end();
     }
 }
-// ✔️ Better performance
-// ✔️ Suitable for logs & large data
+// Better performance
+// Suitable for logs & large data
 
 /*
 => Try-With-Resources (TypeScript equivalent):
@@ -148,8 +148,8 @@ class SafeFileReader{
         }
     }
 }
-// ✔️ No memory leak
-// ✔️ Controlled resource lifecycle
+// No memory leak
+// Controlled resource lifecycle
 
 /*
 => Logging Application Data (Very Important): 

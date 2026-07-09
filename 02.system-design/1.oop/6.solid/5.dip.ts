@@ -16,7 +16,7 @@ class MySqlDatabase{
 // Here problem is what if multiple DB introduced? then this will fails
 // High-level class (business logic):
 class UserServiceClass{
-    private db = new MySqlDatabase(); // ❌ tightly coupled
+    private db = new MySqlDatabase(); // tightly coupled
     saveUser(){
         this.db.connect();
         console.log("User Saved");

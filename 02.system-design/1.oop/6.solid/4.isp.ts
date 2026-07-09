@@ -1,5 +1,5 @@
 /*
-==> Interface Segregation Principle (ISP):
+=> Interface Segregation Principle (ISP):
     ->  class should not be forced to depend on methods they don’t use.
 */
 
@@ -36,7 +36,7 @@ class RobotWorker implements WorkerInterface{
     }
 }
 /*
-==> Why this breaks ISP?
+=> Why this breaks ISP?
     ->  RobotWorker is forced to implement methods it doesn’t need
     ->  Interface is too large
     ->  Leads to runtime errors
@@ -55,7 +55,7 @@ interface Sleepable{
     sleep() : void;
 }
 
-class HumanWorkerClass implements Workable,Eatable,Sleepable{
+class HumanWorkerClass implements Workable, Eatable, Sleepable{
     work(): void {
         console.log("Human can work")
     }
@@ -72,4 +72,3 @@ class RobotWorkerClass implements Workable{
         console.log("Robot can work");
     }
 }
-

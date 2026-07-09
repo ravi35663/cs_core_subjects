@@ -5,7 +5,7 @@
     ->  It allows a program to detect, handle, and recover from unexpected situations.
 */
 /*
-Why Exception Handling is Needed
+=> Why Exception Handling is Needed
     ->  Prevents application crashes
     ->  Provides meaningful error messages
     ->  Separates normal flow from error flow
@@ -22,7 +22,7 @@ try{
 }
 
 // Example:
-function divide(a:number,b:number):number{
+function divide(a:number, b:number):number{
     if(b == 0){
         // throw used to explicitly raise an exception.
         throw new Error("Division by zero is not allowed");
@@ -59,7 +59,7 @@ try{
     }
 }
 /*
-Exception Handling in OOP Context
+=> Exception Handling in OOP Context
     1) Errors are treated as objects
     2) Can be extended, inherited, and categorized
     3) Promotes Single Responsibility Principle
@@ -79,7 +79,7 @@ Exception Handling in OOP Context
     | `finally` | Cleanup code     |
 */
 /*
-==> Real life example of exceptional handling:
+=> Real life example of exceptional handling:
     1)  ATM Machine (Classic & Best Example):
         ->  throw new InsufficientBalanceError("Insufficient balance");
         ->  throw new InvalidPinError("Incorrect PIN entered");

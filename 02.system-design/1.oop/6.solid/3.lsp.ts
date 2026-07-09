@@ -1,5 +1,5 @@
 /*
-==> Liskov Substitution Principle (LSP):
+=> Liskov Substitution Principle (LSP):
     ->  A child class should be replaceable for its parent without breaking behavior.
 */
 

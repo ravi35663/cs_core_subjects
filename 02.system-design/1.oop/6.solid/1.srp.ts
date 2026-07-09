@@ -23,5 +23,5 @@ class EmailService{
     send(){}
 }
 /*
-Note: One class → one responsibility (Must)
+    Note: One class → one responsibility (Must)
 */

@@ -1,5 +1,5 @@
 /*
-==> What are SOLID principle?
+=> What are SOLID principle?
     ->  SOLID is a set of 5 object-oriented design principles that help you write clean, 
         scalable, maintainable, and testable code.
     ->  Think of SOLID as rules for designing good classes, not writing syntax.

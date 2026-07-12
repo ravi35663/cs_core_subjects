@@ -8,7 +8,7 @@
     -   How behavior is passed between objects
 */
 /*
-    Instead of focusing on structure (like structural patterns) or creation 
-    (like creational patterns), they focus on:
+    Instead of focusing on structure (like structural patterns) or creation (like creational patterns), 
+    they focus on:
         -   "How should do what?" and "How should objects talks to each other?"
 */

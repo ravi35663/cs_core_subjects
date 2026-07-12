@@ -7,19 +7,19 @@
         -   You can go through items in a playlist without knowing how they are 
             stored (array, linked list, DB,...etc)
 */
-
 /*
 => Why do we use Iterator:
-    -   Without Iterator clients need to know:
+    -  Without Iterator clients need to know:
         - How data is stored
         - How to loop it
         - How navigation works
-    -   This Above things creates:
+
+    -  This Above things creates:
         - Tight Coupling
         - Breaks encapsulation
         - Hard to change storage logic.
 
-    - With Iterator pattern:
+    -  With Iterator pattern:
         - Hiding internal structure
         - Providing standard navigation
         - Support multiple traversal styles

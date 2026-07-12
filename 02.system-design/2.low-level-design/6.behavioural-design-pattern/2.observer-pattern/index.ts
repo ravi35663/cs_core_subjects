@@ -4,11 +4,9 @@
         so that when one object changes state, all its dependents are notified and updated 
         accordingly.
 
-    -   Observer patterns defined one-to-many dependency, all its dependents are 
-        automatically notified
+    -   Observer patterns defined one-to-many dependency, all its dependents are automatically notified
     -   When one object changes state, all its dependents are automatically notified.
 */
-
 /*
 => When do we use Observer pattern:
     - A change in one object should automatically notify other

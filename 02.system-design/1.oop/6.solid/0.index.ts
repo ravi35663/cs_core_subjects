@@ -23,13 +23,11 @@
 => Liskov Substitution Principle (LSP):
     ->  A child class should be replaceable for its parent without breaking behavior.
 */
-
 /*
-==> Interface Segregation Principle (ISP):
+=> Interface Segregation Principle (ISP):
     ->  Clients should not be forced to depend on methods they don’t use.
 */
-
 /*
-==> Dependencies Inversion Principle (DIP):
+=> Dependencies Inversion Principle (DIP):
     ->  High-level modules should depend on abstractions, not concrete implementations.
 */

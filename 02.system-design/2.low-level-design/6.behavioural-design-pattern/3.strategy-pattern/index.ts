@@ -40,7 +40,6 @@ Think of like Payment methods on Amazon.
     -   If you want to isolate unit testing behavior-wise
     -   If you want to select behavior at runtime
 */
-
 /*
 => Pros and Cons:
     -   Pron:                                           Cons:

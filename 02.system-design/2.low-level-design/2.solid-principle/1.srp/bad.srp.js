@@ -1,12 +1,12 @@
 /*
-==> Bad SRP Example:
-    -   In this example, the Order class handles both order management and payment 
-        processing, violating SRP.
+=> Bad SRP Example:
+    -   In this example, the Order class handles both order management and payment processing, violating 
+        SRP.
 */
 
 // Bad SRP: Order class handles both order and payment logic
 class Order{
-    constructor(orderId,amount){
+    constructor(orderId, amount){
         this.orderId = orderId;
         this.amount = amount;
     }

@@ -1,5 +1,5 @@
 /*
-    ==> Bad Example (Violates ISP)
+=> Bad Example (Violates ISP)
 */
 abstract class Animal {
 
@@ -39,9 +39,10 @@ dog.eat(); // Dog eats
 dog.fly(); //  Runtime Error: Dogs can't fly!
 
 /*
-==> Problems:
-    1)  The Dog class is forced to implement the fly method even though it doesn't make 
-        sense for dogs to fly unless it is super dog(xD).
-    2)  Violates ISP by having a large, generalized interface (Animal) with irrelevant 
-        methods for some subclasses.
+=> Problems:
+    1)  The Dog class is forced to implement the fly method even though it doesn't make sense for dogs to 
+        fly unless it is super dog(xD).
+        
+    2)  Violates ISP by having a large, generalized interface (Animal) with irrelevant methods for some 
+        subclasses.
 */

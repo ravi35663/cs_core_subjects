@@ -1,5 +1,5 @@
 /*
-==> Good LSP Example
+=> Good LSP Example
     1)  This example adheres to LSP by avoiding inheritance and using a clear interface.
 */
 abstract class Shape{
@@ -27,8 +27,7 @@ class Circle extends Shape{
 }  
 /*
 Advantages:
-    1)  Each class (Rectangle and Square) implements behavior consistent with its own 
-        logic without interfering with the other.
-    2)  Substituting one shape for another works seamlessly because they share a common 
-        interface (Shape).
+    1)  Each class (Rectangle and Square) implements behavior consistent with its own logic without 
+        interfering with the other.
+    2)  Substituting one shape for another works seamlessly because they share a common interface (Shape).
 */

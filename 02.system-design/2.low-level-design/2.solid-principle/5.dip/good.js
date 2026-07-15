@@ -1,7 +1,7 @@
 /*
-==> Good Example (Follows DIP)
-    ->  Introduce an abstraction (e.g., PaymentMethod) to decouple the PaymentProcessor 
-        class from the specific payment methods.
+=> Good Example (Follows DIP)
+    ->  Introduce an abstraction (e.g., PaymentMethod) to decouple the PaymentProcessor class from the 
+        specific payment methods.
 */
 
 // Abstraction means no implementation of the method only body would be there but there will be no implementation
@@ -44,13 +44,13 @@ const processPaymentStripe = new PaymentProcessor(stripe);
 processPaymentStripe.process(200) // Payment with stripe
 
 /*
-==> Advantages:
-    ->  The PaymentProcessor class depends on the abstraction (PaymentMethod), not the 
-        concrete implementations (PayPal, Stripe).
+=> Advantages:
+    ->  The PaymentProcessor class depends on the abstraction (PaymentMethod), not the concrete 
+        implementations (PayPal, Stripe).
 
-    ->  Adding new payment methods (e.g., Razorpay) doesn’t require changes to the 
-        PaymentProcessor class, adhering to the Open/Closed Principle.
-
+    ->  Adding new payment methods (e.g., Razorpay) doesn’t require changes to the PaymentProcessor class, 
+        adhering to the Open/Closed Principle.
+        
     ->  Code is more flexible, testable, and maintainable.
 
 Note: By following DIP, the system becomes modular and easily extensible.

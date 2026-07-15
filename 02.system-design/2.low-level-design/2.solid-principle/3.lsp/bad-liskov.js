@@ -1,7 +1,7 @@
 /*
-==> Bad LSP Example:
-    This example violates LSP because the subclass (Square) does not behave consistently 
-    with its superclass (Rectangle).
+=> Bad LSP Example:
+    This example violates LSP because the subclass (Square) does not behave consistently with its 
+    superclass (Rectangle).
 */
 
 class Rectangle {
@@ -46,7 +46,8 @@ console.log(square.getArea()); // 25, but setting width changes height, breaking
   
 /*
 ==> Problems:
-    1)  Substituting a Square for a Rectangle breaks the expected behavior because setting 
-        width affects height, which violates the principle.
+    1)  Substituting a Square for a Rectangle breaks the expected behavior because setting width affects 
+        height, which violates the principle.
+        
     2)  Code that relies on Rectangle's behavior cannot handle Square correctly.
 */

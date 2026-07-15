@@ -11,8 +11,7 @@ In simple terms:
 /*
 =>  Dependency Inversion Principle (DIP):
     -   This is 'D' in SOLID.
-    -   High Level of modules should not depends on low level modules, Both should 
-        depends on abstraction.
+    -   High Level of modules should not depends on low level modules, Both should depends on abstraction.
     -   Abstraction should not depends on details
     -   Details should depend on abstractions.
 */

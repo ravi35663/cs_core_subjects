@@ -1,7 +1,7 @@
 /*
 => Good SRP Example
-    -   Now we separate payment processing into a PaymentService class, so each class has 
-        a single responsibility.
+    -   Now we separate payment processing into a PaymentService class, so each class has a single 
+        responsibility.
 */
 
 // Good SRP: Separate classes for Order and PaymentService

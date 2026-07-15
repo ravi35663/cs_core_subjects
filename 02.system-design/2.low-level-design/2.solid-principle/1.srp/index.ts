@@ -13,11 +13,11 @@ Example:
 /*
 =>  Single Responsibility Principle (SRP):
     -   S of SOLID
-    -   A class should have only one reason to change. This means that the class 
-        should have only one job, one responsibility, one purpose.
+    -   A class should have only one reason to change. This means that the class should have only one job, 
+        one responsibility, one purpose.
 
-    -   If a class takes more than one responsibility, these responsibilities become 
-        coupled, and changes to one might break the others.
+    -   If a class takes more than one responsibility, these responsibilities become coupled, and changes 
+        to one might break the others.
 */
 /*
 =>  Why SRP matters?
@@ -28,9 +28,8 @@ Example:
         -   Store the output in DB
         -   return the necessary things
 
-    -   You should not put all these modules in a single class, because it cause maintenance 
-        of the modules.
-        
+    -   You should not put all these modules in a single class, because it cause maintenance of the 
+        modules.
     -   You should add these modules in different-different classes
     -   Coordinator -> co-ordinates all these modules
     -   Put all classes in Run method to perform the task you have given to the compiler.
@@ -50,6 +49,6 @@ Example:
 /*
 =>  Is, SRP just for classes?
     -   We developers defined it.
-    -   It could be a function that doing one thing only, could be a microservice that 
-        doing one thing and could be a class that is doing one thing only.
+    -   It could be a function that doing one thing only, could be a microservice that doing one thing and 
+        could be a class that is doing one thing only.
 */

@@ -9,16 +9,16 @@
         -   Attributes (Middle)
         -   Operations (Bottom)
         -   Example:
-                +----------------------------------+
+                +-----------------------------------+
                 |            ClassName              |
-                +----------------------------------+
+                +-----------------------------------+
                 | - attribute1 : DataType           |
                 | - attribute2 : DataType           |
                 | + attribute3 : DataType           |
-                +----------------------------------+
+                +-----------------------------------+
                 | + operation1() : ReturnType       |
-                | + operation2(param : Type) : RT  |
-                +----------------------------------+
+                | + operation2(param : Type) : RT   |
+                +-----------------------------------+
     -   Visibility Markets:
         -   Public (+)
         -   Private (-)
@@ -87,8 +87,8 @@
 /*
 =>  Association: ('uses-a' relation)
     ->  represented by (--- assume it is a single line)
-    -   This represents a "uses-a" relationship between two classes where one class 
-        uses or interact with the other. 
+    -   This represents a "uses-a" relationship between two classes where one class uses or interact 
+        with the other. 
     -   Example:
             User & cart
     -   Example:
@@ -100,11 +100,10 @@
             +----------------+        +----------------+
             A Student is associated with a Course and Courses can be differ for Students
 */
-
 /*
 =>  Aggregation: -----------◇ (Hollow diamond): ('has-a' relation)
-    -   This represents a "has-a" relationship where one class contains another class, 
-        but the contained class can exist independently.
+    -   This represents a "has-a" relationship where one class contains another class, but the 
+        contained class can exist independently.
     -   Example:
             Department ◇---- Employee
                     +----------------+
@@ -122,8 +121,7 @@
                     | - name : string|
                     +----------------+
             Relationship meaning:
-                A Department has Employees, but Employees can exist without a 
-                Department
+                A Department has Employees, but Employees can exist without a Department
 */
 /*
 => Composition Relationship: ---◆ (filled diamond) represents Composition: (Lifecycle matters)
@@ -154,8 +152,8 @@
 */
 /*
 =>  Inheritance:('is-a')
-    -   This represents an "is-a" relationship where one class inherits the attributes 
-        and methods of another class.
+    -   This represents an "is-a" relationship where one class inherits the attributes and methods of 
+        another class.
     -   Example:
                 +----------------+
                 |     Animal     |
@@ -185,8 +183,8 @@
 /*
 => Realization (Implementation):
     -   Represented by - - - - ->(combination of - - - - and filled Arrow)
-    -   This represents a relationship between a class and an interface where the 
-        class implements the methods declared in the interface.
+    -   This represents a relationship between a class and an interface where the class implements the 
+        methods declared in the interface.
     -   Example:
             +----------------------+
             |     <<interface>>    |
@@ -211,12 +209,10 @@
         - Meaning:
             CreditCardPayment realizes (implements) Payment interface
 */
-
 /*
 =>  Dependency :
     -   Dashed arrow ( - - - - > ) represents Dependency.
-    -   This represents a "uses" relationship when a change in one class may affect 
-        the other class.
+    -   This represents a "uses" relationship when a change in one class may affect the other class.
     -   Example:
             +----------------+
             |   OrderService |

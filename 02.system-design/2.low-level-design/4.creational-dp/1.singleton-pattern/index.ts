@@ -1,12 +1,10 @@
 /*
 =>  What is Singleton Pattern? Why do we need this?
-    -   The singleton pattern ensure that the class has only one instance throughout 
-        the application's life cycle and provides a global access point to that 
-        instance.
+    -   The singleton pattern ensure that the class has only one instance throughout the application's 
+        life cycle and provides a global access point to that instance.
 
 =>  Why do we need it:
-    -   Should exists only once due to global state, resources constrains or logical 
-        reasoning.
+    -   Should exists only once due to global state, resources constrains or logical reasoning.
     -   Need to be accessed from different part of the system.
 */
 /*
@@ -39,9 +37,9 @@ const s2 = EagerSingleton.getInstance();
 console.log(s1 === s2); // true
 /*
 =>  Key points
-    1)  Instance is created at class load time
-    2)  Simple and thread-safe: if multiple treads are created then only one 
-        EagerSingleton instance will be there
+    1)  Instance is created at class load time:
+    2)  Simple and thread-safe: if multiple treads are created then only one EagerSingleton instance 
+        will be there
     3)  May waste memory if never used
 */
 /*

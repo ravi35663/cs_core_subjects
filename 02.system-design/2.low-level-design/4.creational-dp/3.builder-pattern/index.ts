@@ -4,8 +4,8 @@
 /*
 => What is Builder pattern?
     -   It is creational pattern used to construct complex objects step by step.
-    -   It is separates the constitution of an object from it's representation, 
-        allowing the same constitution process to create different representations.
+    -   It is separates the constitution of an object from it's representation, allowing the same 
+        constitution process to create different representations.
 */
 
 // Example see in good.builder.ts file

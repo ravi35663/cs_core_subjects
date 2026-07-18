@@ -1,22 +1,21 @@
-interface VehicleInterface{
+interface Vehicle{
     drive():void;
 }
 
-class Bike implements VehicleInterface{
+class Bike implements Vehicle{
     drive(): void {
         console.log("Drive Bike");
     }
 }
 
-class Car implements VehicleInterface{
+class Car implements Vehicle{
     drive(): void {
         console.log("Drive car");
     }
 }
-
 /*
-It is a creational design pattern that lets you create objects without telling 
-your code exactly which class to use. Here client is VehicleService and it does not know which class it is using
+    It is a creational design pattern that lets you create objects without telling your code exactly 
+    which class to use. Here client is VehicleService and it does not know which class it is using.
 */
 class VehicleService{ // Service only responsible for particular feature
     public drive(type:string):void{
@@ -25,7 +24,7 @@ class VehicleService{ // Service only responsible for particular feature
 }
 
 class VehicleFactory{ // Factory is responsible for creating object of class type
-    public createVehicle(type:string):VehicleInterface{
+    public static createVehicle(type:string):Vehicle{
         if(type == 'Bike'){
             return new Bike();
         }else if(type == 'Car'){

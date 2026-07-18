@@ -10,6 +10,9 @@ A) System Design:
         -   Solid                       -   Done
 
     2) LLD:
-        -   Introduction                 -   Done
-        -   SOLID Principle              -   Done
+        -   Introduction                 -  Done
+        -   SOLID Principle              -  Done
+        -   UML                          -  Done
+        -   Creational DP                -  Inprogress
+
 */

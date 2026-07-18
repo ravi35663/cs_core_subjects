@@ -1,9 +1,10 @@
 /*
 =>  Factory Pattern:
-    -   It is a creational design pattern that lets you create objects without telling 
-        your code exactly which class to use.
-    -   Factory Pattern creates objects without exposing creation logic   
-    -   Client depends on abstraction, not concrete classes
+    -   It is a creational design pattern that lets you create objects without telling your code 
+        exactly which class to use.
+        
+    -   Factory Pattern creates objects without exposing creation logic.
+    -   Client depends on abstraction, not concrete classes.
 
 =>  Why use it?
     -   When the client does not knows what exact class of the object it needs.

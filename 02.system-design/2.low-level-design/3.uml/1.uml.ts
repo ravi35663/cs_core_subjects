@@ -1,23 +1,22 @@
 /*
-=>   A stereotype is a generalization that assumes all members of a group are the same:
+- A stereotype is a generalization that assumes all members of a group are the same:
     Example: It like assuming that all the person are same in some context.
         All engineers are bad at communication
         All politicians are corrupt:
 */ 
 /*
-
 =>  Unified modeling language (UML):
     -   Unified means single kind of language across all the system.
-    -   Unified modeling language is a standardized visual language used to model and 
-        document the designs of software systems.
-    -   It offer a set of diagrams to represents different aspects of a system, 
-        getting a clear communication among stakeholders and helping us to understand 
-        the design.
+    -   Unified modeling language is a standardized visual language used to model and document the 
+        designs of software systems.
+
+    -   It offer a set of diagrams to represents different aspects of a system, getting a clear 
+        communication among stakeholders and helping us to understand the design.
         
 =>  How many official UML diagrams are there?
     -   There are 14 kind of UML diagrams and they are categorized in two:
     -   Structural Diagram:
-         ***1)  Class Diagram: Show classes, interfaces, relationships: Most important
+         ***1)  Class Diagram:  Show classes, interfaces, relationships: Most important
             2)  Object Diagram: Snapshot of objects at specific point in time
             3)  Component Diagram:  Describe software components and their dependencies
             4)  Composite Structural Diagram:   Shows internal structure of a class and collaboration
@@ -35,4 +34,3 @@
             6)  Interaction Overview diagram: High level overview of diagram
             7)  Timing diagram: Focuses on object behavior with respect to time.
 */
-

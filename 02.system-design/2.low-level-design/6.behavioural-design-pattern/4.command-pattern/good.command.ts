@@ -132,3 +132,4 @@ remote.pressButton(0) // Light is on
 remote.pressButton(2) // ac is on
 
 remote.pressUndoButton() // ac is off
+remote.pressUndoButton() // light is off

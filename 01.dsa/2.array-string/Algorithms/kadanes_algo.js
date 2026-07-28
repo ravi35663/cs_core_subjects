@@ -1,8 +1,7 @@
 /*
 =>  Kadane's Algorithms:
     ->  This algorithm is used to find maximum sub array sum in linear time complexity
-    ->  If all the array elements are negative then maximum of all element is a max-sub 
-        array.
+    ->  If all the array elements are negative then maximum of all element is a max-sub array.
     ->  If current sum is negative reset it to zero
     ->  It does not contains extra space like prefix approach.
     ->  Time complexity is O(n) and space is constant.

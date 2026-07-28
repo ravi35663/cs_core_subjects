@@ -1,7 +1,7 @@
 /*
-==============================
-DNF (DUTCH NATIONAL FLAG) – REVISION
-==============================
+================================
+    DNF (DUTCH NATIONAL FLAG) 
+================================
 
 Purpose:
     - Efficiently segregates an array containing exactly three distinct values

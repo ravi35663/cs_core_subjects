@@ -39,7 +39,6 @@
     -> forEach:	O(n)
     -> reduce : O(n)
 */
-
 /*
 =>  'shift' in javascript:
     ->  shift is used to remove first element in the array and it will return that 
@@ -71,7 +70,7 @@
         if any.
 */
 /*
-==> Syntax :
+=> Syntax :
     arr.splice(start,deleteCount,item1,item2,item3,........)
 
     start: the index at which arr start changing

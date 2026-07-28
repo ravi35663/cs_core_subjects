@@ -93,7 +93,7 @@ Example 2:
   
 /*
 =>  Approaches:
-    1) Brute force (generate all subarrays)
+    1) Brute force (generate all sub-arrays)
     2) Sliding window (optimal)
 */
   

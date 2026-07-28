@@ -1,12 +1,12 @@
 /*
 ==> Revise Topics Serial wise: Only-Revise-Theory and maybe max 1-2 questions(important)
-    1) Basic  
-    2) Array   
-    3) String   
-    4) Sliding window 
+    1) Basic : Done
+    2) Array : Done  
+    3) String : Done
+    4) Sliding window: Done 
     5) Bit-Manipulation
-    6) Searching    
-    7) Sorting:     
+    6) Searching: Done  
+    7) Sorting:     Done
         -> Bubble   
         -> Merge Sort 
         -> Insertion Sort

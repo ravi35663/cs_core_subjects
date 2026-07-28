@@ -24,8 +24,7 @@
             ->  If current element equals candidate, increment count.
             ->  Else, decrement count.
         2) Validation (optional but important)
-            ->  Run through the array again to confirm that the candidate is indeed 
-                the majority element.
+            ->  Run through the array again to confirm that the candidate is indeed the majority element.
 */
 
 function majorElement(nums){

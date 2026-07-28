@@ -1,9 +1,11 @@
 /*
 => Selection Sort: -
-    ->  It is similar to bubble sort but instead of placing large values at sorted 
-        position it places small values at sorted positions(first place).
-    ->  We pick minimum elements in the array and put that minimum element at the starting 
-        of the array and we repeat these steps until all the sorted elements are sorted.
+    ->  It is similar to bubble sort but instead of placing large values at sorted position it places 
+        small values at sorted positions(first place).
+
+    ->  We pick minimum elements in the array and put that minimum element at the starting of the array and 
+        we repeat these steps until all the sorted elements are sorted.
+        
     -> Example: 
             arr =  [4,1,5,7,8,0]
             1st -> [0,1,5,7,8,4]

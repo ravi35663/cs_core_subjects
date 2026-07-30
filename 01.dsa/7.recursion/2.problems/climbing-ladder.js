@@ -15,9 +15,10 @@
 */
 
 /*
-    Here T.C: O(3^n) ( function recalculates the same sub problems multiple times, leading to an exponential time complexity)
+    Here T.C:   O(3^n) ( function recalculates the same sub problems multiple times, leading to an 
+                exponential time complexity)
     Calls are:
-        1,3,3^2,3^3 ..... (At each level of the tree)
+        1, 3, 3^2, 3^3 ..... (At each level of the tree)
 */
 
 function climbingLadder(n){

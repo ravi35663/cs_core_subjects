@@ -1,14 +1,14 @@
 /*
 ==> Subset Sum
-    Given a set of non-negative integers, and a value sum, determine if there is a subset of the given 
-    set with sum equal to given sum. Also count the number of sub arrays.
+    Given a set of non-negative integers, and a value sum, determine if there is a subset of the given set 
+    with sum equal to given sum. Also count the number of sub arrays.
 
     Input
-    arr = [10, 12, 15, 6, 19, 4,1]
-    sum = 16
+        arr = [10, 12, 15, 6, 19, 4,1]
+        sum = 16
 
     Output
-    Yes
+        Yes
 
 */
 
@@ -50,7 +50,7 @@ const arraySum = (arr)=>{
 // With Recursion (Way 2): You can make recursion of above program: (This is not optimized solution)
 
 // T.C: O(2^n) and S.C: O(n): Dry run this program
-function subSetSumRecursion(arr,target, i=0){
+function subSetSumRecursion(arr, target, i=0){
     if(i == arr.length){
         if(target == 0){
             return 1;
@@ -58,8 +58,8 @@ function subSetSumRecursion(arr,target, i=0){
             return 0;
         }
     }
-    const include = subSetSumRecursion(arr,target-arr[i],i+1,);
-    const exclude = subSetSumRecursion(arr,target,i+1);
+    const include = subSetSumRecursion(arr, target-arr[i], i+1,);
+    const exclude = subSetSumRecursion(arr, target, i+1);
     return include + exclude;
 }
 

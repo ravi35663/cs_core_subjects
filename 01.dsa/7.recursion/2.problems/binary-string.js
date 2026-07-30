@@ -1,5 +1,5 @@
 /*
-==> Binary Strings!
+=> Binary Strings!
     You are given an integer N. Your task is to print all binary strings of size N without 
     consecutive ones.
 
@@ -25,15 +25,15 @@
 
 // All the solutions are brute-force-approach:
 // With recursion:
-function binaryString(n, i=0,output=[]){
-    str = decimalToBinary(i++,n);
+function binaryString(n, i=0, output=[]){
+    str = decimalToBinary(i++, n);
     if(str && str.length > n){
         return output;
     }
     if(str){
         output.push(str);
     }
-    return binaryString(n, i,output);
+    return binaryString(n, i, output);
 }
 
 function decimalToBinary(dec,n){
@@ -112,9 +112,9 @@ function binaryStrings(n, output='', result=[]){
         return;
     }
     if(output[output.length-1] != '1'){
-        binaryStrings(n,output + '1',result);
+        binaryStrings(n, output + '1',result);
     }
-    binaryStrings(n,output + '0',result);
+    binaryStrings(n, output + '0',result);
     return result;
 }
 console.log(binaryStrings(3))

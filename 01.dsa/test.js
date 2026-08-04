@@ -1,20 +1,37 @@
-function fillArray(arr, i=0){
-    if(i == arr.length){
-        console.log("Arr in base case: ",arr)
-        return ;
+// Implements queue using array:
+class Queue{
+    constructor(size=10){
+        this.front = 0;
+        this.rear = size - 1;
+        this.ms = size;
+        this.cs = 0;
+        this.arr = new Array(size);
     }
-    arr[i] = i+1;
-    fillArray(arr, i+1);
-    // Backtracking (Coming back from the base case)
-    // Backtracing always used after function call
-    arr[i] = arr[i] * -1
-}
 
-const arr = new Array(5).fill(0);
-fillArray(arr);
-console.log("Array is: ",arr);
-/*
-Output: 
-    Array in base case: [1, 2, 3, 4, 5]
-    Array is: [-1, -2, -3, -4, -5] // after backtracking:
-*/
+    enqueue(val){
+        if(this.cs >= this.ms){
+            console.log("Queue is full:")
+            return;
+        }
+
+        // push at rear
+        this.rear = (this.rear + 1) % this.ms;
+        this.arr[this.rear] = val;
+        this.cs++;
+    }
+
+    dequeue(){
+        if(this.cs == 0){
+            console.log("Queue is empty")
+            return;
+        }
+
+        this.front = (this.front + 1) % this.ms;
+        this.cs--;
+    }
+
+    viewFront(){
+        return this.arr[this.front];
+    }
+
+}

@@ -46,7 +46,6 @@ class Queue{
     }
 }
 
-
 class Stack{
     constructor(){
         this.queue1 = new Queue(20)

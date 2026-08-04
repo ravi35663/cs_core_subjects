@@ -12,14 +12,14 @@
     -> Uploading resources
     -> Printing/task processing
 
-==> Big O of queue:
+=> Big O of queue:
     -> Push : O(1)
     -> Pop: O(1)
     -> Front: O(1)
     -> Access: O(N)
     -> Search: O(N)
 */
-
+// Queue implementation using LinkedList
 const Node = require('../Node')
 class Queue{
     constructor(){

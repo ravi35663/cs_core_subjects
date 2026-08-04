@@ -22,27 +22,24 @@
     -> ....etc.
 
 => Using Stack with Array :-
-    ->  If you add an element at the end of an array then you should remove the element 
-        from at the end.
-    ->  If you add an element at the start of the array then you should remove the element 
-        at the start.
+    ->  If you add an element at the end of an array then you should remove the element from at the end.
+    ->  If you add an element at the start of the array then you should remove the element at the start.
 
         i.e. (pushing and popping from the end)
-        let stack = [];
-        stack.push(10); //[10]
-        stack.push(12); //[10,12]
-        stack.pop(); // [10]
-        stack.pop(); // []
+            let stack = [];
+            stack.push(10); //[10]
+            stack.push(12); //[10,12]
+            stack.pop(); // [10]
+            stack.pop(); // []
 
         i.e. (pushing and popping from the start)
-        let stack = [];
-        stack.unshift(10); //[10]
-        stack.unshift(12); //[10,12]
-        stack.shift(); // [10]
-        stack.shift(); // []
+            let stack = [];
+            stack.unshift(10); //[10]
+            stack.unshift(12); //[10,12]
+            stack.shift(); // [10]
+            stack.shift(); // []
 
-Note: Adding/removing element at beginning in array has more complexity than adding/removing
-      from the end.
+Note: Adding/removing element at beginning in array has more complexity than adding/removing from the end.
 
 => Big O of stack:
     -> Push : O(1)

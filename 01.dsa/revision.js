@@ -13,10 +13,10 @@
         -> Quick Sort
         -> Selection Sort
         -> DNF-Algorithm
-    8) Recursion 
-    9) Linked List 
-    10) Stack 
-    11) Queue   
+    8) Recursion : Done
+    9) Linked List : Done
+    10) Stack : Done
+    11) Queue: Done
     12) Binary Search Tree and Tree - Traversal 
     13) Heap
     14) HashTable

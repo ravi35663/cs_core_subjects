@@ -9,8 +9,12 @@ class AdjacencyList{
         
     }
 
-    addEdges(u, v, weight){
-        this.matrix[u].push([v,weight]);
+    // addEdges(u, v, weight){ // If node have weight
+    //     this.matrix[u].push([v,weight]);
+    // }
+
+    addEdges(u, v){
+        this.matrix[u].push(v);
     }
 
 

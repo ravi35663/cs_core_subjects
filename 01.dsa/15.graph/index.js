@@ -1,8 +1,7 @@
 /*
 => What is graph:
     ->  A graph is a data structure consisting of nodes(vertices) and edges. 
-    ->  Nodes represent entities, and edges represent the relationships between those 
-        entities.
+    ->  Nodes represent entities, and edges represent the relationships between those entities.
     ->  Graph can have open structure as well. 
     ->  Any tree can be a graph
 
@@ -12,22 +11,18 @@
     3)  Vertex:  a node 
     4)  Edge: Connection between nodes (It can be bi-directional or multiple directions)
     5)  Weighted graph:
-            ->  A weighted graph is a type of graph where each edge has a numerical 
-                value or "weight" associated with it. This weight usually represents 
-                cost, distance, or time between two nodes
+        ->  A weighted graph is a type of graph where each edge has a numerical value or "weight" associated 
+            with it. This weight usually represents cost, distance, or time between two nodes.
     6)  Unweighted graph: 
-            ->  An unweighted graph is a graph where the edges between nodes do not have any 
-                associated weights or costs. Each edge simply represents a connection without 
-                prioritizing any path
+        ->  An unweighted graph is a graph where the edges between nodes do not have any associated weights 
+            or costs. Each edge simply represents a connection without prioritizing any path
 */
 /*
 => Real-world Use Cases:
-    1)  Social Networks: Represent users as nodes, and friendships or connections as 
-        edges.
+    1)  Social Networks: Represent users as nodes, and friendships or connections as edges.
     2)  Google Maps: Cities or locations are nodes, and roads are edges.
     3)  Web Crawling: Web pages as nodes, hyperlinks as edges.
-    4)  Recommendation Systems: Products and users as nodes, interactions (likes, purchases) 
-        as edges.
+    4)  Recommendation Systems: Products and users as nodes, interactions (likes, purchases) as edges.
             ->  "People also watched"
             ->  "You might also like"
             ->  "People you also know"

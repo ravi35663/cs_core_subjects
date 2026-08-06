@@ -1,6 +1,6 @@
 const Queue = require('../Queue/queue-with-array');
 /*
-==> Binary Tree-Traversal:
+=> Binary Tree-Traversal:
     -> Pre-order Traversal: Root, Left, Right
     -> In-order Traversal: Left, Root, Right
     -> Post-order Traversal: Left, Right, Root

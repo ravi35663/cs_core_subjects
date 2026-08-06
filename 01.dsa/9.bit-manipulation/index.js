@@ -25,8 +25,7 @@
         e.g:    
             s = ~x
             Steps to get value:
-                0)  if x is negative then make 2's complement of that number other wise move 
-                    to next step:
+                0)  if x is negative then make 2's complement of that number other wise move to next step:
                 1)  flip the bits 
                 2)  check if negative (the flipped bits) 
                     yes:
@@ -56,14 +55,14 @@
                 5 >> 2 ==> 00000101 => 00010100 => which is 20
 
 Note:   
-    1)  Whenever you encounter negative number, get the 2s complement of that number 
-        (positive part only) and further perform the action.
-    2)  if number is 32 bit => 31st for sign and rest for values
-    3)  Largest possible value you can store is (2^31) - 1 if system is 32 bit and 
-        (2^31) is int_max and int_min is -2^31 (get 2s complement of 2^31 and add minus)
+    1)  Whenever you encounter negative number, get the 2s complement of that number (positive part only) and 
+        further perform the action.
+    2)  if number is 32 bit => 31st for sign and rest for values.
+    3)  Largest possible value you can store is (2^31) - 1 if system is 32 bit and (2^31) is int_max and 
+        int_min is -2^31 (get 2s complement of 2^31 and add minus).
     4)  If system if n bit then largest value you can store is (2^n-1) - 1;
-    5)  You'll get the unwanted values if bits are overflow in left shift. So always do 
-        calculation in boundaries of the bits
+    5)  You'll get the unwanted values if bits are overflow in left shift. So always do calculation in 
+        boundaries of the bits
 
 */
 /*
@@ -87,10 +86,10 @@ Note:
 
 function swapTwo(a,b){
 /*
-    Explanation: a^a = 0, b^b = 0 because same bits resultant is 0:
-        a = a^b;
-        b = a^b     => (a^b)^b      => a
-        a = a^b     => (a^b)^b      => a^b^a => b 
+Explanation: a^a = 0, b^b = 0 because same bits resultant is 0:
+    a = a^b;
+    b = a^b     => (a^b)^b      => a
+    a = a^b     => (a^b)^b      => a^b^a => b 
 */
    a = a^b;
    b = a^b;

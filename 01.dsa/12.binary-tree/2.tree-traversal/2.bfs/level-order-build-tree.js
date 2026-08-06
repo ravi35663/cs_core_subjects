@@ -21,10 +21,7 @@ class Node{
     this.value = val;
   }
 }
-
-
 // const Queue = require("../../Queue/queue-with-array");
-
 
 function levelOrderBuild(arr){
     if(arr[0] == -1) return null;

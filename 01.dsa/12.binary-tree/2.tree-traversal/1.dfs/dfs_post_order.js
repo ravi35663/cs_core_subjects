@@ -1,10 +1,10 @@
 /*
-===> Post-Order DFS :-
-    ->  In a post-order traversal, the left subtree is visited first, followed by the right 
-        subtree, and finally the root node.
+=> Post-Order DFS :-
+    ->  In a post-order traversal, the left subtree is visited first, followed by the right subtree, and 
+        finally the root node.
     ->  The order of visitation is typically: Left -> Right -> Node.
-    ->  Post-order traversal is often used for tasks like deleting a tree or to ensure that 
-        the children are visited before the parent.
+    ->  Post-order traversal is often used for tasks like deleting a tree or to ensure that the children 
+        are visited before the parent.
 */
 
 /*
@@ -27,21 +27,20 @@
 */
 
 /*
-===> Steps to perform depth first search post-order:
+=> Steps to perform depth first search post-order:
     ->  Create an array variable which will store values.
     ->  Create a variable which will be used to hold the current value as root of the tree.
     ->  Create a helper function which can have nodes as an argument.
         ->  Inside the helper function check if node have any left property then call that helper 
             function with left property.i.e. helperFunction(node.left)
-        ->  Inside the helper function check if node have any right property then call that 
-            helper function with right property.i.e. helperFunction(node.right)
+        ->  Inside the helper function check if node have any right property then call that helper function with right property.i.e. helperFunction(node.right)
         -> Add node value into that variable which stores node values.
     -> invoke the helper function with the current node(root node).
     -> return that variable which has all values stored.
 */
 
 /*
-    ==> Code of DFS Post-Order :-
+=> Code of DFS Post-Order :-
     dfsPostOrder(){
         const currentNode = this.root;// root of BST.
         const result = [];

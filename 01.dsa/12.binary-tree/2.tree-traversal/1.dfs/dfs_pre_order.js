@@ -1,10 +1,10 @@
 /*
 1) Pre-Order DFS:-
-    ->  In a pre-order traversal, the root node is visited first, followed by the left 
-        subtree and then the right subtree.
+    ->  In a pre-order traversal, the root node is visited first, followed by the left subtree and then 
+        the right subtree.
     ->  The order of visitation is typically: Node -> Left -> Right.
-    ->  This is often used to make a deep copy of a tree, to serialize a tree, or to 
-        perform any operation that needs to start from the top.
+    ->  This is often used to make a deep copy of a tree, to serialize a tree, or to perform any 
+        operation that needs to start from the top.
 */
 /*
 ==> Examples:
@@ -26,21 +26,18 @@
 */
 
 /*
-===> Steps to perform Depth first Search:-  
+=> Steps to perform Depth first Search:-  
     -> Create a variable to store the values of the node visited.
 	-> store the root value into a variable called current.
 	-> create a helper function which will take a node as an argument.
 		-> Push the node value into a variable which stores values.
-		->  if the node has left property, call a helper function with left property
-            on the node.
-        ->  if the node has right property, call a helper function with right property
-            on the node.
+		->  if the node has left property, call a helper function with left property on the node.
+        ->  if the node has right property, call a helper function with right property on the node.
 	-> invoke the helper function with the current variable.
 	-> return the array of values.
 */
-
 /*
-==> Code of DFS-Pre-Order:
+=> Code of DFS-Pre-Order:
     dfsPreOrder(){// we have BST which have root
         let result = [];
         let current = this.root;

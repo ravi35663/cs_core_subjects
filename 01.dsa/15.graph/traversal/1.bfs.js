@@ -1,7 +1,8 @@
 /*
 => BFS traversal:
-    - We can also call it level-wise traversal:
-    - We can also call it breadth-wise traversal:
+    -   We can also call it level-wise traversal:
+    -   We can also call it breadth-wise traversal:
+    -   Dry run the traversal technuque to understand it in deep.
 */
 /*
     Input: V = 5, edges = [ [0, 1], [0, 2], [0, 3], [2, 4] ]

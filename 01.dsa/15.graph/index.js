@@ -63,7 +63,7 @@ Operation                       Adjacency List                          Adjacenc
 
 /*
 => Cyclic graph:
-    - Start at a node and my moving some nodes you can reach that node is known as cyclic graph:
+    - Start at a node and my moving some nodes you can reach the same node is known as cyclic graph:
     - e.g: All undirected graph is cyclic graph
     - Multiple directed graph can be cyclic.
 

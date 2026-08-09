@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HTML FORM</h1>
+    <form>
+        <!-- If you click on username on label then it will automatically focus on input field -->
+        <label for="username">Enter Username: </label>
+        <input type="text" id="username" name="username"  placeholder="Enter name"/>
+        <br/>
+        <br/>
+        <label for="email">Email: </label>
+        <input type="email" id="email" name="email" placeholder="Enter email"/>
+        <br/>
+        <br/>
+        <label for="password">Password: </label>
+        <input type="password" id="password" name="password" placeholder="Enter Password"/>
+
+        <!-- Radio  buttons-->
+         <p>Select Your Age: </p>
+         <input type="radio" value="0-25" id="option-1" name="age"/>
+         <label for="option-1" >0-25</label>
+         <input type="radio" value="26-50" id="option-2" name="age"/>
+         <label for="option-2" >26-50</label>
+         <input type="radio" value="51+" id="option-3" name="age"/>
+         <label for="option-3" >50+</label>
+
+         <br/>
+         <br/>
+        <label for="question">Security Question: </label>
+        <select name="question" id="question">
+            <option value="q1">What is your favorite color?</option>
+            <option value="q2"> What is your mother name?</option>
+            <option value="q3"> Which language you don't speak?</option>
+        </select>
+
+        <br>
+        <br>
+        <label for="answer"> Security Question Answer: </label>
+        <input type="text" name="answer" id="answer">
+        <br><br>
+        <label for="bio">Your Bio:</label><br>
+        <textarea name="bio" id="bio" cols="40" rows="10" placeholder="Your bio..."></textarea>
+        <br>
+        <br>
+        <input type="submit" value="Submit button">
+    
+    </form>
+</body>
+</html>

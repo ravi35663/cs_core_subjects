@@ -1,0 +1,225 @@
+<!-- 
+    What are the different ways to include CSS in a web page
+    1) Inline-css
+        -> Inline Styles: CSS can be applied directly to HTML elements using the style attribute.
+        e.g. 
+        <div style="color: red; font-size: 16px;">
+            This is styled inline.
+        </div>
+    2) Internal Stylesheet: CSS can be included within the <style> element in the
+       <head> section of an HTML document.
+        e.g.
+        <head>
+            <style>
+                body {
+                    font-family: Arial, sans-serif;
+                }
+                h1 {
+                    color: blue;
+                }
+            </style>
+        </head>
+    3) External Stylesheet: CSS can be stored in an external file with a .css 
+       extension and linked to the HTML document using the <link> element in the 
+       <head> section.
+        e.g.
+            <head>
+                <link rel="stylesheet" type="text/css" href="styles.css">
+            </head>
+    4) Importing Stylesheets: CSS files can be imported into another CSS file using 
+       the @import rule. 
+    For example:
+        @import url("other-styles.css");
+-->
+
+<!-- 
+    What is the box model in CSS?
+    -> The box model is a fundamental concept in CSS that describes how elements are 
+       rendered on a web page. According to the box model, every element in a web page 
+       is represented as a rectangular box with four main components:
+    1) Content: The actual content of the element, such as text, images, or other 
+       media, which is contained within the box.
+    2) Padding: The space between the content and the border of the box. Padding can 
+       be set using the padding property in CSS.
+    3) Border: The border of the box, which is drawn around the padding area. 
+       Borders can be styled and customized using the border property in CSS.
+    4) Margin: The space between the border of the box and neighboring elements. 
+       Margins can be set using the margin property in CSS.
+-->
+
+<!-- 
+    CSS Selectors:
+    -> CSS selectors are patterns used to select and style HTML elements based on 
+       their attributes, IDs, classes, types, states, and more. They allow you to 
+       target specific elements or groups of elements within an HTML document. 
+    -> element selectors( tags), class,id,attributes, ..etc
+-->
+
+<!-- 
+    What is the importance of the !important keyword in CSS:
+    -> The !important keyword in CSS is used to give a declaration higher specificity, 
+       overriding any other conflicting styles that may have been applied to an 
+       element.
+-->
+
+<!-- 
+    What are the different positioning schemes in CSS:
+    -> In CSS, there are several positioning schemes that determine how elements are 
+       positioned within the document flow. The main positioning schemes are:
+    
+    1) Static: This is the default positioning scheme. Elements are positioned in the 
+       normal document flow, and their position is determined by the order they 
+       appear in the HTML markup.
+
+    2) Relative: Elements are positioned relative to their normal position in the 
+       document flow. Using the top, right, bottom, and left properties, you can 
+       offset the element from its normal position without affecting the layout of 
+       other elements.
+    
+    3) Absolute: Elements are removed from the normal document flow and positioned 
+       relative to the nearest positioned ancestor (an ancestor with a position other 
+       than static) or to the initial containing block if no positioned ancestor is 
+       found. Absolute positioning allows you to place elements precisely where you 
+       want them on the page.
+
+    4) Fixed: Elements are removed from the normal document flow and positioned 
+       relative to the viewport. This means that they remain in the same position 
+       even when the page is scrolled.
+    
+    5) Sticky: Elements behave like relative positioning until they reach a specified 
+       threshold, at which point they become fixed positioning. This is useful for 
+       creating elements that stick to the top or bottom of the viewport when 
+       scrolling. 
+-->
+
+<!-- 
+    Explain the CSS display property and its values:
+    -> The CSS display property controls how an element is rendered in the document 
+       flow. 
+       It has several values, each with its own behavior:
+    1) block: Makes the element a block-level element, meaning it takes up the full 
+       width available and starts on a new line. Examples include <div>, <p>, 
+       <h1>-<h6>.
+
+    2) inline: Makes the element an inline-level element, meaning it only takes up as 
+       much width as necessary and does not start on a new line. Examples include 
+       <span>, <a>, <strong>, <em>.
+    
+    3) inline-block: Combines aspects of both block and inline. The element is inline, 
+       but its layout behaves like a block-level element, allowing you to set width, 
+       height, margins, and padding.
+    
+    4) none: Hides the element from the page. 
+    
+    5) flex: Turns the element into a flex container, enabling flexbox layout for its 
+       children. This allows you to easily control the arrangement, alignment, and 
+       distribution of the child elements.
+   
+    6) grid: Turns the element into a grid container, enabling grid layout for its 
+       children. This allows you to create complex layouts with rows and columns.
+   
+    7) table, table-cell, table-row: These values are used to create table layouts 
+       similar to HTML tables. They are rarely used in modern web development due to 
+       the availability of flexbox and grid layout.
+-->
+<!--  
+    Flex Vs Grid:
+    -> Flexbox and Grid are both powerful layout methods in CSS used for arranging 
+       elements on a webpage, 
+
+    -> Flexbox: Built for one-dimensional layouts. It excels at arranging elements in 
+       either a row or a column, making them flexible and responsive.
+
+    -> Grid: Designed for two-dimensional layouts. It allows for more complex layouts 
+       with rows and columns, giving you precise control over element placement.
+    -> Flexbox: Offers flexibility for linear arrangements.
+    -> Grid: Provides more structure and control for complex layouts.
+-->
+<!-- 
+    Flex box:
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    nav {
+        display: flex; /* Make the container a flex container */
+        justify-content: space-between; /* Distribute links evenly */
+    }
+
+    nav a {
+        padding: 10px; /* Add spacing for links */
+    }
+    -> This creates a horizontal navigation bar with links evenly spaced and filling the available space within the container.
+-->
+
+<!-- 
+    Grid:
+
+<section class="products">
+    <article>
+        <h3>Product 1</h3>
+        <img src="product1.jpg" alt="Product 1 image">
+        <p>$29.99</p>
+  </article>
+    <article>
+        <h3>Product 2</h3>
+        <img src="product2.jpg" alt="Product 2 image">
+        <p>$39.99</p>
+    </article>
+</section>
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive columns */
+  gap: 10px; /* Spacing between products */
+}
+
+.products article {
+  background-color: #f5f5f5; /* Light background for products */
+  padding: 10px;
+}
+This creates a grid layout with products displayed in columns that automatically 
+adjust based on screen size. There's spacing between products for better readability.
+-->
+
+<!-- 
+    CSS VS SCSS VS CSS3: 
+
+    1) CSS (Cascading Style Sheets):
+    -> CSS is the standard styling language for the web. It uses a simple syntax with 
+       properties and values to style HTML elements.
+
+    2) SCSS (Sass):
+    -> SCSS is a preprocessor scripting language that is a superset of CSS.
+    -> It adds features like variables, nesting, mixins, inheritance, and functions 
+       to CSS, making stylesheets more modular, maintainable, and DRY 
+       (Don't Repeat Yourself).
+    -> SCSS files use the .scss extension and must be compiled into standard CSS before 
+       being served to the browser.
+    
+    3) CSS-in-JS (e.g., styled-components):
+    -> CSS-in-JS is an approach where CSS is written directly in JavaScript files.
+    -> It allows developers to encapsulate styles within components, ensuring that 
+       styles are scoped to the components they belong to.
+
+    Summary: 
+    -> CSS is the standard and is well-suited for smaller projects or when simplicity 
+       is prioritized.
+    -> SCSS is powerful and widely used in larger projects or when complex styling 
+       requirements are present.
+    -> CSS-in-JS is popular in the React ecosystem and offers benefits like 
+       component-level encapsulation and dynamic styling.
+-->
+
+<!--  
+    => What is difference between PX,unit,em,rem in css:
+    -> In CSS, px, em, rem, and % are units of measurement used to define sizes, 
+       spacing, and positioning.
+    -> Pixels (px): px stands for pixels and represents a fixed unit of measurement.
+    -> Em (em): em is a relative unit based on the font size of the element's parent.
+    -> Root Em (rem): rem is a relative unit based on the font size of the root element (<html>).
+    -> Percentage (%): % is a relative unit based on the size of the parent element. It 
+       is often used for widths, heights, margins, and paddings.
+-->

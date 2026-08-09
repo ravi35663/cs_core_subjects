@@ -1,0 +1,86 @@
+===> https://javascript.plainenglish.io/streams-piping-and-their-error-handling-in-nodejs-c3fd818530b6
+-> completed above first
+
+Difference between fork and spawn methods?
+What are test pyramids in Node.js
+Explain middlewares in Node.js
+Different types of HTTP requests, codes and it’s the significance
+List various Node.js timing functions.
+What is WASI in Node.js
+Explain control flow in Node.js
+How to import external libraries?
+Explain LIBUV in Node.js
+Explain URL module, require module and ES6 in Node.js
+Why does google use the V8 engine in Node.js
+What are global objects in Node.js
+Explain streams and types of streams available in Node.js
+What are passport and OAuth in Node.js
+How to read/create/delete and edit files in Node.js
+Explain the DNS lookup function in Node.js
+Difference between Node.js and Ajax?
+How Node.js overcomes the problem of blocking I/O operations
+Explain child threads and how Node.js handle child threads
+What is blocking code in Node.js
+Difference between cluster and worker_threads in Node.js
+How to resolve unhandled exceptions in Node.js
+Testing libraries for Node.js and why we need to assert library in Node.js
+How to convert existing callbacks to promises?
+How would you handle errors for async code in Node.js?
+Explain the difference between the nextTick() and the setImmediate() method.
+Explain the concept of stub in Node.js
+What are OAuth and its concept in Node.js?
+Explain JWT and its application in Node.js
+Explain the difference between readFile & createReadStream.
+
+
+How do you design a scalable Node.js backend for high-traffic applications?
+
+Explain the Node.js event loop and how it handles asynchronous operations.
+
+What are worker threads, and when would you use them over child processes?
+
+How do you manage memory leaks in a Node.js application?
+
+Describe different strategies for load balancing a Node.js server.
+
+How do you handle error propagation and logging in production Node.js systems?
+
+Compare CommonJS and ES Modules. Which one do you prefer and why?
+
+How would you structure a large-scale Node.js monorepo/microservices application?
+
+What are the best practices for using async/await in Node.js?
+
+How do you handle rate limiting and throttling in APIs?
+
+Describe how to implement caching in a Node.js application.
+
+How would you handle graceful shutdown in a Node.js server?
+
+Explain how streams work in Node.js and use cases for them.
+
+How do you implement job queues and background processing in Node?
+
+How do you ensure security in Express-based Node.js APIs?
+
+How do you choose between SQL and NoSQL databases for a given project?
+
+How do you design a relational schema for a multi-tenant SaaS application?
+
+What strategies do you use for database indexing and performance optimization?
+
+How do you manage database migrations and version control?
+
+Explain CAP theorem and its implications for distributed databases.
+
+How do you prevent and resolve deadlocks in transactional systems?
+
+What are your strategies for handling data replication and failover?
+
+How would you design a highly scalable read-heavy database architecture?
+
+How do you ensure data consistency across services and microservices?
+
+What are the differences between horizontal and vertical scaling in databases?
+
+

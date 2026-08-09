@@ -1,0 +1,13 @@
+==> DOM: -
+    -> Document object model
+    -> DOM is created by the browser when a page is loaded
+    -> In graphical form the DOM is looks like tree of elements/ nodes
+    -> Programmatically we can use JS to read or change the DOM.
+    -> Everything in DOM is a node
+    
+==> Interacting with DOM:-
+    -> Change / remove HTML elements in the DOM / on the page
+    -> Change & add CSS style to the elements
+    -> Read and change elements attributes (href, src, alt, custom ..etc)
+    -> Create new HTML elements and insert them into DOM / the page
+    -> Attach event listeners to the elements (click , keypress, submit,...etc)

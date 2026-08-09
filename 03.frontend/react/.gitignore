@@ -1,0 +1,13 @@
+# Node dependencies
+node_modules/
+
+# Compiled output
+dist/
+build/
+
+# Runtime files
+logs/
+tmp/
+
+# Local env
+.env

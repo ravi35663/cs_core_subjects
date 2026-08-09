@@ -1,0 +1,9 @@
+v24.11.1
+/*
+An .nvmrc file helps developers manage different versions of Node.js within 
+their projects. This ensures everyone working on the project uses exactly the 
+same version of Node.js, preventing subtle bugs that might arise from version 
+mismatches.
+
+=> To create this file: node -v > .nvmrc
+*/

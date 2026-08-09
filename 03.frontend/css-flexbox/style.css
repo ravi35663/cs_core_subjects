@@ -1,0 +1,58 @@
+*{
+    font-family: verdana;
+    margin: 0;
+}
+body{
+    background: #eee;
+}
+.wrapper{
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+.flex-container{
+    display: flex;
+    background: black;
+    /* If you shrink the browser the extra item is going to move to next line */
+    /* With wrap-reverse, it will above the item */
+    flex-wrap: wrap;
+    /* By default items are horizontally but you can change the behavior by giving them types*/
+    /* flex-flow: column; */
+    flex-flow: row;
+}
+
+.box{
+    height: 100px;
+    /* min-width: 200px; */
+    /* flex-basic is like min-width and all the elements start with 200px*/
+    /* flex-basis: 200px;
+    flex-grow: 1; */
+    flex: 1 0 200px; /*flex: grow shrink basis*/
+    /* width: 320px; */
+    /* All the boxes will grow with equal rate */
+    /* flex-grow: 1; */
+}
+
+.one{
+    background: red;
+    /* Grow used to fill remaining space of the box */
+    /* Grow is like columns */
+    /* flex-grow: 1; */
+    /* As the browser shrink the size of the boxes will shrink accordingly with the shrink rate */
+    /* flex-shrink: 1; */
+    flex-basis: 100px;
+}
+.two{
+    background: blue;
+    flex-basis: 200px;
+    /* flex-grow: 2; */
+    /* flex-shrink: 2; */
+}
+
+.three{
+    background: green;
+    flex-basis: 300px;
+    /* flex-grow: 3; */
+    /* flex-shrink: 3; */
+}
+/* The bigger the shrink rate the more they going to shrink and same with grow, the bigger the grow rate the bigger they going to grow */

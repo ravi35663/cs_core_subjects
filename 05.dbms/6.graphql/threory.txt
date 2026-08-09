@@ -1,0 +1,38 @@
+/
+References:
+    https://www.youtube.com/playlist?list=PL4cUxeGkcC9iK6Qhn-QLcXCXPQUov1U7f
+    https://www.youtube.com/playlist?list=PL4cUxeGkcC9gUxtblNUahcsg0WLxmrK_y
+    https://studio.apollographql.com/sandbox/explorer ==> to use graphql locally like postman
+
+/
+
+// Learning Graphql
+Graphql:
+    -> Graphql is a Query language
+    -> 
+        Query{
+            books{
+                title,
+                author,
+                price
+            }
+        }
+    -> Alternative to using  RESTApi
+    -> Graphql is good for fetching needed data .
+    -> Graphql provide nested query data
+        e.g. 
+            Query{
+                course(id:1){
+                    id,title,price
+                    author{
+                        name,
+                        id,
+                        courses{
+                            id,
+                            title,
+                            thumbnail
+                        }
+                    }
+                }
+            }
+    -> if you want to fetch nested data from different resources then you have to connect them at the server.

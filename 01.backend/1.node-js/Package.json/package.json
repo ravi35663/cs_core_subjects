@@ -1,0 +1,16 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "index": "node index.js",
+    "preindex":"node preci.js"
+  },
+  "author": "Ravi",
+  "license": "ISC",
+  "devDependencies": {
+    "express": "^4.19.2"
+  }
+}

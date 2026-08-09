@@ -1,0 +1,61 @@
+<!--
+===> HTML5 Semantic Tags
+    ->  <main> -> for the main content of a webpage, unique to that page.
+    ->  <section> -> define a certain section of webpage (e.g. blog list, contact info)
+    ->  <article> -> defines a bit of content which make up an article (e.g. a blog post)
+    ->  <aside>   -> define some content which is related to something else. (e.g. similar blog post)
+    ->  <header>  -> for the header of the website - contains the nav, title .etc
+    ->  <footer>  -> for the footer of a website. 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Used for the responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Learning Semantic Tags</title>
+</head>
+<body>
+    <header>
+        <h1>Marioclub</h1>
+    </header>
+    <section class="banner">
+        <img src="img/banner.png" alt="marioclub welcome banner">
+        <div class="welcome">
+            <h2>Welcome to <br> <span>Marioclub</span></h2>
+        </div>
+    </section>
+    <nav class="main-nav">
+        <ul>
+            <li><a href="/join.html" class="join"> Join the club</a></li>
+            <li><a href="/news.html">Latest news</a></li>
+            <li><a href="/games.html"> Latest games</a></li>
+            <li><a href="/contact.html"> Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <article>
+            <h2>It's Me, Mario</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio aspernatur quis, corrupti laudantium ad vel nisi, iusto soluta odit est ipsa possimus sit amet, recusandae sunt. In dolorum explicabo modi Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur alias maxime quis accusamus obcaecati mollitia hic, praesentium deleniti incidunt expedita ipsa dicta quibusdam recusandae, distinctio accusantium odit illo, sint consectetur.</p>
+        </article>
+        <ul class="images">
+            <li><img src="img/thumb-1.png" alt="mario thumb 1"></li>
+            <li><img src="img/thumb-2.png" alt="mario thumb 2"></li>
+        </ul>
+    </main>
+    <section class="join">
+        <h2>Join Today!</h2>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint praesentium in adipisci. 
+            Accusamus quidem fugit laudantium a, mollitia autem odit doloribus. Tempore esse obcaecati 
+            hic tenetur, nobis repellat consequatur ducimus?
+        </p>
+        <form>
+            <input type="email" name="email" placeholder="Type email and hit enter" required>
+        </form>
+    </section>
+    <footer>
+        <p class="copyright"> Copyright 2024 marioclub</p>
+    </footer>
+</body>
+</html>

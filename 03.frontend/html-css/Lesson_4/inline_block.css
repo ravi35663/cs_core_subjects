@@ -1,0 +1,18 @@
+span{
+    display: inline-block; 
+    /*  this element become inline-block element. That is it won't take entire width of the browser 
+        but can add margin and padding properly
+    */
+    background-color: silver;
+    margin: 20px;
+    padding: 20px;
+}
+p{
+    display: inline;
+    background-color: aqua;
+}
+div{
+    border: 2px solid crimson;
+    margin: 20px; /* all the 4 side it applies like top,bottom,left and right*/
+    padding: 20px;
+}

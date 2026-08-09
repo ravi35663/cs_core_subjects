@@ -1,0 +1,63 @@
+/*
+    On each paragraph tag which have error class apply the below style
+*/
+/* p.error{
+    color: red;
+}
+
+p.success{
+    color: rgb(122, 239, 122);
+}
+
+p.success.feedback{
+    text-align: right;
+    border: 1px dashed rgb(12, 238, 12);
+}
+
+#content{
+    background-color: #ebebeb;
+    padding: 20px;
+} */
+
+/* Descendant selectors */
+/* all p tag inside div tag*/
+/* div p{ 
+    color: purple;
+} */
+
+/* Look for the parent div find any class name 'error' then add below style*/
+/* div .error{ 
+    color: red;
+} */
+
+/* Every anchor tag which have attribute href apply the below style*/
+/* a[href]{
+    background-color: rgb(130, 234, 130);
+} */
+
+/* a[href*='google'] all a tag with href includes 'google' then apply the css*/
+/* a[href$='.com'] all 'a' tag with href ends with '.com' then apply the css*/
+/* Every anchor tag which have attribute href='www.google.com' apply the below style*/
+/* background-color: rgb(130, 234, 130); */
+/* a[href='www.google.com']{ 
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+} */
+
+div{
+   color: blueviolet; /* inherited by child*/
+   border: 1px solid grey; /* not inherited by child*/
+   margin: 40px; /* not inherited by child */
+   font-weight: bold; /*inherited by child*/
+   padding: 20px;
+}
+/*If you want to inherit parent properties/style to child you can applu below stuff*/
+
+p{
+    border: inherit; /* These are inherited from the parent of p tag*/
+    margin: inherit;
+    /*want to override something*/
+    color: sienna;
+}

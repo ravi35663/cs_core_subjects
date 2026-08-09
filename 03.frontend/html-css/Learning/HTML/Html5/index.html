@@ -1,0 +1,153 @@
+<!-- 
+    <!DOCTYPE html>: 
+    -> The <!DOCTYPE html> declaration in HTML5 is used to specify the document type 
+       and version of HTML being used. It tells the web browser that the document 
+       being rendered is an HTML5 document. This declaration ensures that the browser
+       renders the page in standards mode, which means it will follow the HTML5 
+       specification for parsing and rendering the document.
+ -->
+
+ <!-- Key Points: -->
+ <!-- 
+    1) Syntax: The declaration is simple and short:
+        <!DOCTYPE html>
+    2) Position: It must be the very first line in the HTML document, before the <html> tag.
+    3) Purpose: It helps the browser to correctly interpret the HTML code, ensuring 
+       that web pages are displayed consistently across different browsers.
+  -->
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <body>
+        Body
+  </body>
+  </html>
+  <!-- 
+    => Div Vs Span:
+        The <div> and <span> elements in HTML are both used for grouping and styling 
+        elements, but they serve different purposes and have distinct characteristics.
+        -> Div is block level elements, it take full width and start from new line 
+        -> div generally used to group large elements all together. 
+        -> Span is inline element, it only take necessary width and does not start 
+           from new line
+   -->
+
+<!-- 
+Semantic Tags:
+    1) Definition: Tags that clearly describe their meaning in a human- and 
+       machine-readable way. It introduces in HTML5
+       Example: 
+           <header></header>
+            <nav></nav>
+            <article></article>
+            <section></section>
+            <footer></footer>
+ -->
+ <!-- 
+    Non-Semantic Tags:
+     Definition: Tags that do not convey any information about the content they 
+     contain.
+    Example: 
+        <div></div>
+        <span></span>
+-->
+
+<!-- 
+    HTML VS HTML5 
+    -> HTML5 is the fifth version of HTML
+    -> HTML5 is superset of HTML which includes few features.
+    -> HTML and HTML5 are both like building blocks for webpages, but HTML5 is the 
+       newer, more feature-rich version.
+    -> Think of HTML as the foundation: It defines the basic structure and content of 
+       a webpage.
+    -> HTML5 expands on that foundation: It adds features like embedded audio/video, 
+       drawing tools, and offline storage.
+    -> HTML5 features:
+        -> Designed to be responsive on all devices
+        -> Web Storage and Application Cache
+        -> Supports SVG and Canvas for graphics
+        -> Native support for audio and video
+-->
+<!-- 
+    What are data attributes in HTML5:
+    -> Data attributes in HTML5 are custom attributes that can be added to HTML 
+       elements to store extra information or metadata. They begin with the prefix 
+       "data-" followed by a descriptive name. They're useful for JavaScript and CSS 
+       to access and manipulate data associated with elements without affecting t
+       heir semantics or validation.
+        e.g.
+        <div id="product" data-category="electronics" data-price="199.99" data-in-stock="true">
+                Smartwatch
+        </div>
+
+        // In js file
+        var productDiv = document.getElementById('product');
+        var category = productDiv.dataset.category;
+        var price = productDiv.dataset.price;
+        var inStock = productDiv.dataset.inStock;
+
+        console.log(category);  // Output: electronics
+        console.log(price);     // Output: 199.99
+        console.log(inStock);   // Output: true
+-->
+
+<!-- 
+    ==> Iframe in html5
+    -> Iframe is a Window Within Your Webpage
+    -> The <iframe> tag lets you embed another webpage or content directly into your 
+       HTML5 document. It's like a mini-browser inside your page.
+    -> Common Uses:
+        -> Embed videos, maps, social media feeds, or even entire webpages.
+        -> Create interactive features like chat windows or games.
+            <iframe src="https://www.example.com/"></iframe>
+-->
+
+<!-- 
+    What are the formatting tags in html
+    -> HTML formatting tags are like special instructions that tell web browsers how 
+       to display text on a webpage. They come in two main categories:
+    
+    1)Physical Formatting Tags:
+        These tags directly affect the visual appearance of the text, without necessarily 
+        conveying any specific meaning. Here are some common examples:
+        <b> (bold): Makes text bold.
+        <i> (italic): Makes text italic.
+        <u> (underline): Underlines text (deprecated, use CSS for underlining).
+        <sup> (superscript): Displays text slightly above the baseline (e.g., for exponents).
+        <sub> (subscript): Displays text slightly below the baseline (e.g., for chemical formulas).
+        <strike> (strikethrough): Strikes a line through text (deprecated, use CSS).
+
+    2) Logical Formatting Tags:
+        These tags focus on the meaning or importance of the text, and the browser can 
+        choose how to display it visually. For instance, a screen reader might present 
+        bold text differently than italic text.
+
+            <strong> (strong): Indicates strong importance of the text (often displayed as bold).
+            <em> (emphasis): Indicates emphasis on the text (often displayed as italic).
+            <mark> (marked text): Highlights important text (usually with a colored background).
+-->
+
+<!-- 
+    b Vs strong:
+    -> Use <b> if you only want to make text bold for visual presentation without any 
+       semantic meaning.
+    -> Use <strong> when the text holds strong importance or emphasis within the 
+       content, and you want to convey that meaning to search engines, assistive 
+       technologies, and browsers.
+
+    -> <b> is for how the text looks.
+    -> <strong> is for what the text means.
+ -->
+
+ <!-- HTML attributes:
+    In HTML, attributes are special additions to HTML elements that provide more 
+    information about how to display or behave. They act like modifiers for the 
+    element, giving extra details or instructions. 
+    e.g. name, src ,alt ..etc are attributes in html
+-->

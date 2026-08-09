@@ -1,0 +1,16 @@
+{
+  "name": "mongodb",
+  "version": "1.0.0",
+  "description": "--> Collections are used to store documents --> Documents are used to represents individual record of the collection --> Document is like json object in javascript. it is called BSON (Binary JSON)     ..example of record of a User collection      {         \"name\":\"Ravi\",         \"age\":25,         \"email\":\"ravikr845430@gmail.com\",         \"hobbies\":[\"cricket\",\"chess\"],         \"_id\":ObjectId(\"234567890drftghbjnmjn\"),         \"book\":{             \"title\":\"How to win Friends\",             \"price\":12         }     }",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js"
+  },
+  "author": "ravi",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongodb": "^5.7.0"
+  }
+}

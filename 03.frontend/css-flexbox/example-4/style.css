@@ -1,0 +1,36 @@
+body{
+    background: #eee;
+    color: #333;
+}
+
+.wrapper{
+    width: 100%;
+    max-width: 960px;
+}
+
+#blocks{
+    display: flex;
+    margin: 10px;
+    justify-content: space-between;
+}
+
+#blocks div{
+    flex: 0 0 100px;
+    padding: 40px 0;
+    text-align: center;
+    background: #ccc;
+}
+
+/* By default order is 0 */
+.one{
+    order: -3;
+}
+.two{
+    order: 4;
+}
+.three{
+    order: 1;
+}
+.four{
+    order: 0;
+}

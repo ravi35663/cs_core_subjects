@@ -1,0 +1,95 @@
+==> Learning HTML and CSS in deep
+===> HTML:
+-> HTML is stand for Hyper Text Markup Language
+-> it is a markup language not a programming language
+-> HTML used to create content on web page (image,button, texts, forms ..etc)
+-> We structure contents using html tags
+    i.e.
+    <p>Content</p>
+    <span></span>
+    <img>
+    <a>Link</a>
+
+===>CSS:
+-> CSS stand for Cascading Style sheet
+-> Css used to style html elements
+-> change color, position,heading, effects and sizes
+
+==> Selectors:
+-> selectors are the things that we need to target elements to apply css on elements.
+    -> tag name, id, class, attributes ..etc
+    -> For Example: <div>, <li>, <a>
+    div{ // div is a selector
+        color:blue; // these are called declaration
+        margin:20px;
+    }
+
+===> Inline Elements:
+    -> Inline elements are those elements which don't take up room their content needs
+    -> Example: span, img, strong, em, a and more.
+
+===> Block Level Elements:
+    -> Block level elements will take whole width of the page regardless of content
+    -> p, div, h1-h6, ul, li and more.
+
+==> Note:
+1)  if you add inline elements in block level elements then it won't start from the new-line
+2)  Block level elements always start from the new line
+3)  We can convert any block level element to inline element and vice-versa by using style 
+    display:block; or display:inline
+4)  Inline-block elements:
+    if you use any inline elements as block level elements and vice-versa called inline-block elements.
+5)  Know about the developer tool from here: 
+    https://www.youtube.com/watch?v=25R1Jl5P7Mw&list=PL4cUxeGkcC9ivBf_eKCPIAYXWzLlPAm6G&index=7
+
+===> Margin and Padding:
+-> Margin: space between element tag and parent tag
+-> Padding: Space between element tag and content of the tag.
+-> Margin will perfectly work with block level element but only left and right will work with inline elements
+-> Padding works perfectly for both inline and block level elements 
+
+===> Default Browser Style:
+-> When Browser add Default styles in your pages is called Default style.
+-> like adding display:block to div tag and so on.
+-> (user agent style sheet) -> Default Browser style
+
+===> Css Inheritance:
+-> HTML elements can inherit css properties that applied to their parent elements
+-> margin,padding border. etc are not inherited from parents
+-> Example:
+    div{
+        color:red; // this style also applied to span tag
+    }
+    <div>
+        <span>Thi is span tag</span>
+    </div>
+
+===> Position and Layout:
+1) static: It is default value of the elements
+2) relative
+3) fixed
+4) absolute
+5) sticky
+
+==> Pseudo classes:
+    -> style elements when they are in particular state.
+    -> hover, focus, first child of parent
+
+==> Pseudo Elements:
+    -> Pseudo elements are used to inject dynamic content on web
+
+===> Responsive design:
+===> Media Queries:
+-> Media Queries tell the browser how to style the elements at a particular viewport dimensions.
+
+===> viewport meta tag:
+-> Tell the browser that what width the viewport should be.
+
+===> Responsive images:
+-> Only load smaller images for the mobile devices.
+
+
+===> Next to Learn:
+https://www.youtube.com/playlist?list=PL4cUxeGkcC9i3FXJSUfmsNOx8E7u6UuhG
+https://www.youtube.com/playlist?list=PL4cUxeGkcC9itC4TxYMzFCfveyutyPOCY
+https://www.youtube.com/playlist?list=PL4cUxeGkcC9iGYgmEd2dm3zAKzyCGDtM5

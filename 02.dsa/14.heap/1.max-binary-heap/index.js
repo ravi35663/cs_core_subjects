@@ -1,13 +1,13 @@
 /*
 => Representation of MaxBinaryHeap:
-    -   arr = [100,19,36,17,12,25,5,9,15,6,11,13,8,1,4]
+    -   arr = [100, 19, 36, 17, 12, 25, 5, 9, 15, 6, 11, 13, 8, 1, 4]
     -   Finding children of parent having index n;
         1) LeftChild  =  (2n+1)
         2) RightChild =  (2n+2)
         For instance:
-            100
-            /  \
-          19   36
+                    100( 0-> index)
+                    /  \
+        (1-index) 19   36 (2 - index)
 
     -   Finding parent of a child having index n:
         Parent = Floor((n-1)/2)
@@ -26,7 +26,6 @@
         -  else item is already at the right spot and then break the loop their.
 */
 
-
 /*
 => Extract Maximum value:
     -   The procedure for deleting the root from the heap (efficiently extracting 
@@ -41,7 +40,7 @@
     2) Pop from the values properties, so you can return the value at the end.
     3) Have the new-root "sink-down" to the correct spot
         -  Your parent index start at 0 (root index)
-        -  find the index of your left child ( 2*index + 1) (Make sure it is not out of bound)
+        -  find the index of your left child ( 2 * index + 1) (Make sure it is not out of bound)
         -  If left child is greater than parent then swap with parent
         -  Find the rightChild (2 * index + 2) (Make sure it is not out of bound)
         -  Check right child is greater than parent swap with parent.
@@ -49,8 +48,6 @@
         -  The children you swapped become parent.
         -  Keep looping and swap until neither child is larger than the parent
     4) return the Old root
-
-
 */
 
 // Implementation of max binaryHeap:

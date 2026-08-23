@@ -1,76 +1,69 @@
-// Implementation of max binaryHeap:
+/*
+=>  Step: 1
+    => Functional Requirements: LLD
+    Note:   
+        -   You can think of cases like some server failure, where we may need a human to override 
+            instead of automate gates working by themselves.
 
-class MaxBinaryHeap{
-    constructor(){
-        this.values = [];
-    }
+    => Non Functional Requirement (HLD):
+        -   Scalability:
+        -   Consistency:
+        -   Availability:
+        -   Latency:
+        -   Extensibility:
+        -   Security:
 
-    addItem(value){
-        this.values.push(value);
-        // Place added value at the right index:
-        this.bubbleUp()
-        console.log("array is: ",this.values,value)
-    }
+    =>  Edge - Cases:
+*/
 
-    bubbleUp(){
-        let index = this.values.length - 1;
-        while(index > 0){
-            const parent = Math.floor((index - 1)/2);
-            if(this.values[parent] < this.values[index]){
-                [this.values[parent],this.values[index]] = [this.values[index], this.values[parent]]
-                index = parent;
-            }else{
-                break;
-            }
-        }
-    }
+/*
+=>  Step 2:
+    =>  Identify core entities:
+    =>  DTO's: API that are going to use:
+*/
 
-    extractMax(){
-        const end = this.values.pop();
-        const max = this.values[0];
-        if(this.values.length > 0){
-            this.values[0] = end;
-            this.bubbleDown();
-        }
-        return max
-    }
-    bubbleDown(){
-        let i = 0;
-        const len = this.values.length;
-        while(1){
-            const left = (2 * i) + 1;
-            const right = (2 * i) + 2;
-            let swap = -1;
-            if(left < len){
-                if(this.values[i] < this.values[left]){
-                    swap = left;
-                }
-            }
-            if(right < len){
-                if(
-                    (swap == -1 && this.values[i] < this.values[right])
-                    || 
-                    (swap != -1 && this.values[left] < this.values[right])
-                ){
-                    swap = right;
-                }
-            }
-            if(swap == -1){
-                break;
-            }else{
-                [this.values[i], this.values[swap]] =  [this.values[swap], this.values[i]];
-                i = swap;
-            }
-        }
-    }
-}
+/*
+=>  Step 3:
+    =>  Discuss interaction flow: (SDLC of the system)
+*/
 
+/*
+=>  Step 4: Discuss class structures and relationships
+    =>  Architecture Layers:
+        Client/UI -> Controller Layer(HTTP/API) -> Service Layer -> Repository Layer -> Domain Layer        
+    =>  Controllers:
+    =>  Services:
+    =>  Repositories:
+    =>  Interfaces
+    =>  Implementations:
+*/
 
-const maxBinaryHeap = new MaxBinaryHeap();
-const items = [10, 20, 30, 42, 39, 35, 50];
-for(let item of items){
-    maxBinaryHeap.addItem(item);
-}
+/*
+=>  Step 5:
+    =>  Core use cases and methods:
+*/
 
-console.log("Max is: ",maxBinaryHeap.extractMax())
-console.log("Max is: ",maxBinaryHeap.values)
+/*
+=> Step 6:
+    => OOP Principles and design patterns:
+        ->  Design patterns used
+        ->  OOP Principle applied
+*/
+
+/*
+=> Step 7: Handle Edge cases: (Discussions only):
+    =>  Edge cases solutions;
+    =>  Implementation Strategies
+*/
+
+/*
+=>  Step 8: Class diagram and package structure:
+    1)  Association:    I work with you
+    2)  Aggregation:    I have you, but you are not mine
+    3)  Composition:    You are mine and only mine:
+*/
+
+/*
+=>  Step 9:  Future requirement: Optional
+    => Future functional Requirement:
+*/

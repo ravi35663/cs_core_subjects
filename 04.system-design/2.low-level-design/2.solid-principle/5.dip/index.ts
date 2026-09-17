@@ -1,4 +1,5 @@
-/* ===================== DEPENDENCY INVERSION PRINCIPLE (DIP) =====================
+// ===================== DEPENDENCY INVERSION PRINCIPLE (DIP) =====================
+/*
     - Reduces tight coupling between modules
     - High-level modules should not depend on low-level modules
     - Both should depend on abstractions (interfaces)

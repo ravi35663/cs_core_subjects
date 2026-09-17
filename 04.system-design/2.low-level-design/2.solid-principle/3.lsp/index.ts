@@ -1,29 +1,26 @@
 /* ===================== LISKOV SUBSTITUTION PRINCIPLE (LSP) =====================
-    - Subclass objects must be replaceable with superclass objects
-    - Replacing a parent with a child should not break program correctness
-    - Subclasses should honor the behavior and expectations of the base class
-    - Code using the base class should work the same with any subclass
+=> LSP:
+    - L of SOLID.
+    - A subclass should be replaceable with its superclass without breaking the program.
+    - Subclasses must respect the behavior and expectations of the base class.
 
-In simple terms:
-    -   If B extends A, then B should work anywhere A is expected. i.e, class B should always respect 
-        class A without violating the behavior of class A.
-*/
-/*
-=>  Why does LSP matter?
-    => LSP violation leads to :
-        -   Broken functionalities when subclasses replaces parent.
-        -   Fragile inheritance hierarchies
-        -   Bugs that are hard to detect
-        -   Client code being tightly coupled to specific types
-*/
-/*
-=>  How do we spot LSP violation?
-    -   Subclasses throwing unexpected exceptions for base class method.
-    -   subclass changes behavior so much, that the code fails
-*/
-/*
-=> What are the key principles of LSP:
-    -   Design by contact.
-    -   Avoid over inheritance, use composition.
-    -   Refactor early.
+=> In Simple Terms:
+    -   If B extends A, B should work anywhere A is expected.
+    -   B should not violate A's behavior.
+    -   A is parent here and B is child
+
+=> Why LSP Matters?
+    - Prevents broken functionality when replacing parent with child.
+    - Avoids fragile inheritance hierarchies.
+    - Reduces hard-to-detect bugs.
+    - Prevents client code from being tightly coupled to specific types.
+
+=> How to Spot LSP Violations?
+    - Subclass throws unexpected exceptions for base-class methods.
+    - Subclass changes behavior so much that existing code fails.
+
+=> Key Principles:
+    - Follow the contract of the base class.
+    - Avoid excessive inheritance; prefer composition when appropriate.
+    - Refactor violations early.
 */

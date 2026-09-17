@@ -7,7 +7,7 @@ abstract class Shape{
 }
 
 class Rectangle extends Shape{
-    constructor(private height:number,private width:number){
+    constructor(private height:number, private width:number){
         super();
     }
 

@@ -9,7 +9,9 @@
         -   Solid                       -   Done
 
     2) LLD:
-        -  Introduction                 -   Inprogress
+        -   Introduction                    -   Done
+        -   SOLID Principle:                -   Done
+        
         
         
 

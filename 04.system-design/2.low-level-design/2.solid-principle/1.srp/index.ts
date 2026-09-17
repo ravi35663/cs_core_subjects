@@ -1,54 +1,40 @@
 /* ===================== SINGLE RESPONSIBILITY PRINCIPLE (SRP) =====================
-    - A class should have only one responsibility
-    - It should have only one reason to change
-    - Each concern should be handled by a separate class
+=> SRP:
+    - S of SOLID.
+    - A class should have only one responsibility or one reason to change.
+    - Each concern should be handled separately.
+    - Multiple responsibilities create coupling, making changes risky.
 
-Example:
-    - User class → handles user-related logic
-    - UserRepository → handles database operations
-    - EmailService → handles email sending
+=> Example:
+    - User class       → User-related logic
+    - UserRepository   → Database operations
+    - EmailService     → Email sending
 
-    - This separation improves readability, maintainability, and scalability.
-*/
-/*
-=>  Single Responsibility Principle (SRP):
-    -   S of SOLID
-    -   A class should have only one reason to change. This means that the class should have only one job, 
-        one responsibility, one purpose.
+=> Why SRP Matters?
+    - Example: TUF+ Compiler
+        - Add/validate code
+        - Process code
+        - Run test cases
+        - Store output in DB
+        - Return result
 
-    -   If a class takes more than one responsibility, these responsibilities become coupled, and changes 
-        to one might break the others.
-*/
-/*
-=>  Why SRP matters?
-    -   Example of TUF+ Compiler modules
-        -   Add driven code
-        -   System processing
-        -   Code run with test cases
-        -   Store the output in DB
-        -   return the necessary things
+    - Don't put all these responsibilities in one class.
+    - Create separate classes for each responsibility.
+    - Use a Coordinator class to manage and execute these modules.
 
-    -   You should not put all these modules in a single class, because it cause maintenance of the 
-        modules.
-    -   You should add these modules in different-different classes
-    -   Coordinator -> co-ordinates all these modules
-    -   Put all classes in Run method to perform the task you have given to the compiler.
-*/
-/*
-=>  Benefits of SRP:
-    -   Improved maintainability
-    -   Better test coverage
-    -   Lower risk in change
-    -   reusable modules
-*/
-/*
-=>  Common Mistakes when violating SRP:
-    -   Putting DB logic and business logic in the same class.
-    -   UI code coupled with logic.
-*/
-/*
-=>  Is, SRP just for classes?
-    -   We developers defined it.
-    -   It could be a function that doing one thing only, could be a microservice that doing one thing and 
-        could be a class that is doing one thing only.
+=> Benefits:
+    - Better maintainability
+    - Better test coverage
+    - Lower risk when making changes
+    - Reusable modules
+
+=> Common SRP Violations:
+    - Mixing DB logic with business logic.
+    - Coupling UI code with business logic.
+
+=> Is SRP Only for Classes?
+    - No. SRP can apply to:
+        - Functions → Do one thing
+        - Classes → Handle one responsibility
+        - Microservices → Handle one specific responsibility
 */

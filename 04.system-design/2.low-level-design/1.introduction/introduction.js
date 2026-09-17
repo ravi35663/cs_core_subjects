@@ -1,93 +1,77 @@
 /*
-=> Design patterns:
-    ->  Design patterns are the foundation of good software design.
-    ->  They provide reusable solutions to recurring problems, improving code structure and quality.
+=> Design Patterns:
+    - Reusable solutions to common software design problems.
+    - Improve code structure, maintainability, scalability, and quality.
+    - Act as blueprints for object interaction, architecture, and communication.
+    - Example: Undo/Redo functionality can follow a standard design pattern.
 
-    ->  A design pattern is a general approach to solve a common problem in a specific context.
-        Example: Undo-Redo functionality in text editors, games, or code editors can follow a standard 
-        pattern.
-
-    ->  Patterns act as blueprints, not direct code, focusing on object interactions, system architecture, 
-        and class communication.
+=> Benefits:
+    1) Reusability    - Reuse proven solutions.
+    2) Maintainability - Easier to modify and manage.
+    3) Communication   - Common language among developers.
+    4) Scalability    - Supports future growth with less refactoring.
+    5) Efficiency     - Saves time using proven solutions.
 */
 /*
-=> Benefits of Design Patterns:  
-    1) Code Reusability: Promotes using existing solutions across projects.  
-    2) Maintainability: Makes code easier to update and manage.  
-    3) Communication:   Provides a common language for developers to understand designs.  
-    4) Scalability:     Structures code to handle future growth with minimal refactoring.  
-    5) Efficiency:      Saves time by using proven, well-tested solutions instead of reinventing. 
-*/ 
-/*
-=> Why LLD is important?
-    -   Avoid rework
-    -   Improve collaboration
-    -   Promotes Scalability
-    -   Encourage Best practices
+=> Why LLD is Important?
+    - Avoids rework
+    - Improves collaboration
+    - Promotes scalability
+    - Encourages best practices
 */
 /*
-=> Principles of software design:
-    -> We'll be not avoiding these principle while designing a good softwares.
-        -   DRY
-        -   KISS
-        -   YAGNI
+=> Software Design Principles:
+    - DRY
+    - KISS
+    - YAGNI
 */
 /*
-=> DRY (Don't repeat yourself):
-    -   It means that each piece of knowledge or logic should have a single, unambiguous representation 
-        within the system.
-    -   Example:
-        If you're using multiple functions and all those functions implements the same 
-        code. So, instead of writing the same code in each function, you can get 
-        repeated code in some function and call that function in each functions.
+=> DRY (Don't Repeat Yourself):
+    - Every piece of logic should have a single representation.
+    - Extract repeated code into a common function/module and reuse it.
 
-=>  Importance:
-        1) Reduces redundancy
-        2) Easier maintenance: 
-            - if that code logic is change then you only have to make single point change.
-        3) Single point of change
+=> Benefits:
+    1) Reduces redundancy
+    2) Easier maintenance
+    3) Single point of change
 
-=>  How do we apply the DRY principle ?
-    -   Identify the repeating code
-    -   Extract common functionality
-    -   Leverage libraries and frameworks
-    -   Refactor code regularly
+=> How to Apply:
+    - Identify repeated code
+    - Extract common functionality
+    - Use libraries/frameworks
+    - Refactor regularly
 
-=>  When not to use DRY principle ?
-    -   Premature(too early) Abstraction
-    -   Sacrificing readability
-    -   Legacy Code
-    -   Performance Critical Code
+=> When NOT to Use:
+    - Premature abstraction
+    - Reduced readability
+    - Legacy code
+    - Performance-critical code
+*/
+
+/*
+=> KISS (Keep It Simple, Stupid):
+    - Keep design as simple as possible.
+    - Introduce complexity only when necessary.
+    - Don't apply a design principle just because you know it; use it when required.
+
+=> Benefits:
+    - Easier debugging
+    - Better readability
+    - Easier maintenance
+    - Faster development
 */
 /*
-=>  KISS(Keep it simple, stupid) Principle:
-    -   A design should be kept as simple as possible, complexity should only be introduced when 
-        absolutely necessary.
-        
-    -   Example:
-            Don't just apply designing principle just because you know them. If it is required do it else 
-            leave it.
+=> YAGNI (You Aren't Gonna Need It):
+    - Implement only what is currently needed, not what might be needed later.
+    - Do it if you need it; otherwise, skip it.
+    - Example: Start with a simple payment system.
 
-=>  Importance:
-    -   Easier debugging
-    -   Improved readability
-    -   Better maintenance
-    -   Faster development
-*/
-/*
-=>  YAGNI(You Aren't Gonna Need It):
-    -   Always implements things when you actually need them, never when you just force that you might need 
-        them.
-    -   Just remember, Do it if you need it other than that skip it.
-    -   Example:
-            Start with simple payment
-        
-=>  Importance:
-    -   Reduced waste
-    -   Simplified codebase
-    -   Faster development
+=> Benefits:
+    - Reduces waste
+    - Simplifies codebase
+    - Faster development
 
-=>  When not to follow?
-    -   Well known requirement
-    -   Performance critical areas
+=> When NOT to Follow:
+    - Well-known requirements
+    - Performance-critical areas
 */

@@ -22,7 +22,7 @@ class Rectangle {
       return this.width * this.height;
     }
 }
-  
+ 
 // Subclass
 class Square extends Rectangle {
     setWidth(width) {

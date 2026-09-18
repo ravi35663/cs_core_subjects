@@ -8,7 +8,6 @@
     -   Structural (7)
     -   Behavioral (11)
 */
-
 /*
 =>  Creational Pattern:
     -   Creational patterns deal with object creation mechanism.
@@ -22,13 +21,10 @@
 */
 /*
 =>  Structural Pattern:
-    -   Structural patterns focuses on how classes and objects are composed to form 
-        larger structure.
-    -   It helps system to work together that otherwise could not because of 
-        incompatible interfaces
-    -   Structural patterns are about how classes and objects are connected to form 
-        larger, flexible structures. They focus on composition (has-a) rather than 
-        inheritance.
+    -   Structural patterns focuses on how classes and objects are composed to form larger structure.
+    -   It helps system to work together that otherwise could not because of incompatible interfaces
+    -   Structural patterns are about how classes and objects are connected to form larger, 
+        flexible structures. They focus on composition (has-a) rather than inheritance.
 
 =>  Types of Structural Patterns:
     1) Adaptor

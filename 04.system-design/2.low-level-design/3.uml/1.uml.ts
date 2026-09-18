@@ -1,36 +1,33 @@
 /*
-- A stereotype is a generalization that assumes all members of a group are the same:
-    Example: It like assuming that all the person are same in some context.
-        All engineers are bad at communication
-        All politicians are corrupt:
-*/ 
+=> Stereotype:
+    - A generalized assumption that all members of a group are the same.
+    Examples:
+        - All engineers are bad at communication.
+        - All politicians are corrupt.
+*/
 /*
-=>  Unified modeling language (UML):
-    -   Unified means single kind of language across all the system.
-    -   Unified modeling language is a standardized visual language used to model and document the 
-        designs of software systems.
+=> UML (Unified Modeling Language):
+    - A standardized visual language for modeling and documenting software systems.
+    - Provides diagrams to represent different system aspects and improve communication.
 
-    -   It offer a set of diagrams to represents different aspects of a system, getting a clear 
-        communication among stakeholders and helping us to understand the design.
-        
-=>  How many official UML diagrams are there?
-    -   There are 14 kind of UML diagrams and they are categorized in two:
-    -   Structural Diagram:
-         ***1)  Class Diagram:  Show classes, interfaces, relationships: Most important
-            2)  Object Diagram: Snapshot of objects at specific point in time
-            3)  Component Diagram:  Describe software components and their dependencies
-            4)  Composite Structural Diagram:   Shows internal structure of a class and collaboration
-            5)  Deployment Diagram: Describe physical deployment of artifact
-            6)  Package Diagram: Organizes elements into packages/modules
-            7)  Profile Diagram: Used to define custom stereotypes, useful for modeling 
-                    extensions. Profile, stereotype, tagged values, constrains 
+=> Official UML Diagrams: 14
+    Categorized into two types:
 
-    -   Behavioral Diagram:
-            1)  Use Case diagram: Show system functionality from the user's point of view
-            2)  Activity Diagram: Flowchart of operations (like processes on workflow)
-            3)  Sequence diagram: Shows interactions of objects in a time sequence
-            4)  Communication diagram: Like sequence diagrams, but emphasizes object relationship
-            5)  State Machine diagram: Show different state of an object and how it transition
-            6)  Interaction Overview diagram: High level overview of diagram
-            7)  Timing diagram: Focuses on object behavior with respect to time.
+1) Structural Diagrams (System Structure):
+    1. Class Diagram: Classes, interfaces, and relationships. (Most important) **
+    2. Object Diagram: Snapshot of objects at a specific time.
+    3. Component Diagram: Components and their dependencies.
+    4. Composite Structure Diagram: Internal structure and collaborations.
+    5. Deployment Diagram: Physical deployment of software artifacts.
+    6. Package Diagram: Organizes elements into packages/modules.
+    7. Profile Diagram: Custom stereotypes and UML extensions.
+
+2) Behavioral Diagrams (System Behavior):
+    1. Use Case Diagram: System functionality from the user's perspective.
+    2. Activity Diagram: Workflow or process flow.
+    3. Sequence Diagram: Object interactions in time sequence.
+    4. Communication Diagram: Object interactions and relationships.
+    5. State Machine Diagram: Object states and transitions.
+    6. Interaction Overview Diagram: High-level interaction overview.
+    7. Timing Diagram: Object behavior over time.
 */

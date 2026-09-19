@@ -38,7 +38,7 @@ console.log(s1 === s2); // true
 /*
 =>  Key points
     1)  Instance is created at class load time:
-    2)  Simple and thread-safe: if multiple treads are created then only one EagerSingleton instance 
+    2)  Simple and thread-safe: if multiple threads are created then only one EagerSingleton instance 
         will be there
     3)  May waste memory if never used
 */
@@ -66,7 +66,7 @@ console.log(s1 === s2); // true
     1) Instance is created only when needed
     2) Saves memory
     3) Slightly more logic
-    4) It is not tread safe
+    4) It is not thread safe
 */
 /*
 =>  Double-Checked Locking (Async-Safe) in TypeScript

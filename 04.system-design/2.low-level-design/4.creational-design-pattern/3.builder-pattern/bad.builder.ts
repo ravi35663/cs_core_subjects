@@ -39,11 +39,10 @@ const burgerClass = new BurgerMealClass(
   "",
   ""
 );
-
 /*
-Problem without Builder Pattern:
-    -   If you don't need some optional items into you burger meal you have to 
-        explicitly give them null/undefined, assume you have 1000 of optional fields, 
-        if you don't follow the builder pattern you have explicitly make them null 
-        which is very hectic.
+=> Problem without Builder Pattern:
+    - Optional fields must be explicitly passed as null/undefined.
+    - With many optional fields (e.g., 1000), object creation becomes
+      difficult, repetitive, and error-prone.
+    - Builder Pattern makes this cleaner and easier.
 */

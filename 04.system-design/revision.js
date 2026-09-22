@@ -12,7 +12,7 @@
         -   Introduction                    -   Done
         -   SOLID Principle:                -   Done
         -   UML                             -   Done
-        -   Creational-design-pattern       -   Inprogress
+        -   Creational-design-pattern       -   Inprogress (Start from Builder pattern)
 
         
 

@@ -16,8 +16,11 @@ class BurgerMeal{
     // Required
     readonly bunType:string;
     readonly patty:string;
-
-    // Optional // Here you cannot assign default values, values will comes from the BuilderClass which is responsible for building instance of meal
+    /* 
+        Optional fields:
+        Here you cannot assign default values, values will comes from the BuilderClass which is 
+        responsible for building instance of meal 
+    */
     readonly hasCheese?:boolean;
     readonly toppings?:string[];
     readonly side?:string;
@@ -33,7 +36,7 @@ class BurgerMeal{
     }
     // Factory method:
     static builder(bunType: string, patty:string){
-        return new BurgerBuilder(bunType,patty);
+        return new BurgerBuilder(bunType, patty);
     }
 }
 

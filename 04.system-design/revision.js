@@ -14,6 +14,4 @@
         -   UML                             -   Done
         -   Creational-design-pattern       -   Inprogress (Start from Builder pattern)
 
-        
-
 */

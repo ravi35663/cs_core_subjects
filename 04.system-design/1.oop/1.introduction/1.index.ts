@@ -36,9 +36,8 @@
 */
 /*
 =>  Real Life analogy of OOP:
-    ->  Think you are building a bank application with procedural programming. 
-        You get hell out of problems with different users and those problems will 
-        solved by OOP.
+    ->  Think you are building a bank application with procedural programming. You get hell out of 
+        problems with different users and those problems will solved by OOP.
 */
 /*
 => Why OOP is better for large scale applications:

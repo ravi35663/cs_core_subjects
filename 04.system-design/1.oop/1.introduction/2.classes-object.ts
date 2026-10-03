@@ -1,8 +1,8 @@
 /* 
 => Classes and Constructors in TypeScript:  
     -   Classes are blueprints for creating objects with properties and methods.  
-    -   The constructor is a special method that runs when an object is created, 
-        usually to initialize properties.  
+    -   The constructor is a special method that runs when an object is created, usually to initialize 
+        properties.  
 */
 class Person{
     // These are the attributes (the data that stores that is variables)

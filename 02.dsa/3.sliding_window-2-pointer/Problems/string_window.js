@@ -26,7 +26,7 @@
 */
 function stringToMap(s){
     const m ={};
-    for(let i=0;i<s.length;i++){
+    for(let i=0; i<s.length; i++){
         const item = s[i];
         if(m[item]){
             m[item] +=1 

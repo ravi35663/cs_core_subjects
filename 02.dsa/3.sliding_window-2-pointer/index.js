@@ -2,9 +2,8 @@
 ===============
 SLIDING WINDOW 
 ===============
-
-Sliding Window is an optimization technique used for array/string problems.
-It reduces time complexity (often O(n²) → O(n)) by avoiding recomputation.
+  - Sliding Window is an optimization technique used for array/string problems. It reduces time 
+    complexity (often O(n²) → O(n)) by avoiding recomputation.
 
 Core idea:
   - Maintain a window (subarray / substring)
@@ -12,7 +11,6 @@ Core idea:
   - Shrink from the other side
   - Update window state incrementally
 */
-
 /*
 --------------------------------
 1) FIXED WINDOW (Size = K)
@@ -33,16 +31,13 @@ function maxSum(arr, k) {
     // first window
     for (let i = 0; i < k; i++) {
       maxSum += arr[i];
-    }
-  
+    }  
     windowSum = maxSum;
-  
     // slide window
     for (let i = k; i < arr.length; i++) {
       windowSum += arr[i] - arr[i - k];
       maxSum = Math.max(maxSum, windowSum);
     }
-  
     return maxSum;
 }
 
@@ -157,7 +152,7 @@ Used in:
   - Two pointers control expand/shrink
   - Update window state incrementally
   - Avoid recomputation → O(n)
-*/  
+*/
 
 /*
 Example 1:

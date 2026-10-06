@@ -4,9 +4,9 @@
 
         Example: Find the maximum sum of a subarray of size k.
     Steps:
-        Start with a window of size k.
-        Slide the window by one element, updating the sum as you move.
-        Keep track of the maximum/minimum sum encountered.
+        - Start with a window of size k.
+        - Slide the window by one element, updating the sum as you move.
+        - Keep track of the maximum/minimum sum encountered.
 */
 
 // Example: Find the maximum sum of a subarray of size k.

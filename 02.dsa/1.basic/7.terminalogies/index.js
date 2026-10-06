@@ -4,12 +4,11 @@
         like an 'iceman' and more .
 
 => Divide and Conquer :-
-    ->  This pattern is designed to chunk large data sets into smaller chunks and repeat the 
-        process for subsets of data .
+    ->  This pattern is designed to chunk large data sets into smaller chunks and repeat the process 
+        for subsets of data .
     ->  This pattern tremendously decreases the time complexity .
     ->  Few examples are: Binary Search, Quick Sort, Merge Sort ..etc
 */
-
 /*
 => General Frontend Terminology:
     ->  HTML (HyperText Markup Language): The standard markup language used to structure web pages.

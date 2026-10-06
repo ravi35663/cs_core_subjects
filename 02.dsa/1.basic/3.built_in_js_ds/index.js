@@ -17,7 +17,6 @@
     -> person.hasOwnProperty(“name”) 	-> true
     -> person.hasOwnProperty(“hobbies”)- > false  (accessing keys)
 */
-
 /*
 => Array : -
     -> Example arr = [10,20,30,40]
@@ -77,7 +76,7 @@
     deleteCount: the number of elements to remove from the array. if set 0, no elements will be 
     removed.
     
-    item1,item2,item3:  the elements to add to the array starting from the 'start'. 
+    item1, item2, item3:  the elements to add to the array starting from the 'start'. 
                         if omitted then no element will be added.
 */
 

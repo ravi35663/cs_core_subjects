@@ -6,7 +6,6 @@
         arr = [1,2,3]
         arr = new Array(4) // Create array of size 4
 */
-
 /*
 =>  Transpose of a matrix:
     Example: 1

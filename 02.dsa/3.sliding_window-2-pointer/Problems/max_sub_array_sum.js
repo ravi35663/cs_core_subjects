@@ -33,16 +33,16 @@
 
 // Sliding window approach
 // Here T.C = O(n)
-const maxSubArraySum = (arr,n)=>{
+const maxSubArraySum = (arr, n)=>{
     if(arr.length < n){
         return null;
     }
     let max_sum = 0;
-    for(let i=0;i<n;i++){
+    for(let i=0; i<n; i++){
         max_sum +=arr[i];
     }
     let sum = max_sum
-    for(let i=n; i<arr.length;i++){
+    for(let i=n; i<arr.length; i++){
         // adding very next element of n consecutive number into max_sum and subtracting very 
         //first element of n consecutive array
         sum = sum + arr[i] - arr[i-n];

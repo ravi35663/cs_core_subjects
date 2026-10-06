@@ -1,14 +1,14 @@
 /*
 => Sieve of Eratosthenes:
-
-    - Efficient algorithm to find all prime numbers from 2 to n.
-    - Time Complexity: O(n log log n)
-    - Space Complexity: O(n)
+    -   Efficient algorithm to find all prime numbers from 2 to n.
+    -   Time Complexity: O(n log log n)
+    -   Space Complexity: O(n)
 
 => Steps:
+    0. Create an array of size n+1
     1. Assume all numbers are prime.
-    2. Mark 0 and 1 as non-prime.
-    3. Start from 2 and check if it is prime.
+    2. Mark 0 and 1 as non-prime index
+    3. Start from index 2 and check if it is prime.
     4. Mark all multiples of the prime as non-prime.
     5. Repeat until i * i <= n.
     6. Collect all remaining prime numbers.

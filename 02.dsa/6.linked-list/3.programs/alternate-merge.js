@@ -51,7 +51,7 @@ class LinkedList{
     }
 }
 
-function  mergeTwoLinkedLists(first,second){
+function  mergeTwoLinkedLists(first, second){
     let prev = new Node(0);
     let temp = prev;
     while(first && second){

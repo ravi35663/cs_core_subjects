@@ -1,20 +1,20 @@
 /*
 => Divide and Conquer :-
-    -   This pattern is designed to break large data sets into smaller chunks and repeat the 
-        process for subsets of data.
+    -   This pattern is designed to break large data sets into smaller chunks and repeat the process for 
+        subsets of data.
     -   This pattern tremendously decreases the time complexity.
     -   Few examples are: 
-        binary search, quick sort, merge sort ..etc
+            binary search, quick sort, merge sort ..etc
 */
 /*
 => Recursion : -
-	-   A function calls itself to find the desired result .
-	-   There is always a base condition with recursion where it stops calling itself and returns 
-        the initial result and based on that initial result the actual result will be printed.
+	-   A function calls itself to find the desired result.
+	-   There is always a base condition with recursion where it stops calling itself and returns the 
+        initial result and based on that initial result the actual result will be printed.
 
     -   When a function is called then that function is pushed into the call stack.
-    -   Once the function is executed then that function pops off from the call stack. In the 
-        stack everything is moved from top of the stack.
+    -   Once the function is executed then that function pops off from the call stack. In the stack 
+        everything is moved from top of the stack.
 
     -   Recursion works in depth first manner (i.e. first last call happens then others) 
 */
@@ -41,8 +41,8 @@ function outer(input){
 }
 /*
 => Pure Recursion : -
-	-   For arrays, use methods like slice, spread, concat that make copies of arrays so you do 
-        not mutate them. 
+	-   For arrays, use methods like slice, spread, concat that make copies of arrays so you do not 
+        mutate them. 
 
     -   Remember that strings are immutable so you will need to spread, slice, substr or substring 
         to make copies of strings.
@@ -61,14 +61,14 @@ function collectOddValues(arr){// pure recursion
     return odd;
 }
 /*
-=> Pitfall of recursion : 
+=> Pitfall of recursion: 
 	-> No base case
 	-> Forgetting to return or returning the wrong thing
 	-> stack overflow
 
 => Maximum call stack size exceeded: -
-    -   we get this error when there is infinite functions pushed into the stack. It is also known 
-        as stack overflow. It is RangeError
+    -   we get this error when there is infinite functions pushed into the stack. It is also known as 
+        stack overflow. It is RangeError
 */
 // JavaScript Example of Head Recursion
 function headRecursion(n) {

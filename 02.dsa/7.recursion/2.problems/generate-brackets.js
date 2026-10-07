@@ -69,23 +69,22 @@ console.log("Result is: ",result);
 
 
 /*
-    // Little Bit Better
-    // Brute-Force using recursion:
-    function addBracket(n, str="",open = 0, close = 0,result=[]){
-        if(str.length == n * 2){
-            result.push(str);
-            console.log("Str is: ", str);
-            return str;
-        }
-        if(open < n){
-            addBracket(n,str+"(", open+1, close,result );
-        }
-        if(close < open){
-            addBracket(n, str+")", open, close+1,result );
-        }
+// Little Bit Better
+// Brute-Force using recursion:
+function addBracket(n, str="", open = 0, close = 0, result=[]){
+    if(str.length == n * 2){
+        result.push(str);
+        console.log("Str is: ", str);
+        return str;
     }
+    if(open < n){
+        addBracket(n,str+"(", open+1, close, result );
+    }
+    if(close < open){
+        addBracket(n, str+")", open, close+1, result );
+    }
+}
 
-    const result = addBracket(3);
-    console.log("Result is: ",result);
-
+const result = addBracket(3);
+console.log("Result is: ",result);
 */

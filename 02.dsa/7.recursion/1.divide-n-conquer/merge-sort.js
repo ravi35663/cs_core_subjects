@@ -37,6 +37,5 @@ function merge(arr,start,end){
     return arr;
 }
 
-
 const arr = [0,9,2,7,6,0,6,1,5];
 console.log("Sorted array is: ",mergeSort(arr));

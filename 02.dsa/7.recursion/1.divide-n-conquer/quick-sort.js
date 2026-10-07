@@ -7,16 +7,16 @@
         4: if arr has 0 or 1 element, return the array;
 */
 
-function pivotIndex(arr,start,end){
+function pivotIndex(arr, start, end){
     let pi = end;
     let swap_index = start;
-    for(let i=start;i<end;i++){
+    for(let i=start; i<end; i++){
         if(arr[i] < arr[pi]){
-            [arr[swap_index],arr[i]] =  [arr[i],arr[swap_index]];
+            [arr[swap_index], arr[i]] =  [arr[i], arr[swap_index]];
             swap_index++;
         }
     }
-    [arr[swap_index],arr[pi]] =  [arr[pi],arr[swap_index]];
+    [arr[swap_index], arr[pi]] =  [arr[pi], arr[swap_index]];
     return swap_index;
 }
 

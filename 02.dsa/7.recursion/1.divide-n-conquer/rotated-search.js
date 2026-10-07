@@ -1,7 +1,7 @@
 /*
-==> Rotated Search:
-    Write a function that takes input a sorted array of distinct integers, which is rotated about 
-    a pivot point and finds the index of any given element.
+=> Rotated Search:
+    Write a function that takes input a sorted array of distinct integers, which is rotated about a pivot 
+    point and finds the index of any given element.
     
     Sample Input
         [7, 9, 10, 1, 2, 3, 4, 5, 6]

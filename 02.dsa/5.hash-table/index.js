@@ -51,7 +51,6 @@ function hashTwo(key,arrayLength){
 const item = "ivar"
 console.log(hashTwo(item,3));
 
-
 /*
 => Notes:
     1)  Hash tables are collections of key-value pairs.

@@ -1,7 +1,7 @@
 /*
 ==> Subset Sum
-    Given a set of non-negative integers, and a value sum, determine if there is a subset of the given set 
-    with sum equal to given sum. Also count the number of sub arrays.
+    Given a set of non-negative integers, and a value sum, determine if there is a subset of the given 
+    set with sum equal to given sum. Also count the number of sub arrays.
 
     Input
         arr = [10, 12, 15, 6, 19, 4,1]

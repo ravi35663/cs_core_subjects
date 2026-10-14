@@ -47,7 +47,7 @@ function BinaryTreeHeight(root){
     if(root == null) return 0;
     const h1 = BinaryTreeHeight(root.left);
     const h2 = BinaryTreeHeight(root.right);
-    return 1 + Math.max(h1,h2);
+    return 1 + Math.max(h1, h2);
 }
 
 function BinaryTreeDiameter(root){

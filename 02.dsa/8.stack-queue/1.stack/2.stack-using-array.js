@@ -19,7 +19,10 @@ class Stack{
         return this.stack[last_index-1];
     }
 
-    // Insert at bottom: You cannot directly insert into stack, you have to first empty the stack then you have to add/push items one-by-one:
+    /*
+        Insert at bottom: You cannot directly insert into stack, you have to first empty the stack then 
+        you have to add/push items one-by-one:
+    */ 
     insertAtBottom(val){
         if(this.stack.length ==0){
             this.stack.push(val);

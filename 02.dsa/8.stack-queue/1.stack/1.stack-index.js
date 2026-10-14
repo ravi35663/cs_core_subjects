@@ -53,6 +53,7 @@ Note: Adding/removing element at beginning in array has more complexity than add
     -> You can implement stack using linked list and using array.
 */
 
+// Stack using LinkedList:
 const Node = require('../Node');
 class Stack{
     constructor(){

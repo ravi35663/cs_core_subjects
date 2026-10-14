@@ -6,6 +6,10 @@
     4)  Sorting & Searching =>  Done
     5)  Hash-table          =>  Done  
     6)  LinkedList          =>  Done
-    7)  Recursion           =>  Inprogress
-    8)  
+    7)  Recursion           =>  Done
+    8)  Stack & Queue       =>  Done
+    9)  Bit-manipulation    =>  Done
+    10) Backtracking        =>  Done
+    11) Tree                =>  Done
+    12) Binary Tree         =>  Inprogress
 */

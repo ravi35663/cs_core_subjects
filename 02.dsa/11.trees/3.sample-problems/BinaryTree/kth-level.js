@@ -37,8 +37,8 @@ function dfs(root,k,output=[]){
     output.push(root.value);
     return;
   }
-  dfs(root.right,k-1,output);
-  dfs(root.left,k-1,output);
+  dfs(root.right, k-1, output);
+  dfs(root.left, k-1, output);
   return output;
 }
 

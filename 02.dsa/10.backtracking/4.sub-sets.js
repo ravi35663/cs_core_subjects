@@ -21,7 +21,7 @@
 // }
 
 // With backtracking:
-function generateSubsets(input,output=[],i=0,j=0,result=[]){
+function generateSubsets(input, output=[], i=0, j=0, result=[]){
     // Base case
     if(!input[i]){
         // console.log("Output is: ",output);
@@ -34,7 +34,7 @@ function generateSubsets(input,output=[],i=0,j=0,result=[]){
     generateSubsets(input, [...output], i+1, j+1,result);
     //Exclude the ith letter
     output[j] = ''
-    generateSubsets(input,[...output],i+1,j,result);
+    generateSubsets(input, [...output], i+1, j, result);
     return result;
 }
 

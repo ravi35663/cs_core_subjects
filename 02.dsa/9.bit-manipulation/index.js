@@ -55,12 +55,12 @@
                 5 >> 2 ==> 00000101 => 00010100 => which is 20
 
 Note:   
-    1)  Whenever you encounter negative number, get the 2s complement of that number (positive part only) and 
-        further perform the action.
+    1)  Whenever you encounter negative number, get the 2s complement of that number 
+        (positive part only) and further perform the action.
     2)  if number is 32 bit => 31st for sign and rest for values.
     3)  Largest possible value you can store is (2^31) - 1 if system is 32 bit and (2^31) is int_max and 
         int_min is -2^31 (get 2s complement of 2^31 and add minus).
-    4)  If system if n bit then largest value you can store is (2^n-1) - 1;
+    4)  If system is n bit then largest value you can store is (2^n-1) - 1;
     5)  You'll get the unwanted values if bits are overflow in left shift. So always do calculation in 
         boundaries of the bits
 
@@ -96,9 +96,9 @@ Explanation: a^a = 0, b^b = 0 because same bits resultant is 0:
    a = a^b;
 }
 /*
-Check if ith bit is set or not:
+Check if ith bit is set or not: 
     Example: 1
-        n = 13, i=2;
+        n = 13, i=2; // consider 0 based index for binary number
         Explanation: 
             n = 13 => (1101)
             here 2nd bit is 1 from right to left so it is true

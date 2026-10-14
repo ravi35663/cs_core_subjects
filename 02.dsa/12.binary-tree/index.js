@@ -1,7 +1,7 @@
 /*
 =>  Hierarchical Data Structure:
-    -   A Hierarchical Data Structure organizes data in a tree-like form, where each item (node) has 
-        one parent (except the root) and zero or more children.
+    -   A Hierarchical Data Structure organizes data in a tree-like form, where each item (node) has one 
+        parent (except the root) and zero or more children.
 */
 /*
 => Tree :

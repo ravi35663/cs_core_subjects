@@ -19,7 +19,7 @@
 // This solution will check if configuration is possible or not but cannot generate all possible solution
 function nQueen(n){
     const arr = [];
-    for(let i=0;i<n;i++){
+    for(let i=0; i<n;i++){
         arr.push((new Array(n)).fill(0));
     }
     placedQueen(arr,0,n);
@@ -31,8 +31,8 @@ function placedQueen(arr, placed_queen, n){
     if(placed_queen == n){
         return arr;
     }
-    for( let j=0;j<n;j++){
-        if(canQueenBePlacedInThisPosition(placed_queen,j,arr)){
+    for( let j=0; j<n; j++){
+        if(canQueenBePlacedInThisPosition(placed_queen, j, arr)){
             arr[placed_queen][j] = 1;
             const success =  placedQueen(arr,placed_queen+1,n)
             if(success){
@@ -51,14 +51,14 @@ const canQueenBePlacedInThisPosition = (row,column,board)=>{
 
     // Diagonally upward left check
     let k = column;
-    for(let i=row-1,j=column-1; i>=0 && j>=0 ;i--,j--){
+    for(let i=row-1, j=column-1; i>=0 && j>=0 ; i--,j--){
         if(board[i][j]){
             return false;
         }
     }
 
     // Diagonally upward right check
-    for(let i=row-1,j=column+1 ;i>=0 && j<board.length;i--,j++){
+    for(let i=row-1, j=column+1 ; i>=0 && j<board.length; i--,j++){
         if(board[i][j]){
             return false;
         }

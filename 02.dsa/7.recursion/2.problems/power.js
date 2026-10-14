@@ -27,7 +27,7 @@ const fastPower = (a,n)=>{
     if(n==0){
         return 1;
     }
-    let subProblem = fastPower(a,Math.floor(n/2));
+    let subProblem = fastPower(a, Math.floor(n/2));
     let subSquare = subProblem * subProblem;
     if( n%2 == 1){
         return subSquare * a;

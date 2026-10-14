@@ -12,7 +12,7 @@ Learn → Try → Build → Explain → Note only what matters → Revisit
 # Anthropic Courses – Lead Software Engineer Focus
 
 LEARNING ORDER:
-1. AI Fluency
+1. AI Fluency: (Completed)
    → Understand AI fundamentals, prompting, context & limitations.
 
 2. Claude 101
@@ -22,8 +22,7 @@ LEARNING ORDER:
    → Learn Claude Code fundamentals, project context, commands & workflows.
 
 4. Claude Code in Action ⭐⭐⭐⭐
-   → Focus heavily on planning, architecture, coding, testing, debugging,
-     code review and working with large codebases.
+   → Focus heavily on planning, architecture, coding, testing, debugging, code review and working with large codebases.
 
 5. Introduction to Agent Skills ⭐⭐⭐⭐
    → Learn how to create reusable engineering workflows and standardize

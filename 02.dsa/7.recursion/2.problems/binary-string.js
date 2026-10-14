@@ -101,7 +101,6 @@ function decimalToBinary(dec,n){
 /*
     Optimized solution:
 */
-
 function binaryStrings(n, output='', result=[]){
     if(output.length > n){
         return;
@@ -112,7 +111,7 @@ function binaryStrings(n, output='', result=[]){
         return;
     }
     if(output[output.length-1] != '1'){
-        binaryStrings(n, output + '1',result);
+        binaryStrings(n, output + '1', result);
     }
     binaryStrings(n, output + '0',result);
     return result;

@@ -4,13 +4,12 @@
     ->  Every node to the left of the parent node is always less than parent.
     ->  Every node to the right of the parent node is always greater or equal than the parent.
     ->  Left and the right part of the BST is always the BST.
-    ->  InOrder Traversal of a binary search tree is always sorted (Left-Root-Right).
+    ->  InOrder Traversal of a binary search tree is always sorted (Left - Root - Right).
     ->  BST problems follow a recursive structure.
-    ->  Mostly all problems can be solved by dividing the problem into sub problems and making recursive calls 
-        on subtrees.
+    ->  Mostly all problems can be solved by dividing the problem into sub problems and making recursive 
+        calls on subtrees.
     ->  BST makes search efficient
 */
-
 /*
 => Big O of BST:-
     -> Search : O(H)( 😬Not Guarantees because if three is linear then it will go on for n) 
@@ -245,7 +244,7 @@ class BinarySearchTree{
 
 
     // Print Elements in a range:
-    printInRange(root,k1,k2){
+    printInRange(root, k1, k2){
         // console.log("Line 252")
         if(!root){
             return;

@@ -113,7 +113,7 @@ function heightOfBinaryTree(root){
     if(root == null) return 0;
     let h1 = heightOfBinaryTree(root.left);
     let h2 = heightOfBinaryTree(root.right);
-    return 1 + Math.max(h1,h2);
+    return 1 + Math.max(h1, h2);
 }
 
 
@@ -130,7 +130,7 @@ function dfs(root,k,output=[]){
   return output;
 }
 
-// return sum of all node// root,left,right
+// return sum of all node// root, left, right
 function nodeSum(root){
     if(!root) return 0;
     return root.value + nodeSum(root.left) + nodeSum(root.right);

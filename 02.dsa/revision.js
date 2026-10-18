@@ -11,5 +11,7 @@
     9)  Bit-manipulation    =>  Done
     10) Backtracking        =>  Done
     11) Tree                =>  Done
-    12) Binary Tree         =>  Inprogress
+    12) Binary Tree         =>  Done
+    13) BST                 =>  Done
+    14) Heap                =>  Inprogress
 */

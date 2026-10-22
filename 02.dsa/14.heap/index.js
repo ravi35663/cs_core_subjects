@@ -11,12 +11,11 @@
 
     -   Max and Min Binary heaps are two type of binary heaps.
 
-    -   Binary Heaps are very useful data structures for sorting, and implementing other data 
-        structure like priority queue.
+    -   Binary Heaps are very useful data structures for sorting, and implementing other data structure 
+        like priority queue.
 
     -   With a little bit of math we can represent heaps using array/list.
 */
-
 /*
 =>  Complete Binary tree:
     - Every node apart from root and leaf, must have 2 nodes
@@ -55,7 +54,6 @@
      / \   / \
     5   6 3   1
 */  
-
 /*
 => MinBinaryHeap:
     -   Each parent has at most two children
@@ -78,7 +76,6 @@
 */
 /*
 => Why do we need heaps?
-    -   Binary Heaps are used to implements priority queues, which are very common used data
-        structure.
-    -   Binary heaps are also used for graph-traversal algorithms.
+    -   Binary Heaps are used to implements priority queues, which are very common used data structure.
+    -   Binary heaps are also used for graph - traversal algorithms.
 */

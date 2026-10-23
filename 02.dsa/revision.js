@@ -13,5 +13,6 @@
     11) Tree                =>  Done
     12) Binary Tree         =>  Done
     13) BST                 =>  Done
-    14) Heap                =>  Inprogress
+    14) Heap                =>  Done
+    15) Graph               => Inprogress
 */

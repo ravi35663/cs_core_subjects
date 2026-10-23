@@ -1,5 +1,5 @@
 /*
-===> Representation of MinBinaryHeap:
+=> Representation of MinBinaryHeap:
     ->  arr = [1, 4, 5, 6, 8, 13, 9, 15, 12, 36, 11, 25, 100, 17, 19]
     ->  Finding children of parent having index n;
         1) LeftChild  =  (2n+1)
@@ -13,7 +13,7 @@
         Parent = Floor((n-1)/2)
 */
 
-// Implementation of max binaryHeap:
+// Implementation of min binaryHeap:
 class MinBinaryHeap{
     constructor(){
         this.values = [];

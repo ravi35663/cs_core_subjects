@@ -12,28 +12,24 @@
     -   Finding parent of a child having index n:
         Parent = Floor((n-1)/2)
 */
-
 /*
 => Insert value:
-    1) Add item at the end of the heap
-    2) Bubble up the heap so that you put the item at the right spot
-    3) Get the index of recent added item
-    4) Run a loop until the item has not reach their right spot.
-        -   compare child item with parent
-        -   if child item is greater than parent then swap the value 
-            and make parent_index = child_index
-            
-        -  else item is already at the right spot and then break the loop their.
+    1) Add item at the end of the heap (assume heap is array here)
+    2) Bubble up the heap so that you put the item at the right spot:
+        Bubble Up approach:
+        1) Get the index of recent added item
+        2) Run a loop until the item has not reach their right spot.
+            -   compare child item with parent
+            -   if child item is greater than parent then swap the value and make 
+                    parent_index = child_index
+            -  else item is already at the right spot and then break the loop their.
 */
-
 /*
 => Extract Maximum value:
-    -   The procedure for deleting the root from the heap (efficiently extracting 
-        maximum-element from the max heap or extracting the minimum element from the 
-        min-heap) and restoring the properties is called down-heap 
-        (AKA bubble-down, shift-down, extract min-max).
+    -   The procedure for deleting the root from the heap (efficiently extracting maximum-element from 
+        the max heap or extracting the minimum element from the min-heap) and restoring the properties 
+        is called down-heap (AKA bubble-down, shift-down, extract min-max).
 */ 
-
 /*
 => Steps to extract maximum element from the heap:
     1) Swap the first value in the values (arr) with the last one.
@@ -73,9 +69,8 @@ class MaxBinaryHeap{
             }
         }
     }
-    // Remove latest element
+    // Remove Root element of the heap: This is maxHeap so root will be max element
     extractMax(){
-        // [this.values[0],this.values[this.values.length-1]] = [this.values[this.values.length-1],this.values[0]]
         const end = this.values.pop();
         const max = this.values[0];
         if( this.values.length > 0){
@@ -88,9 +83,9 @@ class MaxBinaryHeap{
 
     bubbleDown(){
         let idx = 0;
-        let parent = this.values[idx];
         let len = this.values.length;
         while(true){
+            let parent = this.values[idx];
             let leftIndex = (2 * idx + 1);
             let rightIndex = (2 * idx + 2);
             let swap = null;

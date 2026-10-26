@@ -11,12 +11,12 @@
     1) Write a min-binary-heap (Lower number means higher priority)
     2) Each node has a 'val' and 'priority' use the priority to build the heap
     3) Enqueue: 
-        ->  Enqueue method accepts a value and priority, makes a new node and puts 
-            it in the right spot based off its priority. 
-        ->  TimeComplexity is O(LogN) 
+        ->  Enqueue method accepts a value and priority, makes a new node and puts it in the right spot 
+            based of its priority. 
+        ->  TimeComplexity is O(LogN)
+
     4) Dequeue: 
-        ->  Dequeue method removes root element, returns it and rearrange heap using 
-            priority.
+        ->  Dequeue method removes root element, returns it and rearrange heap using priority.
         ->  TimeComplexity is O(LogN)
 */
 

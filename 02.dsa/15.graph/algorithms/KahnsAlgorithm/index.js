@@ -1,19 +1,17 @@
 /*
-
 Title: Topological sort or Kahn's algorithm:
     
 Description:
-    Given a Directed Acyclic Graph (DAG) with V vertices labeled from 0 to V-1. The 
-    graph is represented using an adjacency list where adj[i] lists all nodes connected 
-    to node. 
-    Find any Topological Sorting of that Graph.
+    Given a Directed Acyclic Graph (DAG) with V vertices labeled from 0 to V-1. The graph is represented 
+    using an adjacency list where adj[i] lists all nodes connected to node. Find any Topological Sorting 
+    of that Graph.
 
-    In topological sorting, node u will always appear before node v if there is a 
-    directed edge from node u towards node v(u -> v).
+    In topological sorting, node 'u' will always appear before node 'v' if there is a directed edge from 
+    node 'u' towards node 'v'(u -> v).
 
-    The function should return an array representing the topological order. The output 
-    will be validated by our driver code, which checks the correctness of your 
-    topological sort. It will print True if the order is valid, otherwise False.
+    The function should return an array representing the topological order. The output will be validated 
+    by our driver code, which checks the correctness of your topological sort. It will print True if the 
+    order is valid, otherwise False.
 
 Example:
     Example 1

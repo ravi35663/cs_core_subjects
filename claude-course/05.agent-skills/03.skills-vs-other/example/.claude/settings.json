@@ -1,0 +1,13 @@
+{
+  "_comment": "Hooks example. Event-driven: runs when Claude calls a tool, not when a request matches.",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          { "type": "command", "command": "node .claude/hooks/block-push-main.js" }
+        ]
+      }
+    ]
+  }
+}

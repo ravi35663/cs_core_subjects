@@ -1,0 +1,9 @@
+[project]
+name = "mcp-connecting-example"
+version = "0.1.0"
+description = "Example MCP client connecting to a document MCP server"
+requires-python = ">=3.10"
+dependencies = [
+    # FastMCP lives in mcp 1.x. mcp 2.x renamed it to MCPServer.
+    "mcp[cli]>=1.8.0,<2",
+]

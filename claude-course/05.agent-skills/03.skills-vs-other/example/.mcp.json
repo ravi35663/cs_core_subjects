@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "dsa-files": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "D:/learning/data-structure-javascript/02.dsa"
+      ]
+    }
+  }
+}
